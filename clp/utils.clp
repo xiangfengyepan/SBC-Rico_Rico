@@ -20,12 +20,12 @@
    (printout t "===============================" crlf crlf))
 
 ;;; Función para pausar (esperar Enter)
-(deffunction pausa ()
-   (printout t crlf "Presiona ENTER para continuar..." crlf)
+(deffunction read_line (?text)
+   (printout t ?text crlf)
    (readline))
 
 ;;; Función para imprimir un menú numerado
-(deffunction imprimir-lista (?titulo $?items)
+(deffunction imprimir_lista (?titulo $?items)
    (printout t crlf ?titulo crlf)
    (loop-for-count (?i 1 (length$ ?items))
       (printout t ?i ". " (nth$ ?i ?items) crlf)))
@@ -39,7 +39,7 @@
    (printout t crlf))
 
 ;;; Mensaje de bienvenida
-(deffunction saludo-inicial ()
+(deffunction saludo_inicial ()
    (cls)
    (titulo "Bienvenido a Rico Rico CLIPS")
    (printout t "Sistema de menús inteligente para eventos." crlf)
@@ -51,13 +51,13 @@
 ;;; ================================
 
 ;;; Función para activar depuración de hechos y reglas
-(deffunction debug-on ()
+(deffunction debug_on ()
    (watch facts)
    (watch rules)
    (printout t "Depuración activada." crlf))
 
 ;;; Función para desactivar depuración
-(deffunction debug-off ()
+(deffunction debug_off ()
    (unwatch facts)
    (unwatch rules)
    (printout t "Depuración desactivada." crlf))
@@ -67,12 +67,7 @@
 ;;; FUNCIONES DE UTILIDAD GENERAL
 ;;; ================================
 
-;;; Función para imprimir una lista de elementos
-;;; Usada para mostrar opciones de un menú, por ejemplo
-(deffunction imprimir-lista (?titulo $?items)
-   (printout t crlf ?titulo crlf)
-   (loop-for-count (?i 1 (length$ ?items))
-      (printout t ?i ". " (nth$ ?i ?items) crlf)))
+
 
 
 
