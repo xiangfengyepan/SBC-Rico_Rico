@@ -1,0 +1,16 @@
+(deffacts hechos-iniciales
+   (plato (nombre "Gazpacho") (tipo primero) (temporada verano) (estilo clasico) (vegetariano si) (precio 4) (ingredientes tomate pepino aceite))
+   (plato (nombre "Ensalada de queso") (tipo primero) (temporada todo) (estilo clasico) (vegetariano si) (precio 5) (ingredientes queso lechuga nueces))
+   (plato (nombre "Tofu salteado") (tipo segundo) (temporada verano) (estilo clasico) (vegetariano si) (precio 7) (ingredientes tofu verduras soja))
+   (plato (nombre "Tarta de chocolate") (tipo postre) (temporada todo) (estilo clasico) (vegetariano si) (precio 6) (ingredientes chocolate nata))
+   (bebida (nombre "Vino tinto") (compatible-con "Solomillo al vino" "Bacalao al pil pil") (precio 4))
+   (bebida (nombre "Agua mineral") (compatible-con "Gazpacho" "Ensalada de queso" "Tarta de chocolate" "Tofu salteado") (precio 1))
+   (preferencias
+         (evento familiar)
+         (temporada verano)
+         (comensales 50)
+         (estilo clasico)
+         (vegetariano si)
+         (precio-min 10)
+         (precio-max 20000))
+)
