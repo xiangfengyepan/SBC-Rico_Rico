@@ -19,11 +19,14 @@
                (precio-min ?min)
                (precio-max ?max))
    
-    ?p1 <- (plato (nombre ?n1) (tipo primero) (temporada ?temp | todo) (estilo ?est) (vegetariano ?veg) (precio ?pp1) (ingredientes $?ing1))
-    ?p2 <- (plato (nombre ?n2) (tipo segundo) (temporada ?temp | todo) (estilo ?est) (vegetariano ?veg) (precio ?pp2) (ingredientes $?ing2))
-    ?p3 <- (plato (nombre ?n3) (tipo postre)  (temporada ?temp | todo) (estilo ?est) (vegetariano ?veg) (precio ?pp3) (ingredientes $?ing3))
+    ?p1 <- (plato (nombre ?n1) (tipo $?t1) (temporada ?temp | todo) (estilo ?est) (vegetariano ?veg) (precio ?pp1) (ingredientes $?ing1))
+    ?p2 <- (plato (nombre ?n2) (tipo $?t2) (temporada ?temp | todo) (estilo ?est) (vegetariano ?veg) (precio ?pp2) (ingredientes $?ing2))
+    ?p3 <- (plato (nombre ?n3) (tipo $?t3)  (temporada ?temp | todo) (estilo ?est) (vegetariano ?veg) (precio ?pp3) (ingredientes $?ing3))
 
-   
+   (test (member$ primero ?t1))
+   (test (member$ segundo ?t2)) 
+   (test (member$ postre ?t3)) 
+
    ;; Bebida con lista de compatibilidad
    ?b <- (bebida (nombre ?bnom) (compatible-con $?compatibles) (precio ?pb))
 

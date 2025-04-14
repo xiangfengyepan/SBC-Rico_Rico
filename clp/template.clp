@@ -1,7 +1,7 @@
 ;; DEFINICIONES DE PLATOS
 (deftemplate plato
    (slot nombre)
-   (slot tipo) ;; primero, segundo, postre
+   (multislot tipo) ;; primero, segundo, postre
    (slot temporada) ;; todo, verano, invierno, etc.
    (slot estilo) ;; clasico, moderno, regional, sibarita
    (slot vegetariano) ;; si / no
