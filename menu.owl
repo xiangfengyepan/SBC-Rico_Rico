@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rico-rico#"
+     xml:base="http://www.semanticweb.org/rico-rico"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rico-rico"/>
+
+    <!-- Clases -->
+    <owl:Class rdf:about="#Plato"/>
+    <owl:Class rdf:about="#PrimerPlato">
+        <rdfs:subClassOf rdf:resource="#Plato"/>
+    </owl:Class>
+    <owl:Class rdf:about="#SegundoPlato">
+        <rdfs:subClassOf rdf:resource="#Plato"/>
+    </owl:Class>
+    <owl:Class rdf:about="#Postre">
+        <rdfs:subClassOf rdf:resource="#Plato"/>
+    </owl:Class>
+    <owl:Class rdf:about="#Bebida"/>
+    <owl:Class rdf:about="#Ingrediente"/>
+    <owl:Class rdf:about="#Menu"/>
+    <owl:Class rdf:about="#Cliente"/>
+    <owl:Class rdf:about="#Estilo"/>
+    <owl:Class rdf:about="#Temporada"/>
+
+    <!-- Propiedades de objeto -->
+    <owl:ObjectProperty rdf:about="#tieneIngrediente">
+        <rdfs:domain rdf:resource="#Plato"/>
+        <rdfs:range rdf:resource="#Ingrediente"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#esCompatibleCon">
+        <rdfs:domain rdf:resource="#Plato"/>
+        <rdfs:range rdf:resource="#Plato"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#esCompatibleConBebida">
+        <rdfs:domain rdf:resource="#Plato"/>
+        <rdfs:range rdf:resource="#Bebida"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#tieneBebida">
+        <rdfs:domain rdf:resource="#Menu"/>
+        <rdfs:range rdf:resource="#Bebida"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#tienePlato">
+        <rdfs:domain rdf:resource="#Menu"/>
+        <rdfs:range rdf:resource="#Plato"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#usaIngredienteDeTemporada">
+        <rdfs:domain rdf:resource="#Ingrediente"/>
+        <rdfs:range rdf:resource="#Temporada"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#prefiereEstilo">
+        <rdfs:domain rdf:resource="#Cliente"/>
+        <rdfs:range rdf:resource="#Estilo"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#prohibeIngrediente">
+        <rdfs:domain rdf:resource="#Cliente"/>
+        <rdfs:range rdf:resource="#Ingrediente"/>
+    </owl:ObjectProperty>
+
+    <!-- Propiedades de datos -->
+    <owl:DatatypeProperty rdf:about="#precio">
+        <rdfs:domain rdf:resource="#Plato"/>
+        <rdfs:range rdf:resource="xsd:float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="#precioBebida">
+        <rdfs:domain rdf:resource="#Bebida"/>
+        <rdfs:range rdf:resource="xsd:float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="#numeroComensales">
+        <rdfs:domain rdf:resource="#Cliente"/>
+        <rdfs:range rdf:resource="xsd:integer"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="#precioMaximo">
+        <rdfs:domain rdf:resource="#Cliente"/>
+        <rdfs:range rdf:resource="xsd:float"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="#precioMinimo">
+        <rdfs:domain rdf:resource="#Cliente"/>
+        <rdfs:range rdf:resource="xsd:float"/>
+    </owl:DatatypeProperty>
+
+    <!-- Individuos de ejemplo -->
+    <owl:NamedIndividual rdf:about="#Macarrones">
+        <rdf:type rdf:resource="#PrimerPlato"/>
+        <precio rdf:datatype="xsd:float">8.99</precio>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#TartaDeQueso">
+        <rdf:type rdf:resource="#Postre"/>
+        <precio rdf:datatype="xsd:float">4.50</precio>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#VinoTinto">
+        <rdf:type rdf:resource="#Bebida"/>
+        <precioBebida rdf:datatype="xsd:float">3.20</precioBebida>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#Tomate">
+        <rdf:type rdf:resource="#Ingrediente"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#Verano">
+        <rdf:type rdf:resource="#Temporada"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#Moderno">
+        <rdf:type rdf:resource="#Estilo"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="#ClienteEjemplo">
+        <rdf:type rdf:resource="#Cliente"/>
+        <numeroComensales rdf:datatype="xsd:integer">120</numeroComensales>
+        <precioMinimo rdf:datatype="xsd:float">20.0</precioMinimo>
+        <precioMaximo rdf:datatype="xsd:float">50.0</precioMaximo>
+        <prefiereEstilo rdf:resource="#Moderno"/>
+        <prohibeIngrediente rdf:resource="#Tomate"/>
+    </owl:NamedIndividual>
+
+</rdf:RDF>
