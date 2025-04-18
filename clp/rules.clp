@@ -1,14 +1,3 @@
-;; DEFINICIONES DE PREFERENCIAS DEL USUARIO
-(deftemplate preferencias
-   (slot evento)
-   (slot temporada)
-   (slot comensales)
-   (slot estilo)
-   (slot vegetariano)
-   (slot precio-min)
-   (slot precio-max)
-)
-
 (defrule generar-menu
    ?prefs <- (preferencias
                (evento ?event)
