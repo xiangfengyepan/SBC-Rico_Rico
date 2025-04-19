@@ -17,12 +17,12 @@
    (test (member$ postre ?t3)) 
 
    ;; Bebida con lista de compatibilidad
-   ?b <- (bebida (nombre ?bnom) (compatible-con $?compatibles) (precio ?pb))
+   ?b <- (bebida (nombre ?bnom) (no-compatible-con $?no-compatibles) (precio ?pb))
 
    ;; Comprobación de la compatibilidad entre los platos y la bebida
-   (test (or (member$ ?n1 ?compatibles) (member$ "todos" ?compatibles)))
-   (test (or (member$ ?n2 ?compatibles) (member$ "todos" ?compatibles)))
-   (test (or (member$ ?n3 ?compatibles) (member$ "todos" ?compatibles)))
+   (test (not (member$ ?n1 ?no-compatibles)))
+   (test (not (member$ ?n2 ?no-compatibles)))
+   (test (not (member$ ?n3 ?no-compatibles)))
 
    ;; Comprobación del rango de precios
    (test (<= (+ ?pp1 ?pp2 ?pp3 ?pb) ?max))

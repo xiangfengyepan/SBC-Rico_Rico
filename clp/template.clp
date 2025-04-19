@@ -12,7 +12,7 @@
 ;; DEFINICIONES DE BEBIDAS
 (deftemplate bebida
    (slot nombre)
-   (multislot compatible-con)
+   (multislot no-compatible-con)
    (slot precio)
 )
 

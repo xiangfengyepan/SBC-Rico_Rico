@@ -8,9 +8,12 @@
 ; (watch rules)
 ; (watch facts)
 
-(cls)
-(saludo_inicial)
+(saludo-inicial)
 (reset)
+(facts)
 (run)
+
+
 (exit)
+
 

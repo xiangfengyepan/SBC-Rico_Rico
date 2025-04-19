@@ -20,12 +20,12 @@
    (printout t "===============================" crlf crlf))
 
 ;;; Función para pausar (esperar Enter)
-(deffunction read_line (?text)
+(deffunction read-line (?text)
    (printout t ?text crlf)
    (readline))
 
 ;;; Función para imprimir un menú numerado
-(deffunction imprimir_lista (?titulo $?items)
+(deffunction imprimir-lista (?titulo $?items)
    (printout t crlf ?titulo crlf)
    (loop-for-count (?i 1 (length$ ?items))
       (printout t ?i ". " (nth$ ?i ?items) crlf)))
@@ -39,7 +39,7 @@
    (printout t crlf))
 
 ;;; Mensaje de bienvenida
-(deffunction saludo_inicial ()
+(deffunction saludo-inicial ()
    (cls)
    (titulo "Bienvenido a Rico Rico CLIPS")
    (printout t "Sistema de menús inteligente para eventos." crlf)
@@ -51,13 +51,13 @@
 ;;; ================================
 
 ;;; Función para activar depuración de hechos y reglas
-(deffunction debug_on ()
+(deffunction debug-on ()
    (watch facts)
    (watch rules)
    (printout t "Depuración activada." crlf))
 
 ;;; Función para desactivar depuración
-(deffunction debug_off ()
+(deffunction debug-off ()
    (unwatch facts)
    (unwatch rules)
    (printout t "Depuración desactivada." crlf))
@@ -66,6 +66,16 @@
 ;;; ================================
 ;;; FUNCIONES DE UTILIDAD GENERAL
 ;;; ================================
+
+
+
+
+
+
+
+
+
+
 
 
 
