@@ -40,7 +40,7 @@
                  (precio-total ?precio-total)))
    
    ;; Imprimir el menú generado
-   (printout t "Menu generado: " ?n1 ", " ?n2 ", " ?n3 ", bebida: " ?bnom ", precio: " ?precio-total crlf)
+   ; (printout t "Menu generado: " ?n1 ", " ?n2 ", " ?n3 ", bebida: " ?bnom ", precio: " ?precio-total crlf)
 )
 
 
