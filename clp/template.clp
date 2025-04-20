@@ -18,11 +18,11 @@
 
 ;; DEFINICIONES DE PREFERENCIAS DEL USUARIO
 (deftemplate preferencias
-   (slot evento)
-   (slot temporada)
-   (slot comensales)
-   (slot estilo)
-   (slot vegetariano)
+   (multislot evento)
+   (multislot temporada)
+   (slot comensales) ; numero de comersales
+   (multislot estilo)
+   (slot vegetariano) ; si no
    (slot precio-min)
    (slot precio-max)
 )

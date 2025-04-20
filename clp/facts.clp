@@ -5,14 +5,6 @@
    (plato (nombre "Tarta de chocolate") (tipo postre) (temporada todo) (estilo clasico) (vegetariano si) (precio 6) (ingredientes chocolate nata))
    (bebida (nombre "Vino tinto") (no-compatible-con "Solomillo al vino" "Bacalao al pil pil") (precio 4))
    (bebida (nombre "Agua mineral") (no-compatible-con "Gazpacho" "Ensalada de queso" "Tarta de chocolate" "Tofu salteado") (precio 1))
-   (preferencias
-         (evento familiar)
-         (temporada verano)
-         (comensales 50)
-         (estilo clasico)
-         (vegetariano si)
-         (precio-min 10)
-         (precio-max 20000))
 )
 
 (deffacts primeros-platos
@@ -52,5 +44,5 @@
          (estilo moderno)
          (vegetariano si)
          (precio-min 15)
-         (precio-max 5000))
+         (precio-max 50))
 )
