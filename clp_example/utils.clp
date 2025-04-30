@@ -74,7 +74,7 @@
    (bind ?nMenus 0)
 
    ;; Contar platos
-   (do-for-all-facts ((?p Plato)) TRUE
+   (do-for-all-facts ((?p plato)) TRUE
       (bind ?nPlatos (+ ?nPlatos 1)))
 
    ;; Contar bebidas
@@ -86,7 +86,7 @@
       (bind ?nPreferencias (+ ?nPreferencias 1)))
 
    ;; Contar menús
-   (do-for-all-facts ((?m Menu)) TRUE
+   (do-for-all-facts ((?m menu)) TRUE
       (bind ?nMenus (+ ?nMenus 1)))
 
    ;; Imprimir resultados
@@ -114,7 +114,7 @@
    (bind ?caro nil)
 
    ;; Recorrer todos los menús y clasificarlos según los precios proporcionados
-   (do-for-all-facts ((?m Menu)) TRUE
+   (do-for-all-facts ((?m menu)) TRUE
       (bind ?precio (fact-slot-value ?m precio-total))
 
       ;; Si el precio es menor que el precio barato y aún no se ha encontrado uno barato

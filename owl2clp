@@ -1,4 +1,4 @@
 #!/bin/bash
 
 command -v owl2clips || pip install owl2else # --user
-owl2clips --input ontology/myMenu.owl --output clp/ontologia.clp --format xml
+owl2clips --input ontology/myMenu.owl --output clp/example.clp --format xml
