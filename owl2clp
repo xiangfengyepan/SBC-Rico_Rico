@@ -1,4 +1,25 @@
 #!/bin/bash
 
+# this scritp need to be executed in the SBC-Rico_Rico directory
+REQUIRED_DIR="SBC-Rico_Rico"
+CURRENT_DIR="$(basename "$PWD")"
+
+if [ "$CURRENT_DIR" != "$REQUIRED_DIR" ]; then
+  echo "❌ Error: This script must be run from the '$REQUIRED_DIR' directory."
+  echo "Current directory: '$CURRENT_DIR'"
+  exit 1
+fi
+
+# uncomment this for windows (this may take a while but it only will be once)
+python3 -m venv owl_env
+source owl_env/bin/activate
+pip install owl2clips
+
+
 command -v owl2clips || pip install owl2else # --user
-owl2clips --input ontology/myMenu.owl --output clp/example.clp --format xml
+FILE_NAME="myOntology"
+OUTPUT_NAME="clp/${FILE_NAME}.clp"
+# FILE_NAME="myMenu"
+# OUTPUT_NAME="clp_example/${FILE_NAME}.clp"
+
+owl2clips --input "ontology/${FILE_NAME}.rdf" --output "$OUTPUT_NAME" --format xml
