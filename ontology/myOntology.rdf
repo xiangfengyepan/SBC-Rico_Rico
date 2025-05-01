@@ -5,8 +5,68 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-14="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/esCompatibleCon -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/esCompatibleCon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/esCompatibleConBebida -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/esCompatibleConBebida"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/esTradicionalDe -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/esTradicionalDe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/prefiereEstilo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/prefiereEstilo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/prohibeIngrediente -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/prohibeIngrediente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/tieneComplejidad -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/tieneComplejidad"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/tieneIngrediente -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/tieneIngrediente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/tieneTipoPlato -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14/tieneTipoPlato"/>
     
 
 
@@ -249,7 +309,7 @@
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Boda -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Boda">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Familiar"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Comunion"/>
     </owl:Class>
     
 
@@ -431,6 +491,248 @@
     </owl:Class>
     
 
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Bebida"/>
+        <untitled-ontology-14:precioBebida rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</untitled-ontology-14:precioBebida>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Complejidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Andalucia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Andalucia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Localizacion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Arroz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Arroz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
+        <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Complejidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Carne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Carne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tipo_Plato"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cataluna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cataluna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Localizacion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cerveza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cerveza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Bebida"/>
+        <untitled-ontology-14:precioBebida rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</untitled-ontology-14:precioBebida>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#ClienteEjemplo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#ClienteEjemplo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cliente"/>
+        <untitled-ontology-14:esAlcohólico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esAlcohólico>
+        <untitled-ontology-14:precioMaximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</untitled-ontology-14:precioMaximo>
+        <prefiereEstilo rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Clásico"/>
+        <prohibeIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Marisco"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#ClienteVegetariano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#ClienteVegetariano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cliente"/>
+        <untitled-ontology-14:esVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esVegetariano>
+        <untitled-ontology-14:precioMinimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</untitled-ontology-14:precioMinimo>
+        <prefiereEstilo rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Moderno"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#CongresoExample -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#CongresoExample">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Congreso"/>
+        <untitled-ontology-14:numeroComersales rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</untitled-ontology-14:numeroComersales>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Estofados -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Estofados">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tipo_Plato"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#FlanCasero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#FlanCasero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Plato"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Postre"/>
+        <untitled-ontology-14:esCaliente rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esCaliente>
+        <untitled-ontology-14:precioPlato rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</untitled-ontology-14:precioPlato>
+        <esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#PaellaValenciana"/>
+        <esCompatibleConBebida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#VinoTinto"/>
+        <esTradicionalDe rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Andalucia"/>
+        <tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
+        <tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Huevo"/>
+        <tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Postre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Galicia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Galicia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Localizacion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#GazpachoAndaluz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#GazpachoAndaluz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primer_Plato"/>
+        <untitled-ontology-14:esCaliente rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esCaliente>
+        <untitled-ontology-14:precioPlato rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</untitled-ontology-14:precioPlato>
+        <esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#PaellaValenciana"/>
+        <esCompatibleConBebida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#VinoTinto"/>
+        <esTradicionalDe rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Andalucia"/>
+        <tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
+        <tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pepino"/>
+        <tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tomate"/>
+        <tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Entrante"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Marisco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Marisco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
+        <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esOrigenVegetariano>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Complejidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#PaellaValenciana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#PaellaValenciana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Segundo_Plato"/>
+        <untitled-ontology-14:esCaliente rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esCaliente>
+        <untitled-ontology-14:precioPlato rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</untitled-ontology-14:precioPlato>
+        <esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#GazpachoAndaluz"/>
+        <esCompatibleConBebida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cerveza"/>
+        <esTradicionalDe rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cataluna"/>
+        <tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
+        <tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Arroz"/>
+        <tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Principal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pasta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pasta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tipo_Plato"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pepino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pepino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
+        <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pescado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pescado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tipo_Plato"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tipo_Plato"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tomate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tomate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
+        <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#VinoTinto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#VinoTinto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Bebida"/>
+        <untitled-ontology-14:precioBebida rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</untitled-ontology-14:precioBebida>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
