@@ -1,4 +1,4 @@
-(load "ontologia.clp")
+(load "myOntology.clp")
 (load "utils.clp")
 (load "rules.clp")
 
@@ -9,10 +9,10 @@
 (saludo-inicial)
 (reset)
 
-; (facts)
+(instances)
 
-(run-con-info)
-(seleccionar-tres-menus 20 25)
+(run)
+; (seleccionar-tres-menus 20 25)
 
 (exit)
 

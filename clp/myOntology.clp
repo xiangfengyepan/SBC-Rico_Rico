@@ -265,12 +265,15 @@
 
     ([ClienteEjemplo] of Cliente
          (esAlcohólico  "true")
+         (precioMinimo  100)
          (precioMaximo  2000)
     )
 
     ([ClienteVegetariano] of Cliente
          (esVegetariano  "true")
          (precioMinimo  1000)
+         (precioMaximo  20000)
+
     )
 
     ([CongresoExample] of Congreso
