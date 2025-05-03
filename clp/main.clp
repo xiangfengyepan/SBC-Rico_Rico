@@ -9,10 +9,15 @@
 (saludo-inicial)
 (reset)
 
-(instances)
+; (instances)
 
 (run)
-; (seleccionar-tres-menus 20 25)
+
+
+; Para listar todas las instancias de la clase Menu
+(do-for-all-instances ((?m Menu))
+   (printout t crlf (send ?m print) crlf)
+)
 
 (exit)
 

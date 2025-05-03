@@ -2,37 +2,7 @@
 ;;; clp/myOntology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/myOntology.rdf
-;;; :Date 01/05/2025 21:54:49
-
-(defclass Temporada
-    (is-a USER)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Invierno
-    (is-a Temporada)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Otoño
-    (is-a Temporada)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Primavera
-    (is-a Temporada)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Verano
-    (is-a Temporada)
-    (role concrete)
-    (pattern-match reactive)
-)
+;;; :Date 03/05/2025 18:18:10
 
 (defclass Menu
     (is-a USER)
@@ -117,6 +87,36 @@
 
 (defclass Segundo_Plato
     (is-a Plato)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Temporada
+    (is-a USER)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Invierno
+    (is-a Temporada)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Otoño
+    (is-a Temporada)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Primavera
+    (is-a Temporada)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Verano
+    (is-a Temporada)
     (role concrete)
     (pattern-match reactive)
 )
@@ -250,6 +250,9 @@
          (esOrigenVegetariano  "true")
     )
 
+    ([Asados] of Tipo_Plato
+    )
+
     ([Baja] of Complejidad
     )
 
@@ -263,21 +266,39 @@
          (precioBebida  250)
     )
 
+    ([Chocolate] of Ingrediente
+         (esOrigenVegetariano  "true")
+    )
+
+    ([ClienteEconomico] of Cliente
+         (precioMaximo  800)
+         (precioMinimo  -1)
+    )
+
     ([ClienteEjemplo] of Cliente
          (esAlcohólico  "true")
-         (precioMinimo  100)
          (precioMaximo  2000)
+         (precioMinimo  -1)
+    )
+
+    ([ClientePremium] of Cliente
+         (precioMaximo  -1)
+         (precioMinimo  2000)
     )
 
     ([ClienteVegetariano] of Cliente
          (esVegetariano  "true")
+         (precioMaximo  -1)
          (precioMinimo  1000)
-         (precioMaximo  20000)
-
     )
 
     ([CongresoExample] of Congreso
          (numeroComersales  100)
+    )
+
+    ([EnsaladaCesar] of Primer_Plato
+         (esCaliente  "false")
+         (precioPlato  350)
     )
 
     ([Estofados] of Tipo_Plato
@@ -296,6 +317,12 @@
          (precioPlato  400)
     )
 
+    ([Guisos] of Tipo_Plato
+    )
+
+    ([Madrid] of Localizacion
+    )
+
     ([Marisco] of Ingrediente
          (esOrigenVegetariano  "false")
     )
@@ -308,6 +335,9 @@
          (precioPlato  600)
     )
 
+    ([PaisVasco] of Localizacion
+    )
+
     ([Pasta] of Tipo_Plato
     )
 
@@ -318,11 +348,32 @@
     ([Pescado] of Tipo_Plato
     )
 
+    ([Pollo] of Ingrediente
+         (esOrigenVegetariano  "false")
+    )
+
+    ([Queso] of Ingrediente
+         (esOrigenVegetariano  "false")
+    )
+
+    ([RefrescoCola] of Bebida
+         (precioBebida  150)
+    )
+
+    ([Sidra] of Bebida
+         (precioBebida  350)
+    )
+
     ([Sopas] of Tipo_Plato
     )
 
     ([Tomate] of Ingrediente
          (esOrigenVegetariano  "true")
+    )
+
+    ([TortillaPatatas] of Segundo_Plato
+         (esCaliente  "true")
+         (precioPlato  450)
     )
 
     ([VinoTinto] of Bebida
