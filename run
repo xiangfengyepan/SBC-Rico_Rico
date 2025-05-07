@@ -1,4 +1,4 @@
 #!/bin/bash
 cd clp
-../clips_core_source_642/core/clips < main.clp 
+../clips < main.clp 
 cd ../
