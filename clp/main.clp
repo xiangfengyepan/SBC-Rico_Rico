@@ -1,4 +1,5 @@
 (load "myOntology.clp")
+(load "input.clp")
 (load "utils.clp")
 (load "rules.clp")
 
@@ -10,7 +11,7 @@
 (reset)
 
 ; (instances)
-
+; (inicio)
 (run)
 
 
@@ -18,7 +19,3 @@
 (do-for-all-instances ((?m Menu))
    (printout t crlf (send ?m print) crlf)
 )
-
-(exit)
-
-

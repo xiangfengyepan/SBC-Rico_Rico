@@ -1,0 +1,3 @@
+- justificacio?
+- preguntas i/o input?
+- 

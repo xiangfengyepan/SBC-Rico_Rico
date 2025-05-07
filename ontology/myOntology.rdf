@@ -592,7 +592,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#ClienteEconomico">
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cliente"/>
         <untitled-ontology-14:precioMaximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</untitled-ontology-14:precioMaximo>
-        <untitled-ontology-14:precioMinimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</untitled-ontology-14:precioMinimo>
+        <untitled-ontology-14:precioMinimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</untitled-ontology-14:precioMinimo>
 
         <prefiereEstilo rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Casero"/>
     </owl:NamedIndividual>
@@ -605,7 +605,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cliente"/>
         <untitled-ontology-14:esAlcohólico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esAlcohólico>
         <untitled-ontology-14:precioMaximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</untitled-ontology-14:precioMaximo>
-        <untitled-ontology-14:precioMinimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</untitled-ontology-14:precioMinimo>
+        <untitled-ontology-14:precioMinimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</untitled-ontology-14:precioMinimo>
 
         <prefiereEstilo rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Clásico"/>
         <prohibeIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Marisco"/>
@@ -617,7 +617,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#ClientePremium">
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cliente"/>
-        <untitled-ontology-14:precioMaximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</untitled-ontology-14:precioMaximo>
+        <untitled-ontology-14:precioMaximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000</untitled-ontology-14:precioMaximo>
         <untitled-ontology-14:precioMinimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</untitled-ontology-14:precioMinimo>
         <prefiereEstilo rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Gourmet"/>
         <prohibeIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pescado"/>
@@ -630,7 +630,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#ClienteVegetariano">
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cliente"/>
         <untitled-ontology-14:esVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esVegetariano>
-        <untitled-ontology-14:precioMaximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</untitled-ontology-14:precioMaximo>
+        <untitled-ontology-14:precioMaximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000</untitled-ontology-14:precioMaximo>
         <untitled-ontology-14:precioMinimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</untitled-ontology-14:precioMinimo>
         <prefiereEstilo rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Moderno"/>
     </owl:NamedIndividual>
