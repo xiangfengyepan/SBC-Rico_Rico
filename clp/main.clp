@@ -1,21 +1,34 @@
-(load "myOntology.clp")
-(load "input.clp")
-(load "utils.clp")
-(load "rules.clp")
-
-; (watch activations)
-; (watch rules)
-; (watch facts)
-
-(saludo-inicial)
-(reset)
-
-; (instances)
-; (inicio)
-(run)
-
-
-; Para listar todas las instancias de la clase Menu
-(do-for-all-instances ((?m Menu))
-   (printout t crlf (send ?m print) crlf)
+(defmodule MAIN
+    (export ?ALL)
 )
+
+(deffunction cls (?lines)
+   (loop-for-count (?i 1 ?lines)
+      (printout t crlf)))
+
+;;; Función para imprimir un título con decoración
+(deffunction titulo (?texto)
+   (cls 10)
+   (printout t crlf)
+   (printout t "===============================" crlf)
+   (printout t "| " ?texto crlf)
+   (printout t "===============================" crlf crlf))
+
+(deffunction MAIN::saludo-inicial ()
+   (titulo "Bienvenido a Rico Rico CLIPS")
+   (printout t "Sistema de menús inteligente para eventos." crlf)
+   (printout t "Versión: 6.4.2" crlf crlf))
+
+
+(defrule MAIN::inicio 
+	(declare (salience 20)) 
+	=> 
+	(saludo-inicial)
+    ; (make-instance [Invierno] of Temporada)
+    ; (make-instance [Verano] of Temporada)
+    ; (make-instance [Otono] of Temporada)
+    ; (make-instance [Primavera] of Temporada)
+	(focus entrada)
+)
+
+
