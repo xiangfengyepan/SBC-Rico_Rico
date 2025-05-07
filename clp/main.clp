@@ -6,7 +6,7 @@
    (loop-for-count (?i 1 ?lines)
       (printout t crlf)))
 
-;;; Función para imprimir un título con decoración
+;;; Funcion para imprimir un titulo con decoracion
 (deffunction titulo (?texto)
    (cls 10)
    (printout t crlf)
@@ -16,8 +16,8 @@
 
 (deffunction MAIN::saludo-inicial ()
    (titulo "Bienvenido a Rico Rico CLIPS")
-   (printout t "Sistema de menús inteligente para eventos." crlf)
-   (printout t "Versión: 6.4.2" crlf crlf))
+   (printout t "Sistema de menus inteligente para eventos." crlf)
+   (printout t "Version: 6.4.2" crlf crlf))
 
 
 (defrule MAIN::inicio 

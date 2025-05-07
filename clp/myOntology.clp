@@ -2,46 +2,7 @@
 ;;; clp/myOntology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/myOntology.rdf
-;;; :Date 03/05/2025 18:18:10
-
-(defclass Menu
-    (is-a USER)
-    (role concrete)
-    (pattern-match reactive)
-    (multislot tieneBebida
-        (type INSTANCE)
-        (create-accessor read-write))
-    (multislot tienePlato
-        (type INSTANCE)
-        (create-accessor read-write))
-    (multislot tienePrecio
-        (type INSTANCE)
-        (create-accessor read-write))
-)
-
-(defclass Clásico
-    (is-a Menu)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Moderno
-    (is-a Menu)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Regional
-    (is-a Menu)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Sibarita
-    (is-a Menu)
-    (role concrete)
-    (pattern-match reactive)
-)
+;;; :Date 07/05/2025 20:08:32
 
 (defclass Plato
     (is-a USER)
@@ -91,75 +52,6 @@
     (pattern-match reactive)
 )
 
-(defclass Temporada
-    (is-a USER)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Invierno
-    (is-a Temporada)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Otoño
-    (is-a Temporada)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Primavera
-    (is-a Temporada)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Verano
-    (is-a Temporada)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Evento
-    (is-a USER)
-    (role concrete)
-    (pattern-match reactive)
-    (multislot numeroComersales
-        (type INTEGER)
-        (create-accessor read-write))
-)
-
-(defclass Congreso
-    (is-a Evento)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Familiar
-    (is-a Evento)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Bautizo
-    (is-a Familiar)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Comunion
-    (is-a Familiar)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Boda
-    (is-a Comunion)
-    (role concrete)
-    (pattern-match reactive)
-)
-
 (defclass Bebida
     (is-a USER)
     (role concrete)
@@ -176,10 +68,7 @@
     (multislot prefiereEstilo
         (type INSTANCE)
         (create-accessor read-write))
-    (multislot prohibeIngrediente
-        (type INSTANCE)
-        (create-accessor read-write))
-    (multislot esAlcohólico
+    (multislot esAlcoholico
         (type SYMBOL)
         (create-accessor read-write))
     (multislot esVegetariano
@@ -199,10 +88,13 @@
     (pattern-match reactive)
 )
 
-(defclass Estilo
+(defclass Evento
     (is-a USER)
     (role concrete)
     (pattern-match reactive)
+    (multislot numeroComersales
+        (type INTEGER)
+        (create-accessor read-write))
 )
 
 (defclass Ingrediente
@@ -223,7 +115,34 @@
     (pattern-match reactive)
 )
 
+(defclass Menu
+    (is-a USER)
+    (role concrete)
+    (pattern-match reactive)
+    (multislot tieneBebida
+        (type INSTANCE)
+        (create-accessor read-write))
+    (multislot tienePlato
+        (type INSTANCE)
+        (create-accessor read-write))
+    (multislot tienePrecio
+        (type INSTANCE)
+        (create-accessor read-write))
+)
+
 (defclass Precio
+    (is-a USER)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Temporada
+    (is-a USER)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Tipo_Menu
     (is-a USER)
     (role concrete)
     (pattern-match reactive)
@@ -256,6 +175,12 @@
     ([Baja] of Complejidad
     )
 
+    ([Bautizo] of Evento
+    )
+
+    ([Boda] of Evento
+    )
+
     ([Carne] of Tipo_Plato
     )
 
@@ -270,30 +195,13 @@
          (esOrigenVegetariano  "true")
     )
 
-    ([ClienteEconomico] of Cliente
-         (precioMaximo  800)
-         (precioMinimo  -1)
+    ([Clasico] of Tipo_Menu
     )
 
-    ([ClienteEjemplo] of Cliente
-         (esAlcohólico  "true")
-         (precioMaximo  2000)
-         (precioMinimo  -1)
+    ([Comunion] of Evento
     )
 
-    ([ClientePremium] of Cliente
-         (precioMaximo  -1)
-         (precioMinimo  2000)
-    )
-
-    ([ClienteVegetariano] of Cliente
-         (esVegetariano  "true")
-         (precioMaximo  -1)
-         (precioMinimo  1000)
-    )
-
-    ([CongresoExample] of Congreso
-         (numeroComersales  100)
+    ([Congreso] of Evento
     )
 
     ([EnsaladaCesar] of Primer_Plato
@@ -320,6 +228,9 @@
     ([Guisos] of Tipo_Plato
     )
 
+    ([Invierno] of Temporada
+    )
+
     ([Madrid] of Localizacion
     )
 
@@ -328,6 +239,15 @@
     )
 
     ([Media] of Complejidad
+    )
+
+    ([Moderno] of Tipo_Menu
+    )
+
+    ([Null] of Tipo_Menu
+    )
+
+    ([Otoño] of Temporada
     )
 
     ([PaellaValenciana] of Segundo_Plato
@@ -352,12 +272,21 @@
          (esOrigenVegetariano  "false")
     )
 
+    ([Primavera] of Temporada
+    )
+
     ([Queso] of Ingrediente
          (esOrigenVegetariano  "false")
     )
 
     ([RefrescoCola] of Bebida
          (precioBebida  150)
+    )
+
+    ([Regional] of Tipo_Menu
+    )
+
+    ([Sibarita] of Tipo_Menu
     )
 
     ([Sidra] of Bebida
@@ -374,6 +303,9 @@
     ([TortillaPatatas] of Segundo_Plato
          (esCaliente  "true")
          (precioPlato  450)
+    )
+
+    ([Verano] of Temporada
     )
 
     ([VinoTinto] of Bebida

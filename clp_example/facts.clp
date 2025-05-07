@@ -8,7 +8,7 @@
 )
 
 (deffacts primeros-platos
-   (plato (nombre "Salmorejo cordobés") (tipo primero) (temporada verano) (estilo regional) (vegetariano si) (precio 5) (ingredientes tomate pan ajo aceite))
+   (plato (nombre "Salmorejo cordobes") (tipo primero) (temporada verano) (estilo regional) (vegetariano si) (precio 5) (ingredientes tomate pan ajo aceite))
    (plato (nombre "Crema de calabaza") (tipo primero) (temporada invierno) (estilo clasico) (vegetariano si) (precio 6) (ingredientes calabaza cebolla nata))
    (plato (nombre "Ensalada de quinoa") (tipo primero) (temporada todo) (estilo moderno) (vegetariano si) (precio 7) (ingredientes quinoa tomate pepino aguacate))
 )
@@ -23,7 +23,7 @@
 
 (deffacts postres
    (plato (nombre "Tarta de chocolate") (tipo postre) (temporada todo) (estilo clasico) (vegetariano si) (precio 6) (ingredientes chocolate nata))
-   (plato (nombre "Macedonia de frutas") (tipo postre) (temporada verano) (estilo clasico) (vegetariano si) (precio 4) (ingredientes manzana melón piña naranja))
+   (plato (nombre "Macedonia de frutas") (tipo postre) (temporada verano) (estilo clasico) (vegetariano si) (precio 4) (ingredientes manzana melon piña naranja))
    (plato (nombre "Flan de coco") (tipo postre) (temporada todo) (estilo clasico) (vegetariano si) (precio 5) (ingredientes huevo coco leche condensada))
    (plato (nombre "Coulant de chocolate") (tipo postre) (temporada invierno) (estilo sibarita) (vegetariano si) (precio 7) (ingredientes chocolate mantequilla harina))
 )
@@ -31,7 +31,7 @@
 
 (deffacts bebidas
    (bebida (nombre "Cerveza artesanal") (no-compatible-con "Hamburguesa vegana" "Moussaka vegetariana") (precio 3))
-   (bebida (nombre "Zumo natural") (no-compatible-con "Macedonia de frutas" "Ensalada de quinoa" "Salmorejo cordobés") (precio 2))
+   (bebida (nombre "Zumo natural") (no-compatible-con "Macedonia de frutas" "Ensalada de quinoa" "Salmorejo cordobes") (precio 2))
    (bebida (nombre "Cava") (no-compatible-con "Coulant de chocolate" "Tarta de chocolate") (precio 5))
 )
 

@@ -27,7 +27,7 @@
    (slot precio-max)
 )
 
-;; DEFINICIÓN DEL MENÚ SELECCIONADO
+;; DEFINICIoN DEL MENu SELECCIONADO
 (deftemplate menu
    (slot nombre)
    (slot primero)

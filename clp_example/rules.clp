@@ -68,14 +68,14 @@
    =>
    (bind ?precio-total (+ ?pp1 ?pp2 ?pp3 ?pb))
 
-   (assert (menu (nombre "Opción personalizada")
+   (assert (menu (nombre "Opcion personalizada")
                  (primero ?n1)
                  (segundo ?n2)
                  (postre ?n3)
                  (bebida ?bnom)
                  (precio-total ?precio-total)))
 
-   ;; Imprimir el menú generado
+   ;; Imprimir el menu generado
    ; (printout t "Menu generado: " ?n1 ", " ?n2 ", " ?n3 ", bebida: " ?bnom ", precio: " ?precio-total crlf)
 )
 
