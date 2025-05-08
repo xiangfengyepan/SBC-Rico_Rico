@@ -3,12 +3,12 @@
     (export ?ALL)
 )
 
-(deffunction input::obtener_valor_numerico (?mensaje ?min ?max)
+(deffunction input::obtener-valor-numerico (?mensaje ?min ?max)
     (printout t ?mensaje ": ")
     (bind ?valor (read))
 
     (while (not (numberp ?valor)) do
-        (printout t "El valor introducido no es un numero valido. Intente de nuevo: ")
+        (printout t "El valor introducido no es un número válido. Intente de nuevo: ")
         (bind ?valor (read))
     )
 
@@ -16,7 +16,7 @@
             (and (neq ?min nil) (< ?valor ?min)) 
             (and (neq ?max nil) (> ?valor ?max))) 
         do
-        (printout t "El valor introducido no es valido.")
+        (printout t "El valor introducido no es válido.")
         (if (neq ?min nil) then (printout t " Debe ser mayor o igual que " ?min "."))
         (if (neq ?max nil) then (printout t " Debe ser menor o igual que " ?max "."))
         (printout t crlf)
@@ -26,31 +26,32 @@
     (printout t crlf)
     (return ?valor)
 )
-(deffunction input::obtener_rango (?mensaje-min ?mensaje-max ?limite-min ?limite-max)
+
+(deffunction input::obtener-rango (?mensaje-min ?mensaje-max ?limite-min ?limite-max)
     (bind ?min nil)
     (bind ?max nil)
     (while (or (eq ?min nil) (eq ?max nil) (> ?min ?max)) do
-        (bind ?min (input::obtener_valor_numerico ?mensaje-min ?limite-min ?limite-max))
-        (bind ?max (input::obtener_valor_numerico ?mensaje-max ?limite-min ?limite-max))
+        (bind ?min (input::obtener-valor-numerico ?mensaje-min ?limite-min ?limite-max))
+        (bind ?max (input::obtener-valor-numerico ?mensaje-max ?limite-min ?limite-max))
         (if (> ?min ?max) then
-            (printout t "El valor minimo no puede ser mayor que el maximo. Intente de nuevo." crlf)
+            (printout t "El valor mínimo no puede ser mayor que el máximo. Intente de nuevo." crlf)
         )
     )
     (return (create$ ?min ?max))
 )
 
-(deffunction input::seleccion_una_opcion (?question $?opcions)
+(deffunction input::seleccion-una-opcion (?question $?opciones)
     (printout t ?question)
-    (printout t " Las opciones son: " $?opcions crlf)
+    (printout t " Las opciones son: " $?opciones crlf)
     (bind ?response (read))
-    (while (not (member$ ?response $?opcions)) do 
+    (while (not (member$ ?response $?opciones)) do 
         (printout t "La respuesta introducida no forma parte de las opciones. Intente de nuevo" crlf)
         (bind ?response (read))
     )
     (return ?response)
 )
 
-(deffunction input::obtener_temporada (?numero)
+(deffunction input::obtener-temporada (?numero)
     (bind ?temporada 
         (if (eq ?numero 0) then (make-instance Invierno of Temporada)
         else (if (eq ?numero 1) then (make-instance Primavera of Temporada)
@@ -60,104 +61,67 @@
     (return ?temporada)
 )
 
-(deffunction input::instanciacion_persona ()
-    (bind ?rango (input::obtener_rango "Introduzca el precio minimo" "Introduzca el precio maximo" 0 nil))
-    (bind ?precio_min (nth$ 1 ?rango))
-    (bind ?precio_max (nth$ 2 ?rango))
-
-    
-    ; (bind ?esVegetariano (input::seleccion_una_opcion "Eres vegetariano?: " true false))
-    ; (bind ?esAlcoholico (input::seleccion_una_opcion "Eres alcolico?: " true false))
-
-    ; (bind ?temporada (obtener_temporada (input::seleccion_una_opcion "En que temporada quieres celebrar el evento? (0:Primavera , 1:Verano, 2:Otoño, 3:Invierno): " 0 1 2 3)))
-
-    ; (bind ?preferencia (input::seleccion_una_opcion "Si tiene alguna preferencia introduzcala, en caso contrario elija 'Null': " 
-    ;     Null Clasico Moderno Regional Sibarita))
+(deffunction input::instanciacion-persona ()
+    (bind ?rango (input::obtener-rango "Introduzca el precio mínimo" "Introduzca el precio máximo" 0 nil))
+    (bind ?precio-min (nth$ 1 ?rango))
+    (bind ?precio-max (nth$ 2 ?rango))
 
     (make-instance cliente1 of Cliente 
-        (precioMinimo ?precio_min) 
-        (precioMaximo ?precio_max)  
-        ; (prefiereEstilo ?preferencia) 
-        ; (esVegetariano ?esVegetariano) 
-        ; (esAlcoholico ?esAlcoholico)
+        (precioMinimo ?precio-min) 
+        (precioMaximo ?precio-max)  
     )
-
 )
 
-(defrule input::crear_cliente
+(defrule input::crear-cliente
     (declare (salience 10))
     => 
-    (printout t "Ahora vamos a hacerte algunas preguntas para poder recomendarte unos buenos menu" crlf crlf)
-    (input::instanciacion_persona)
+    (printout t "Ahora vamos a hacerte algunas preguntas para poder recomendarte unos buenos menús" crlf crlf)
+    (input::instanciacion-persona)
 
-    ; TODO
-    ; Menú 1 - Combinación tradicional andaluza
     (make-instance menu1 of Menu
-        (tieneBebida [VinoTinto])  ; Bebida compatible con los platos
+        (tieneBebida [VinoTinto])
         (tienePlato (create$ [GazpachoAndaluz] [PaellaValenciana] [FlanCasero]))
         (tienePrecio (+ (send [GazpachoAndaluz] get-precioPlato)
                     (send [PaellaValenciana] get-precioPlato)
                     (send [FlanCasero] get-precioPlato)
-                    (send [VinoTinto] get-precioBebida)))  ; Total: 400+600+400+700 = 2100
+                    (send [VinoTinto] get-precioBebida)))
     )
-    ; Menú 2 - Opción más ligera
+
     (make-instance menu2 of Menu
-        (tieneBebida [AguaMineral])  ; Bebida refrescante
+        (tieneBebida [AguaMineral])
         (tienePlato (create$ [EnsaladaCesar] [TortillaPatatas] [FlanCasero]))
         (tienePrecio (+ (send [EnsaladaCesar] get-precioPlato)
                     (send [TortillaPatatas] get-precioPlato)
                     (send [FlanCasero] get-precioPlato)
-                    (send [AguaMineral] get-precioBebida)))  ; Total: 350+450+400+100 = 1300
+                    (send [AguaMineral] get-precioBebida)))
     )
 
-    ; Menú 3 - Opción mediterránea
     (make-instance menu3 of Menu
-        (tieneBebida [Cerveza])  ; Bebida típica con paella
+        (tieneBebida [Cerveza])
         (tienePlato (create$ [GazpachoAndaluz] [PaellaValenciana] [FlanCasero]))
         (tienePrecio (+ (send [GazpachoAndaluz] get-precioPlato)
                     (send [PaellaValenciana] get-precioPlato)
                     (send [FlanCasero] get-precioPlato)
-                    (send [Cerveza] get-precioBebida)))  ; Total: 400+600+400+250 = 1650
-
+                    (send [Cerveza] get-precioBebida)))
     )
 
-    ; Menú 4 - Opción económica
     (make-instance menu4 of Menu
-        (tieneBebida [RefrescoCola])  ; Bebida económica
+        (tieneBebida [RefrescoCola])
         (tienePlato (create$ [EnsaladaCesar] [TortillaPatatas] [FlanCasero]))
         (tienePrecio (+ (send [EnsaladaCesar] get-precioPlato)
                     (send [TortillaPatatas] get-precioPlato)
                     (send [FlanCasero] get-precioPlato)
-                    (send [RefrescoCola] get-precioBebida)))  ; Total: 350+450+400+150 = 1350
+                    (send [RefrescoCola] get-precioBebida)))
     )
-    ; Menú 5 - Opción premium
+
     (make-instance menu5 of Menu
-        (tieneBebida [Sidra])  ; Bebida especial
+        (tieneBebida [Sidra])
         (tienePlato (create$ [GazpachoAndaluz] [PaellaValenciana] [FlanCasero]))
         (tienePrecio (+ (send [GazpachoAndaluz] get-precioPlato)
                     (send [PaellaValenciana] get-precioPlato)
                     (send [FlanCasero] get-precioPlato)
-                    (send [Sidra] get-precioBebida)))  ; Total: 400+600+400+350 = 1750
+                    (send [Sidra] get-precioBebida)))
     )
-
-
-    ; ;; Crear un menú 2 (Menú intermedio)
-    ; (make-instance menu2 of Menu
-    ;     (tieneBebida (create$ Sidra))  ;; Bebida: Sidra (precio 350)
-    ;     (tienePlato (create$ GazpachoAndaluz))  ;; Primer Plato: Gazpacho Andaluz (precio 400)
-    ;     (tienePlato (create$ PaellaValenciana))  ;; Segundo Plato: Paella Valenciana (precio 600)
-    ;     (tienePlato (create$ FlanCasero))  ;; Postre: Flan Casero (precio 400)
-    ;     (tienePrecio (create$ (+ 400 600 350 400))))  ;; Precio total: 400 + 600 + 350 + 400 = 1750
-
-
-    ; ;; Crear un menú 3 (Menú premium)
-    ; (make-instance menu3 of Menu
-    ;     (tieneBebida (create$ VinoTinto))  ;; Bebida: Vino Tinto (precio 700)
-    ;     (tienePlato (create$ TortillaPatatas))  ;; Primer Plato: Tortilla de Patatas (precio 450)
-    ;     (tienePlato (create$ PaellaValenciana))  ;; Segundo Plato: Paella Valenciana (precio 600)
-    ;     (tienePlato (create$ FlanCasero))  ;; Postre: Flan Casero (precio 400)
-    ;     (tienePrecio (create$ (+ 450 600 700 400))))  ;; Precio total: 450 + 600 + 700 + 400 = 2150
-
 
     (focus output)
 )

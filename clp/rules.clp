@@ -27,12 +27,5 @@
          (tienePlato ?primer ?segundo ?postre)
          (tieneBebida ?bebida)
          (tienePrecio ?precio-total))
-
-      ; (printout t "Menu generado:" crlf)
-      ; (printout t "  Primer plato: " ?primer crlf)
-      ; (printout t "  Segundo plato: " ?segundo crlf)
-      ; (printout t "  Postre: " ?postre crlf)
-      ; (printout t "  Bebida: " ?bebida crlf)
-      ; (printout t "  Precio total: " ?precio-total crlf crlf)
    )
 )
