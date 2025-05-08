@@ -2,7 +2,7 @@
 ;;; clp/myOntology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/myOntology.rdf
-;;; :Date 07/05/2025 20:08:32
+;;; :Date 08/05/2025 21:08:58
 
 (defclass Plato
     (is-a USER)
@@ -17,7 +17,7 @@
     (multislot esTradicionalDe
         (type INSTANCE)
         (create-accessor read-write))
-    (multislot tieneComplejidad
+    (slot tieneComplejidad
         (type INSTANCE)
         (create-accessor read-write))
     (multislot tieneIngrediente
@@ -26,10 +26,10 @@
     (multislot tieneTipoPlato
         (type INSTANCE)
         (create-accessor read-write))
-    (multislot esCaliente
+    (slot esCaliente
         (type SYMBOL)
         (create-accessor read-write))
-    (multislot precioPlato
+    (slot precioPlato
         (type INTEGER)
         (create-accessor read-write))
 )
@@ -56,7 +56,7 @@
     (is-a USER)
     (role concrete)
     (pattern-match reactive)
-    (multislot precioBebida
+    (slot precioBebida
         (type INTEGER)
         (create-accessor read-write))
 )
@@ -68,16 +68,16 @@
     (multislot prefiereEstilo
         (type INSTANCE)
         (create-accessor read-write))
-    (multislot esAlcoholico
+    (slot esAlcoholico
         (type SYMBOL)
         (create-accessor read-write))
-    (multislot esVegetariano
+    (slot esVegetariano
         (type SYMBOL)
         (create-accessor read-write))
-    (multislot precioMaximo
+    (slot precioMaximo
         (type INTEGER)
         (create-accessor read-write))
-    (multislot precioMinimo
+    (slot precioMinimo
         (type INTEGER)
         (create-accessor read-write))
 )
@@ -92,7 +92,7 @@
     (is-a USER)
     (role concrete)
     (pattern-match reactive)
-    (multislot numeroComersales
+    (slot numeroComersales
         (type INTEGER)
         (create-accessor read-write))
 )
@@ -101,10 +101,10 @@
     (is-a USER)
     (role concrete)
     (pattern-match reactive)
-    (multislot esTemporada
+    (slot esTemporada
         (type INSTANCE)
         (create-accessor read-write))
-    (multislot esOrigenVegetariano
+    (slot esOrigenVegetariano
         (type SYMBOL)
         (create-accessor read-write))
 )
@@ -125,7 +125,7 @@
     (multislot tienePlato
         (type INSTANCE)
         (create-accessor read-write))
-    (multislot tienePrecio
+    (slot tienePrecio
         (type INSTANCE)
         (create-accessor read-write))
 )
@@ -205,14 +205,32 @@
     )
 
     ([EnsaladaCesar] of Primer_Plato
+         (esCompatibleCon  [Null])
+         (esCompatibleConBebida  [AguaMineral])
+         (esTradicionalDe  [Null])
+         (tieneComplejidad  [Baja])
+         (tieneIngrediente  [Lechuga] [Pollo])
+         (tieneTipoPlato  [Ensaladas])
          (esCaliente  "false")
          (precioPlato  350)
+    )
+
+    ([Ensaladas] of Tipo_Plato
+    )
+
+    ([España] of Localizacion
     )
 
     ([Estofados] of Tipo_Plato
     )
 
     ([FlanCasero] of Postre
+         (esCompatibleCon  [PaellaValenciana])
+         (esCompatibleConBebida  [VinoTinto])
+         (esTradicionalDe  [Andalucia])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Huevo])
+         (tieneTipoPlato  [Null])
          (esCaliente  "false")
          (precioPlato  400)
     )
@@ -221,6 +239,12 @@
     )
 
     ([GazpachoAndaluz] of Primer_Plato
+         (esCompatibleCon  [PaellaValenciana])
+         (esCompatibleConBebida  [VinoTinto])
+         (esTradicionalDe  [Andalucia])
+         (tieneComplejidad  [Baja])
+         (tieneIngrediente  [Pepino] [Tomate])
+         (tieneTipoPlato  [Null])
          (esCaliente  "true")
          (precioPlato  400)
     )
@@ -228,7 +252,13 @@
     ([Guisos] of Tipo_Plato
     )
 
+    ([Huevo] of Ingrediente
+    )
+
     ([Invierno] of Temporada
+    )
+
+    ([Lechuga] of Ingrediente
     )
 
     ([Madrid] of Localizacion
@@ -251,6 +281,12 @@
     )
 
     ([PaellaValenciana] of Segundo_Plato
+         (esCompatibleCon  [GazpachoAndaluz])
+         (esCompatibleConBebida  [Cerveza])
+         (esTradicionalDe  [Cataluna])
+         (tieneComplejidad  [Alta])
+         (tieneIngrediente  [Arroz])
+         (tieneTipoPlato  [Null])
          (esCaliente  "true")
          (precioPlato  600)
     )
@@ -259,6 +295,9 @@
     )
 
     ([Pasta] of Tipo_Plato
+    )
+
+    ([Patata] of Ingrediente
     )
 
     ([Pepino] of Ingrediente
@@ -301,6 +340,12 @@
     )
 
     ([TortillaPatatas] of Segundo_Plato
+         (esCompatibleCon  [Null])
+         (esCompatibleConBebida  [VinoTinto])
+         (esTradicionalDe  [España])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Huevo] [Patata])
+         (tieneTipoPlato  [Null])
          (esCaliente  "true")
          (precioPlato  450)
     )
