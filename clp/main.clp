@@ -6,7 +6,6 @@
    (loop-for-count (?i 1 ?lines)
       (printout t crlf)))
 
-;;; Funcion para imprimir un titulo con decoracion
 (deffunction titulo (?texto)
    (cls 10)
    (printout t crlf)
@@ -24,11 +23,7 @@
 	(declare (salience 20)) 
 	=> 
 	(saludo-inicial)
-    ; (make-instance [Invierno] of Temporada)
-    ; (make-instance [Verano] of Temporada)
-    ; (make-instance [Otono] of Temporada)
-    ; (make-instance [Primavera] of Temporada)
-	(focus entrada)
+	(focus input)
 )
 
 
