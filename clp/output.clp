@@ -39,7 +39,7 @@
                 (bind ?i (+ ?i 1))
             )
         )
-        else (printout t " Ningún elemento especificado" crlf)
+        else (printout t ?indent "│    " ?bullet "Ningún elemento especificado" crlf)
     )
 )
 
@@ -79,16 +79,16 @@
     (printout t "   └─────────────────────────────────────┘" crlf)
     
     (bind ?ingredientes (send ?plato get-tieneIngrediente))
-    (print-list-with-bullets "Ingredientes" ?ingredientes "     " "◦")
+    (print-list-with-bullets "Ingredientes" ?ingredientes "     " "◦ ")
     
     (bind ?tiene-tipo (send ?plato get-tieneTipoPlato))
-    (print-list-with-bullets "Tipo de Plato" ?tiene-tipo "     " "◦")
+    (print-list-with-bullets "Tipo de Plato" ?tiene-tipo "     " "◦ ")
     
     (bind ?compatibles (send ?plato get-esCompatibleCon))
-    (print-list-with-bullets "Compatible con" ?compatibles "     " "◦")
+    (print-list-with-bullets "Compatible con" ?compatibles "     " "◦ ")
     
     (bind ?bebidas (send ?plato get-esCompatibleConBebida))
-    (print-list-with-bullets "Bebidas recomendadas" ?bebidas "     " "◦")
+    (print-list-with-bullets "Bebidas recomendadas" ?bebidas "     " "◦ ")
     
     (printout t "     ├─◦ Origen: " (send ?plato get-esTradicionalDe) crlf)
     (printout t "     ├─◦ Complejidad: " (send ?plato get-tieneComplejidad) crlf)

@@ -2,7 +2,7 @@
 ;;; clp/myOntology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/myOntology.rdf
-;;; :Date 08/05/2025 21:08:58
+;;; :Date 09/05/2025 10:42:18
 
 (defclass Plato
     (is-a USER)
@@ -205,9 +205,7 @@
     )
 
     ([EnsaladaCesar] of Primer_Plato
-         (esCompatibleCon  [Null])
          (esCompatibleConBebida  [AguaMineral])
-         (esTradicionalDe  [Null])
          (tieneComplejidad  [Baja])
          (tieneIngrediente  [Lechuga] [Pollo])
          (tieneTipoPlato  [Ensaladas])
@@ -230,7 +228,6 @@
          (esTradicionalDe  [Andalucia])
          (tieneComplejidad  [Media])
          (tieneIngrediente  [Huevo])
-         (tieneTipoPlato  [Null])
          (esCaliente  "false")
          (precioPlato  400)
     )
@@ -244,7 +241,6 @@
          (esTradicionalDe  [Andalucia])
          (tieneComplejidad  [Baja])
          (tieneIngrediente  [Pepino] [Tomate])
-         (tieneTipoPlato  [Null])
          (esCaliente  "true")
          (precioPlato  400)
     )
@@ -274,9 +270,6 @@
     ([Moderno] of Tipo_Menu
     )
 
-    ([Null] of Tipo_Menu
-    )
-
     ([Otoño] of Temporada
     )
 
@@ -286,7 +279,6 @@
          (esTradicionalDe  [Cataluna])
          (tieneComplejidad  [Alta])
          (tieneIngrediente  [Arroz])
-         (tieneTipoPlato  [Null])
          (esCaliente  "true")
          (precioPlato  600)
     )
@@ -340,12 +332,10 @@
     )
 
     ([TortillaPatatas] of Segundo_Plato
-         (esCompatibleCon  [Null])
          (esCompatibleConBebida  [VinoTinto])
          (esTradicionalDe  [España])
          (tieneComplejidad  [Media])
          (tieneIngrediente  [Huevo] [Patata])
-         (tieneTipoPlato  [Null])
          (esCaliente  "true")
          (precioPlato  450)
     )
