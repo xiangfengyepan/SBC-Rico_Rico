@@ -1,7 +1,5 @@
-(defmodule output
-    (import MAIN ?ALL)
-    (export ?ALL)
-)
+(defmodule output (import MAIN ?ALL) (export ?ALL))
+
 
 (deffunction output::rep-str (?count ?char)
     (if (<= ?count 0) then ""

@@ -1,7 +1,4 @@
-(defmodule input
-    (import MAIN ?ALL)
-    (export ?ALL)
-)
+(defmodule input (import MAIN ?ALL) (export ?ALL))
 
 (deffunction input::obtener-valor-numerico (?mensaje ?min ?max)
     (printout t ?mensaje ": ")
@@ -77,51 +74,7 @@
     => 
     (printout t "Ahora vamos a hacerte algunas preguntas para poder recomendarte unos buenos menús" crlf crlf)
     (input::instanciacion-persona)
-
-    (make-instance menu1 of Menu
-        (tieneBebida [VinoTinto])
-        (tienePlato (create$ [GazpachoAndaluz] [PaellaValenciana] [FlanCasero]))
-        (tienePrecio (+ (send [GazpachoAndaluz] get-precioPlato)
-                    (send [PaellaValenciana] get-precioPlato)
-                    (send [FlanCasero] get-precioPlato)
-                    (send [VinoTinto] get-precioBebida)))
-    )
-
-    (make-instance menu2 of Menu
-        (tieneBebida [AguaMineral])
-        (tienePlato (create$ [EnsaladaCesar] [TortillaPatatas] [FlanCasero]))
-        (tienePrecio (+ (send [EnsaladaCesar] get-precioPlato)
-                    (send [TortillaPatatas] get-precioPlato)
-                    (send [FlanCasero] get-precioPlato)
-                    (send [AguaMineral] get-precioBebida)))
-    )
-
-    (make-instance menu3 of Menu
-        (tieneBebida [Cerveza])
-        (tienePlato (create$ [GazpachoAndaluz] [PaellaValenciana] [FlanCasero]))
-        (tienePrecio (+ (send [GazpachoAndaluz] get-precioPlato)
-                    (send [PaellaValenciana] get-precioPlato)
-                    (send [FlanCasero] get-precioPlato)
-                    (send [Cerveza] get-precioBebida)))
-    )
-
-    (make-instance menu4 of Menu
-        (tieneBebida [RefrescoCola])
-        (tienePlato (create$ [EnsaladaCesar] [TortillaPatatas] [FlanCasero]))
-        (tienePrecio (+ (send [EnsaladaCesar] get-precioPlato)
-                    (send [TortillaPatatas] get-precioPlato)
-                    (send [FlanCasero] get-precioPlato)
-                    (send [RefrescoCola] get-precioBebida)))
-    )
-
-    (make-instance menu5 of Menu
-        (tieneBebida [Sidra])
-        (tienePlato (create$ [GazpachoAndaluz] [PaellaValenciana] [FlanCasero]))
-        (tienePrecio (+ (send [GazpachoAndaluz] get-precioPlato)
-                    (send [PaellaValenciana] get-precioPlato)
-                    (send [FlanCasero] get-precioPlato)
-                    (send [Sidra] get-precioBebida)))
-    )
-
-    (focus output)
 )
+
+
+(defrule input::done => (focus analisis))

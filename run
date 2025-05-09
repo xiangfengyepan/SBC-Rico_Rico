@@ -1,4 +1,4 @@
 #!/bin/bash
+
 cd clp
-../clips -f2 run.clp
-cd ../
+../clips -f2 "1-main.clp"
