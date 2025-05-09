@@ -2,10 +2,10 @@
 (load "utils.clp")
 (load "rules.clp")
 (load "facts.clp")
-(load "primeros-platos.clp")
-(load "segundos-platos.clp")
-(load "postres.clp")
-(load "bebidas.clp")
+(load "instancias/primeros-platos.clp")
+(load "instancias/segundos-platos.clp")
+(load "instancias/postres.clp")
+(load "instancias/bebidas.clp")
 
 
 ; (watch activations)
