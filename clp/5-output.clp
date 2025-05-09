@@ -143,9 +143,7 @@
     (bind ?max (send ?cliente get-precioMaximo))
     (print-preferencia-cliente ?min ?max)
 
-    (bind ?todos-menus (find-all-instances ((?m Menu))
-                        (and (>= (send ?m get-tienePrecio) ?min)
-                             (<= (send ?m get-tienePrecio) ?max))))
+    (bind ?todos-menus (find-all-instances ((?m Menu)) TRUE))
 
     (if (>= (length$ ?todos-menus) 3) then
         (bind ?ordenados (output::ordenar-por-precio ?todos-menus))

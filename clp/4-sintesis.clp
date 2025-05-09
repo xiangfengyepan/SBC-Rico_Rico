@@ -27,6 +27,8 @@
         (precioMinimo ?min))
     =>
     ; TODO
+    ; (and (>= (send ?m get-tienePrecio) ?min)
+    ;                          (<= (send ?m get-tienePrecio) ?max))
 )
 
 (defrule sintesis::done => (focus output))

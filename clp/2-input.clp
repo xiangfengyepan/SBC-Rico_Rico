@@ -62,15 +62,25 @@
     (bind ?rango (input::obtener-rango "Introduzca el precio mínimo" "Introduzca el precio máximo" 0 nil))
     (bind ?precio-min (nth$ 1 ?rango))
     (bind ?precio-max (nth$ 2 ?rango))
+    (bind ?esVegetariano (input::seleccion-una-opcion "Eres vegetariano?: " true false))
+    (bind ?esAlcoholico (input::seleccion-una-opcion "Eres alcolico?: " true false))
+
+    (bind ?temporada (obtener-temporada (input::seleccion-una-opcion "En que temporada quieres celebrar el evento? (0:Primavera , 1:Verano, 2:Otoño, 3:Invierno): " 0 1 2 3)))
+
+    (bind ?preferencia (input::seleccion-una-opcion "Si tiene alguna preferencia introduzcala, en caso contrario elija 'Null': " 
+        Null Clasico Moderno Regional Sibarita))
+
 
     (make-instance cliente1 of Cliente 
         (precioMinimo ?precio-min) 
         (precioMaximo ?precio-max)  
+        (prefiereEstilo ?preferencia) 
+        (esVegetariano ?esVegetariano) 
+        (esAlcoholico ?esAlcoholico)
     )
 )
 
 (defrule input::crear-cliente
-    (declare (salience 10))
     => 
     (printout t "Ahora vamos a hacerte algunas preguntas para poder recomendarte unos buenos menús" crlf crlf)
     (input::instanciacion-persona)
