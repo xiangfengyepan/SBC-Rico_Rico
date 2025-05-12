@@ -114,6 +114,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#haceDeporte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#haceDeporte">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cliente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Grado"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#prefiereEstilo -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#prefiereEstilo">

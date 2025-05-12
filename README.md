@@ -2,10 +2,6 @@
 - graficos?
 
 
-- Ontologia
-- relacionar cliente con evento
-- preguntar evento en el input
-
 # Atributos Bebidas (grados)
 - calorias
 - proteinas
