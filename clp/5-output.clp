@@ -78,12 +78,18 @@
     
     (bind ?ingredientes (send ?comida get-tieneIngrediente))
     (print-list-with-bullets "Ingredientes" ?ingredientes "     " "◦ ")
-    
+
     (bind ?tiene-tipo (send ?comida get-tieneTipoComida))
     (print-list-with-bullets "Tipo de Comida" ?tiene-tipo "     " "◦ ")
     
     (bind ?compatibles (send ?comida get-esCompatibleCon))
     (print-list-with-bullets "Compatible con" ?compatibles "     " "◦ ")
+
+    (printout t "     ├─◦ Alcohol: " (send ?comida get-contieneAlcohol) crlf)
+    (printout t "     ├─◦ Lactosa: " (send ?comida get-tieneLactosa) crlf)
+    (printout t "     ├─◦ Calorias: " (send ?comida get-tieneCalorias) crlf)
+    (printout t "     ├─◦ Carbohidratos: " (send ?comida get-tieneCarbohidratos) crlf)
+    (printout t "     ├─◦ Proteinas: " (send ?comida get-tieneProteinas) crlf)
     
     (printout t "     ├─◦ Origen: " (send ?comida get-esTradicionalDe) crlf)
     (printout t "     ├─◦ Complejidad: " (send ?comida get-tieneComplejidad) crlf)
@@ -133,14 +139,13 @@
     (printout t "┣" (output::rep-str ?box-width "━") "┫" crlf)
 
 
-    (printout t "┃" (output::center-text (str-cat "Alcoholico: " (send ?cliente get-esAlcoholico))  ?box-width) "┃" crlf)
-    (printout t "┃" (output::center-text (str-cat "Vegetariano: " (send ?cliente get-esVegetariano))  ?box-width) "┃" crlf)
-    (printout t "┃" (output::center-text (str-cat "Intolerante a la lactosa: " (send ?cliente get-esIntoleranteLactosa))  ?box-width) "┃" crlf)
+    (printout t "┃" (output::center-text (str-cat "Es Alcoholico: " (send ?cliente get-esAlcoholico))  ?box-width) "┃" crlf)
+    (printout t "┃" (output::center-text (str-cat "Es Vegetariano: " (send ?cliente get-esVegetariano))  ?box-width) "┃" crlf)
+    (printout t "┃" (output::center-text (str-cat "Es Intolerante a la lactosa: " (send ?cliente get-esIntoleranteLactosa))  ?box-width) "┃" crlf)
 
     (printout t "┃" (output::center-text (str-cat "Grado de deporte: " (send ?cliente get-haceDeporte))  ?box-width) "┃" crlf)
 
-
-    (printout t "┃" (output::center-text (str-cat "Estilo: " (send ?cliente get-prefiereEstilo))  ?box-width) "┃" crlf)
+    (printout t "┃" (output::center-text (str-cat "Prefiere Estilo: " (send ?cliente get-prefiereEstilo))  ?box-width) "┃" crlf)
 
     (bind ?evento (send ?cliente get-prefiereEvento))
     (printout t "┃" (output::center-text (str-cat "Evento: " (instance-name ?evento) 

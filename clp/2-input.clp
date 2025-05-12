@@ -80,6 +80,18 @@
     (return ?grado)
 )
 
+(deffunction input::obtener-estilo (?numero)
+    (bind ?grado 
+        (if (eq ?numero 0) then [Clasico]
+        else (if (eq ?numero 1) then [Moderno]
+        else (if (eq ?numero 2) then [Regional]
+        else (if (eq ?numero 2) then [Sibarita]
+        else nil))))
+    )
+    (return ?grado)
+)
+
+
 
 (deffunction input::instanciacion-persona ()
     (bind ?rango (input::obtener-rango "Introduzca el precio mínimo" "Introduzca el precio máximo" 0 nil))
@@ -93,8 +105,7 @@
 
     (bind ?haceDeporte (input::obtener-grado (input::seleccion-una-opcion "Haces deporte? (0:Alto 1:Medio 2:Bajo ): " 0 1 2)))
 
-    (bind ?preferencia (input::seleccion-una-opcion "Si tiene alguna preferencia introduzcala, en caso contrario elija 'Null': " 
-        Null Clasico Moderno Regional Sibarita))
+    (bind ?preferencia (input::obtener-estilo (input::seleccion-una-opcion "Si tiene alguna preferencia introduzcala (0:Clasico 1:Moderno 2:Regional 3:Sibarita), en caso contrario elija '-1': " -1 0 1 2 3)))
 
     ; Evento
     (bind ?temporada (obtener-temporada (input::seleccion-una-opcion "En que temporada quieres celebrar el evento? (0:Primavera , 1:Verano, 2:Otoño, 3:Invierno): " 0 1 2 3)))
