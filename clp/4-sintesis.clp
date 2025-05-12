@@ -1,5 +1,12 @@
 (defmodule sintesis (import MAIN ?ALL) (export ?ALL))
 
+(defrule eliminar-platos-incompletos
+    ?plato <- (object (is-a Plato) (tieneIngrediente $? ?ingrediente $?))
+    (not (object (is-a Ingrediente) (name ?ingrediente)))
+    =>
+    (send ?plato delete)
+)
+
 (defrule generar-menus
     ?primer <- (object (is-a Primer_Plato) (precioPlato ?precio-primer))
     ?segundo <- (object (is-a Segundo_Plato) (precioPlato ?precio-segundo))

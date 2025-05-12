@@ -27,7 +27,7 @@
         (type INSTANCE)
         (create-accessor read-write))
     (slot esCaliente
-        (type SYMBOL)
+        (type SYMBOL)(default FALSE)
         (create-accessor read-write))
     (slot precioPlato
         (type INTEGER)
@@ -69,10 +69,10 @@
         (type INSTANCE)
         (create-accessor read-write))
     (slot esAlcoholico
-        (type SYMBOL)
+        (type SYMBOL)(default FALSE)
         (create-accessor read-write))
     (slot esVegetariano
-        (type SYMBOL)
+        (type SYMBOL)(default FALSE)
         (create-accessor read-write))
     (slot precioMaximo
         (type INTEGER)
@@ -105,7 +105,7 @@
         (type INSTANCE)
         (create-accessor read-write))
     (slot esOrigenVegetariano
-        (type SYMBOL)
+        (type SYMBOL)(default FALSE)
         (create-accessor read-write))
 )
 
@@ -166,7 +166,7 @@
     )
 
     ([Arroz] of Ingrediente
-         (esOrigenVegetariano  "true")
+         (esOrigenVegetariano  TRUE)
     )
 
     ([Asados] of Tipo_Plato
@@ -192,7 +192,7 @@
     )
 
     ([Chocolate] of Ingrediente
-         (esOrigenVegetariano  "true")
+         (esOrigenVegetariano  TRUE)
     )
 
     ([Clasico] of Tipo_Menu
@@ -227,7 +227,7 @@
          (esTradicionalDe  [Andalucia])
          (tieneComplejidad  [Media])
          (tieneIngrediente  [Huevo])
-         (esCaliente  "false")
+         (esCaliente  FALSE)
          (precioPlato  400)
     )
 
@@ -240,7 +240,7 @@
          (esTradicionalDe  [Andalucia])
          (tieneComplejidad  [Baja])
          (tieneIngrediente  [Pepino] [Tomate])
-         (esCaliente  "true")
+         (esCaliente  TRUE)
          (precioPlato  400)
     )
 
@@ -260,7 +260,7 @@
     )
 
     ([Marisco] of Ingrediente
-         (esOrigenVegetariano  "false")
+         (esOrigenVegetariano  FALSE)
     )
 
     ([Media] of Complejidad
@@ -278,7 +278,7 @@
          (esTradicionalDe  [Cataluna])
          (tieneComplejidad  [Alta])
          (tieneIngrediente  [Arroz])
-         (esCaliente  "true")
+         (esCaliente  TRUE)
          (precioPlato  600)
     )
 
@@ -292,21 +292,21 @@
     )
 
     ([Pepino] of Ingrediente
-         (esOrigenVegetariano  "true")
+         (esOrigenVegetariano  TRUE)
     )
 
     ([Pescado] of Tipo_Plato
     )
 
     ([Pollo] of Ingrediente
-         (esOrigenVegetariano  "false")
+         (esOrigenVegetariano  FALSE)
     )
 
     ([Primavera] of Temporada
     )
 
     ([Queso] of Ingrediente
-         (esOrigenVegetariano  "false")
+         (esOrigenVegetariano  FALSE)
     )
 
     ([RefrescoCola] of Bebida
@@ -327,7 +327,7 @@
     )
 
     ([Tomate] of Ingrediente
-         (esOrigenVegetariano  "true")
+         (esOrigenVegetariano  TRUE)
     )
 
     ([TortillaPatatas] of Segundo_Plato
@@ -335,7 +335,7 @@
          (esTradicionalDe  [España])
          (tieneComplejidad  [Media])
          (tieneIngrediente  [Huevo] [Patata])
-         (esCaliente  "true")
+         (esCaliente  TRUE)
          (precioPlato  450)
     )
 

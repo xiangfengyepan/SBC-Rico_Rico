@@ -15,7 +15,6 @@ python3 -m venv owl_env
 source owl_env/bin/activate
 pip install owl2clips
 
-
 command -v owl2clips || pip install owl2else # --user
 FILE_NAME="ontology"
 OUTPUT_NAME="clp/${FILE_NAME}.clp"
@@ -23,3 +22,9 @@ OUTPUT_NAME="clp/${FILE_NAME}.clp"
 # OUTPUT_NAME="clp_example/${FILE_NAME}.clp"
 
 owl2clips --input "ontology/${FILE_NAME}.rdf" --output "$OUTPUT_NAME" --format xml
+
+# Fix Booleans
+sed -i 's/"false"/FALSE/gi' "$OUTPUT_NAME"
+sed -i 's/"true"/TRUE/gi' "$OUTPUT_NAME"
+sed -i 's/(type SYMBOL)/(type SYMBOL)(default FALSE)/g' "$OUTPUT_NAME"
+

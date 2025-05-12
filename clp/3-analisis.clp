@@ -1,7 +1,8 @@
 (defmodule analisis (import MAIN ?ALL) (export ?ALL))
 
 (defrule vegetarian-only
-    ?ingrediente <- (object (is-a Ingrediente) (esOrigenVegetariano false))
+    (object (is-a Cliente) (esVegetariano TRUE))
+    ?ingrediente <- (object (is-a Ingrediente) (esOrigenVegetariano FALSE))
     =>
     (send ?ingrediente delete)
 )

@@ -62,8 +62,8 @@
     (bind ?rango (input::obtener-rango "Introduzca el precio mínimo" "Introduzca el precio máximo" 0 nil))
     (bind ?precio-min (nth$ 1 ?rango))
     (bind ?precio-max (nth$ 2 ?rango))
-    (bind ?esVegetariano (input::seleccion-una-opcion "Eres vegetariano?: " true false))
-    (bind ?esAlcoholico (input::seleccion-una-opcion "Eres alcolico?: " true false))
+    (bind ?esVegetariano (input::seleccion-una-opcion "Eres vegetariano?: " TRUE FALSE))
+    (bind ?esAlcoholico (input::seleccion-una-opcion "Eres alcolico?: " TRUE FALSE))
 
     (bind ?temporada (obtener-temporada (input::seleccion-una-opcion "En que temporada quieres celebrar el evento? (0:Primavera , 1:Verano, 2:Otoño, 3:Invierno): " 0 1 2 3)))
 
