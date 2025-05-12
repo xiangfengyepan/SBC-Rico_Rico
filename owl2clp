@@ -17,7 +17,7 @@ pip install owl2clips
 
 
 command -v owl2clips || pip install owl2else # --user
-FILE_NAME="myOntology"
+FILE_NAME="ontology"
 OUTPUT_NAME="clp/${FILE_NAME}.clp"
 # FILE_NAME="myMenu"
 # OUTPUT_NAME="clp_example/${FILE_NAME}.clp"

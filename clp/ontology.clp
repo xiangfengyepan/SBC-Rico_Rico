@@ -1,8 +1,8 @@
 ;;; ---------------------------------------------------------
-;;; clp/myOntology.clp
+;;; clp/ontology.clp
 ;;; Translated by owl2clips
-;;; Translated to CLIPS from ontology ontology/myOntology.rdf
-;;; :Date 09/05/2025 10:42:18
+;;; Translated to CLIPS from ontology ontology/ontology.rdf
+;;; :Date 12/05/2025 16:55:52
 
 (defclass Plato
     (is-a USER)
@@ -209,7 +209,6 @@
          (tieneComplejidad  [Baja])
          (tieneIngrediente  [Lechuga] [Pollo])
          (tieneTipoPlato  [Ensaladas])
-         (esCaliente  "false")
          (precioPlato  350)
     )
 

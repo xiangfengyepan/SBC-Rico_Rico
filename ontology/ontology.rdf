@@ -529,7 +529,6 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Lechuga"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pollo"/>
         <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ensaladas"/>
-        <untitled-ontology-14:esCaliente rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esCaliente>
         <untitled-ontology-14:precioPlato rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</untitled-ontology-14:precioPlato>
     </owl:NamedIndividual>
     
@@ -661,6 +660,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tipo_Menu"/>
     </owl:NamedIndividual>
     
+
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otoño -->
 

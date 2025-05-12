@@ -90,7 +90,12 @@
     
     (printout t "     ├─◦ Origen: " (send ?plato get-esTradicionalDe) crlf)
     (printout t "     ├─◦ Complejidad: " (send ?plato get-tieneComplejidad) crlf)
-    (printout t "     ├─◦ Temperatura: " (if (send ?plato get-esCaliente) then "Caliente" else "Frío") crlf)
+    (printout t "     ├─◦ Temperatura: " 
+        (if (eq (send ?plato get-esCaliente) "true") 
+            then "Caliente" 
+            else "Frío") 
+        crlf)
+    ; (printout t "     ├─◦ Alcogolico: " (if (send ?plato get-esAlcoholico) then "Alcoholico" else "No Alcogolico") crlf)
     (printout t "     └─◦ Precio: " (format-money (send ?plato get-precioPlato)) crlf)
 )
 
