@@ -8,6 +8,10 @@
 )
 
 (defrule generar-menus
+    (object (is-a Cliente)
+        (precioMaximo ?max)
+        (precioMinimo ?min))
+
     ?primer <- (object (is-a Primer_Plato) (precioComida ?precio-primer))
     ?segundo <- (object (is-a Segundo_Plato) (precioComida ?precio-segundo))
     ?postre <- (object (is-a Postre) (precioComida ?precio-postre))
@@ -22,20 +26,11 @@
 
     (bind ?precio-total (+ ?precio-primer ?precio-segundo ?precio-postre ?precio-bebida))
 
-    (make-instance of Menu
-        (tienePlato ?primer ?segundo ?postre)
-        (tieneBebida ?bebida)
-        (precioMenu ?precio-total))
-)
-
-(defrule limitar-precio-menu
-    ?cliente <- (object (is-a Cliente)
-        (precioMaximo ?max)
-        (precioMinimo ?min))
-    =>
-    ; TODO
-    ; (and (>= (send ?m get-precioMenu) ?min)
-    ;                          (<= (send ?m get-precioMenu) ?max))
+    (if (and (<= ?min ?precio-total) (<= ?precio-total ?max)) then
+        (make-instance of Menu
+            (tienePlato ?primer ?segundo ?postre)
+            (tieneBebida ?bebida)
+            (precioMenu ?precio-total)))
 )
 
 (defrule sintesis::done => (focus output))
