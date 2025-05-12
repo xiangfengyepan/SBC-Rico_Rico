@@ -1,13 +1,6 @@
 - deftemplates si tenemos defclasses?
 - graficos?
 
-// TODO xiangfeng
-- bebida en ouput
-- es intelerante lactosa
-
-
-
-
 
 - Ontologia
 - relacionar cliente con evento

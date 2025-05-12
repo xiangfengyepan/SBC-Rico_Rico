@@ -137,6 +137,7 @@
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneBebida -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneBebida">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Menu"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Bebida"/>
     </owl:ObjectProperty>
@@ -146,6 +147,7 @@
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneCalorias -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneCalorias">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Comida"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Grado"/>
     </owl:ObjectProperty>
@@ -155,6 +157,7 @@
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneCarbohidratos -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneCarbohidratos">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Comida"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Grado"/>
     </owl:ObjectProperty>
@@ -190,19 +193,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tienePrecio -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tienePrecio">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Menu"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Precio"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneProteinas -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneProteinas">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Comida"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Grado"/>
     </owl:ObjectProperty>
@@ -233,6 +227,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#contieneAlcohol">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Comida"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
@@ -262,6 +257,7 @@
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#esIntoleranteLactosa -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#esIntoleranteLactosa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cliente"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
@@ -318,6 +314,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#precioMenu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#precioMenu">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Menu"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#precioMinimo -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#precioMinimo">
@@ -331,6 +337,7 @@
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneLactosa -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneLactosa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Comida"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>

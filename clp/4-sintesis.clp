@@ -25,7 +25,7 @@
     (make-instance of Menu
         (tienePlato ?primer ?segundo ?postre)
         (tieneBebida ?bebida)
-        (tienePrecio ?precio-total))
+        (precioMenu ?precio-total))
 )
 
 (defrule limitar-precio-menu
@@ -34,8 +34,8 @@
         (precioMinimo ?min))
     =>
     ; TODO
-    ; (and (>= (send ?m get-tienePrecio) ?min)
-    ;                          (<= (send ?m get-tienePrecio) ?max))
+    ; (and (>= (send ?m get-precioMenu) ?min)
+    ;                          (<= (send ?m get-precioMenu) ?max))
 )
 
 (defrule sintesis::done => (focus output))

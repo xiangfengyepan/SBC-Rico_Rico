@@ -61,10 +61,10 @@
 
 (deffunction input::obtener-evento (?numero)
     (bind ?evento 
-        (if (eq ?numero 0) then (make-instance of Bautizo)
-        else (if (eq ?numero 1) then (make-instance of Boda)
-        else (if (eq ?numero 2) then (make-instance of Comunion)
-        else (if (eq ?numero 3) then (make-instance of Congreso)
+        (if (eq ?numero 0) then (make-instance Bautizo of Bautizo)
+        else (if (eq ?numero 1) then (make-instance Boda of Boda)
+        else (if (eq ?numero 2) then (make-instance Comunion of Comunion)
+        else (if (eq ?numero 3) then (make-instance Congreso of Congreso)
         else nil))))
     )
     (return ?evento)
@@ -76,6 +76,7 @@
     (bind ?precio-max (nth$ 2 ?rango))
     (bind ?esVegetariano (input::seleccion-una-opcion "Eres vegetariano?: " TRUE FALSE))
     (bind ?esAlcoholico (input::seleccion-una-opcion "Eres alcolico?: " TRUE FALSE))
+    (bind ?esIntoleranteLactosa (input::seleccion-una-opcion "Eres intolerante a la lactosa?: " TRUE FALSE))
 
     (bind ?temporada (obtener-temporada (input::seleccion-una-opcion "En que temporada quieres celebrar el evento? (0:Primavera , 1:Verano, 2:Otoño, 3:Invierno): " 0 1 2 3)))
 
@@ -94,6 +95,8 @@
         (esVegetariano ?esVegetariano) 
         (esAlcoholico ?esAlcoholico)
         (prefiereEvento ?tipoEvento)
+        (esIntoleranteLactosa ?esIntoleranteLactosa)
+
     )
 )
 

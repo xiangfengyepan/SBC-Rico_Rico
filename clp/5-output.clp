@@ -50,8 +50,8 @@
             (bind ?a (nth$ ?i ?ordenada))
             (bind ?b (nth$ (+ ?i 1) ?ordenada))
 
-            (bind ?precio-a (send ?a get-tienePrecio))
-            (bind ?precio-b (send ?b get-tienePrecio))
+            (bind ?precio-a (send ?a get-precioMenu))
+            (bind ?precio-b (send ?b get-precioMenu))
 
             (if (> ?precio-a ?precio-b) then
                 (bind ?ordenada (replace$ ?ordenada ?i (+ ?i 1) ?b ?a)))
@@ -62,9 +62,9 @@
     (return ?ordenada)
 )
 
-(deffunction output::imprimir-plato (?plato)
-    (bind ?nombre (instance-name ?plato))
-    (bind ?clase (class ?plato))
+(deffunction output::imprimir-plato (?comida)
+    (bind ?nombre (instance-name ?comida))
+    (bind ?clase (class ?comida))
     (bind ?titulo (str-cat ?nombre " (" ?clase ")"))
     (bind ?longitud-titulo (str-length ?titulo))
     
@@ -76,27 +76,25 @@
     (printout t "   │" (center-text ?titulo ?box-width) "│" crlf)  
     (printout t "   └─────────────────────────────────────┘" crlf)
     
-    (bind ?ingredientes (send ?plato get-tieneIngrediente))
+    (bind ?ingredientes (send ?comida get-tieneIngrediente))
     (print-list-with-bullets "Ingredientes" ?ingredientes "     " "◦ ")
     
-    (bind ?tiene-tipo (send ?plato get-tieneTipoComida))
-    (print-list-with-bullets "Tipo de Plato" ?tiene-tipo "     " "◦ ")
+    (bind ?tiene-tipo (send ?comida get-tieneTipoComida))
+    (print-list-with-bullets "Tipo de Comida" ?tiene-tipo "     " "◦ ")
     
-    (bind ?compatibles (send ?plato get-esCompatibleCon))
+    (bind ?compatibles (send ?comida get-esCompatibleCon))
     (print-list-with-bullets "Compatible con" ?compatibles "     " "◦ ")
     
-    (bind ?bebidas (send ?plato get-esCompatibleCon))
-    (print-list-with-bullets "Bebidas recomendadas" ?bebidas "     " "◦ ")
-    
-    (printout t "     ├─◦ Origen: " (send ?plato get-esTradicionalDe) crlf)
-    (printout t "     ├─◦ Complejidad: " (send ?plato get-tieneComplejidad) crlf)
+    (printout t "     ├─◦ Origen: " (send ?comida get-esTradicionalDe) crlf)
+    (printout t "     ├─◦ Complejidad: " (send ?comida get-tieneComplejidad) crlf)
     (printout t "     ├─◦ Temperatura: " 
-        (if (eq (send ?plato get-esCaliente) TRUE) 
+        (if (eq (send ?comida get-esCaliente) TRUE) 
             then "Caliente" 
             else "Frío") 
         crlf)
-    (printout t "     └─◦ Precio: " (format-money (send ?plato get-precioComida)) crlf)
+    (printout t "     └─◦ Precio: " (format-money (send ?comida get-precioComida)) crlf)
 )
+
 
 (deffunction output::imprimir-menu (?menu)
     (bind ?platos (send ?menu get-tienePlato))
@@ -107,10 +105,13 @@
         (output::imprimir-plato (nth$ ?i ?platos))
         (bind ?i (+ ?i 1))
     )
+    (bind ?bebida (send ?menu get-tieneBebida))
+    (output::imprimir-plato ?bebida)
+
 )
 
 (deffunction print-menu-box (?menu ?type)
-    (bind ?price-text (str-cat ?type " (" (format-money (send ?menu get-tienePrecio)) ")"))
+    (bind ?price-text (str-cat ?type " (" (format-money (send ?menu get-precioMenu)) ")"))
     (bind ?box-width 46)
     
     (printout t crlf)
@@ -134,6 +135,8 @@
 
     (printout t "┃" (output::center-text (str-cat "Alcoholico: " (send ?cliente get-esAlcoholico))  ?box-width) "┃" crlf)
     (printout t "┃" (output::center-text (str-cat "Vegetariano: " (send ?cliente get-esVegetariano))  ?box-width) "┃" crlf)
+    (printout t "┃" (output::center-text (str-cat "Intolerante a la lactosa: " (send ?cliente get-esIntoleranteLactosa))  ?box-width) "┃" crlf)
+
     (printout t "┃" (output::center-text (str-cat "Estilo: " (send ?cliente get-prefiereEstilo))  ?box-width) "┃" crlf)
 
     (bind ?evento (send ?cliente get-prefiereEvento))

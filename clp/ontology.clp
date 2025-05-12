@@ -2,7 +2,79 @@
 ;;; clp/ontology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/ontology.rdf
-;;; :Date 12/05/2025 19:03:32
+;;; :Date 12/05/2025 19:20:44
+
+(defclass Comida
+    (is-a USER)
+    (role concrete)
+    (pattern-match reactive)
+    (multislot esCompatibleCon
+        (type INSTANCE)
+        (create-accessor read-write))
+    (multislot esTradicionalDe
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot tieneCalorias
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot tieneCarbohidratos
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot tieneComplejidad
+        (type INSTANCE)
+        (create-accessor read-write))
+    (multislot tieneIngrediente
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot tieneProteinas
+        (type INSTANCE)
+        (create-accessor read-write))
+    (multislot tieneTipoComida
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot contieneAlcohol
+        (type SYMBOL)(default FALSE)
+        (create-accessor read-write))
+    (slot esCaliente
+        (type SYMBOL)(default FALSE)
+        (create-accessor read-write))
+    (slot precioComida
+        (type INTEGER)
+        (create-accessor read-write))
+    (slot tieneLactosa
+        (type SYMBOL)(default FALSE)
+        (create-accessor read-write))
+)
+
+(defclass Bebida
+    (is-a Comida)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Plato
+    (is-a Comida)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Postre
+    (is-a Plato)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Primer_Plato
+    (is-a Plato)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Segundo_Plato
+    (is-a Plato)
+    (role concrete)
+    (pattern-match reactive)
+)
 
 (defclass Evento
     (is-a USER)
@@ -46,78 +118,6 @@
     (pattern-match reactive)
 )
 
-(defclass Comida
-    (is-a USER)
-    (role concrete)
-    (pattern-match reactive)
-    (multislot esCompatibleCon
-        (type INSTANCE)
-        (create-accessor read-write))
-    (multislot esTradicionalDe
-        (type INSTANCE)
-        (create-accessor read-write))
-    (multislot tieneCalorias
-        (type INSTANCE)
-        (create-accessor read-write))
-    (multislot tieneCarbohidratos
-        (type INSTANCE)
-        (create-accessor read-write))
-    (slot tieneComplejidad
-        (type INSTANCE)
-        (create-accessor read-write))
-    (multislot tieneIngrediente
-        (type INSTANCE)
-        (create-accessor read-write))
-    (multislot tieneProteinas
-        (type INSTANCE)
-        (create-accessor read-write))
-    (multislot tieneTipoComida
-        (type INSTANCE)
-        (create-accessor read-write))
-    (multislot contieneAlcohol
-        (type SYMBOL)(default FALSE)
-        (create-accessor read-write))
-    (slot esCaliente
-        (type SYMBOL)(default FALSE)
-        (create-accessor read-write))
-    (slot precioComida
-        (type INTEGER)
-        (create-accessor read-write))
-    (multislot tieneLactosa
-        (type SYMBOL)(default FALSE)
-        (create-accessor read-write))
-)
-
-(defclass Bebida
-    (is-a Comida)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Plato
-    (is-a Comida)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Postre
-    (is-a Plato)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Primer_Plato
-    (is-a Plato)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Segundo_Plato
-    (is-a Plato)
-    (role concrete)
-    (pattern-match reactive)
-)
-
 (defclass Cliente
     (is-a USER)
     (role concrete)
@@ -131,7 +131,7 @@
     (slot esAlcoholico
         (type SYMBOL)(default FALSE)
         (create-accessor read-write))
-    (multislot esIntoleranteLactosa
+    (slot esIntoleranteLactosa
         (type SYMBOL)(default FALSE)
         (create-accessor read-write))
     (slot esVegetariano
@@ -173,14 +173,14 @@
     (is-a USER)
     (role concrete)
     (pattern-match reactive)
-    (multislot tieneBebida
+    (slot tieneBebida
         (type INSTANCE)
         (create-accessor read-write))
     (multislot tienePlato
         (type INSTANCE)
         (create-accessor read-write))
-    (slot tienePrecio
-        (type INSTANCE)
+    (slot precioMenu
+        (type INTEGER)
         (create-accessor read-write))
 )
 
