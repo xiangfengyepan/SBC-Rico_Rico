@@ -50,12 +50,24 @@
 
 (deffunction input::obtener-temporada (?numero)
     (bind ?temporada 
-        (if (eq ?numero 0) then (make-instance Invierno of Temporada)
-        else (if (eq ?numero 1) then (make-instance Primavera of Temporada)
-        else (if (eq ?numero 2) then (make-instance Otono of Temporada)
-        else (if (eq ?numero 3) then (make-instance Verano of Temporada)
-        else nil)))))
+        (if (eq ?numero 0) then [Invierno]
+        else (if (eq ?numero 1) then [Primavera]
+        else (if (eq ?numero 2) then [Otono]
+        else (if (eq ?numero 3) then [Verano]
+        else nil))))
+    )
     (return ?temporada)
+)
+
+(deffunction input::obtener-evento (?numero)
+    (bind ?evento 
+        (if (eq ?numero 0) then (make-instance of Bautizo)
+        else (if (eq ?numero 1) then (make-instance of Boda)
+        else (if (eq ?numero 2) then (make-instance of Comunion)
+        else (if (eq ?numero 3) then (make-instance of Congreso)
+        else nil))))
+    )
+    (return ?evento)
 )
 
 (deffunction input::instanciacion-persona ()
@@ -70,6 +82,10 @@
     (bind ?preferencia (input::seleccion-una-opcion "Si tiene alguna preferencia introduzcala, en caso contrario elija 'Null': " 
         Null Clasico Moderno Regional Sibarita))
 
+    (bind ?tipoEvento (input::obtener-evento (input::seleccion-una-opcion "Que tipo de evento quiere de las siguentes opciones (0:Bautizo 1:Boda 2:Comunion 3:Congreso):" 0 1 2 3)))
+    (bind ?nComersales (input::obtener-valor-numerico "Introduzca el numero de comersales" 0 nil))
+    (send ?tipoEvento put-numeroComersales ?nComersales)
+    (send ?tipoEvento put-esTemporadaEvento ?temporada)
 
     (make-instance cliente1 of Cliente 
         (precioMinimo ?precio-min) 
@@ -77,6 +93,7 @@
         (prefiereEstilo ?preferencia) 
         (esVegetariano ?esVegetariano) 
         (esAlcoholico ?esAlcoholico)
+        (prefiereEvento ?tipoEvento)
     )
 )
 

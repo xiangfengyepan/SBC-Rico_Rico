@@ -2,19 +2,64 @@
 ;;; clp/ontology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/ontology.rdf
-;;; :Date 12/05/2025 16:55:52
+;;; :Date 12/05/2025 19:03:32
 
-(defclass Plato
+(defclass Evento
+    (is-a USER)
+    (role concrete)
+    (pattern-match reactive)
+    (slot esTemporadaEvento
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot numeroComersales
+        (type INTEGER)
+        (create-accessor read-write))
+)
+
+(defclass Congreso
+    (is-a Evento)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Familiar
+    (is-a Evento)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Bautizo
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Boda
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Comunion
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Comida
     (is-a USER)
     (role concrete)
     (pattern-match reactive)
     (multislot esCompatibleCon
         (type INSTANCE)
         (create-accessor read-write))
-    (multislot esCompatibleConBebida
+    (multislot esTradicionalDe
         (type INSTANCE)
         (create-accessor read-write))
-    (multislot esTradicionalDe
+    (multislot tieneCalorias
+        (type INSTANCE)
+        (create-accessor read-write))
+    (multislot tieneCarbohidratos
         (type INSTANCE)
         (create-accessor read-write))
     (slot tieneComplejidad
@@ -23,15 +68,36 @@
     (multislot tieneIngrediente
         (type INSTANCE)
         (create-accessor read-write))
-    (multislot tieneTipoPlato
+    (multislot tieneProteinas
         (type INSTANCE)
+        (create-accessor read-write))
+    (multislot tieneTipoComida
+        (type INSTANCE)
+        (create-accessor read-write))
+    (multislot contieneAlcohol
+        (type SYMBOL)(default FALSE)
         (create-accessor read-write))
     (slot esCaliente
         (type SYMBOL)(default FALSE)
         (create-accessor read-write))
-    (slot precioPlato
+    (slot precioComida
         (type INTEGER)
         (create-accessor read-write))
+    (multislot tieneLactosa
+        (type SYMBOL)(default FALSE)
+        (create-accessor read-write))
+)
+
+(defclass Bebida
+    (is-a Comida)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Plato
+    (is-a Comida)
+    (role concrete)
+    (pattern-match reactive)
 )
 
 (defclass Postre
@@ -52,23 +118,20 @@
     (pattern-match reactive)
 )
 
-(defclass Bebida
-    (is-a USER)
-    (role concrete)
-    (pattern-match reactive)
-    (slot precioBebida
-        (type INTEGER)
-        (create-accessor read-write))
-)
-
 (defclass Cliente
     (is-a USER)
     (role concrete)
     (pattern-match reactive)
-    (multislot prefiereEstilo
+    (slot prefiereEstilo
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot prefiereEvento
         (type INSTANCE)
         (create-accessor read-write))
     (slot esAlcoholico
+        (type SYMBOL)(default FALSE)
+        (create-accessor read-write))
+    (multislot esIntoleranteLactosa
         (type SYMBOL)(default FALSE)
         (create-accessor read-write))
     (slot esVegetariano
@@ -82,19 +145,10 @@
         (create-accessor read-write))
 )
 
-(defclass Complejidad
+(defclass Grado
     (is-a USER)
     (role concrete)
     (pattern-match reactive)
-)
-
-(defclass Evento
-    (is-a USER)
-    (role concrete)
-    (pattern-match reactive)
-    (slot numeroComersales
-        (type INTEGER)
-        (create-accessor read-write))
 )
 
 (defclass Ingrediente
@@ -142,6 +196,12 @@
     (pattern-match reactive)
 )
 
+(defclass Tipo_Bebida
+    (is-a USER)
+    (role concrete)
+    (pattern-match reactive)
+)
+
 (defclass Tipo_Menu
     (is-a USER)
     (role concrete)
@@ -156,10 +216,10 @@
 
 (definstances instances
     ([AguaMineral] of Bebida
-         (precioBebida  100)
+         (precioComida  100)
     )
 
-    ([Alta] of Complejidad
+    ([Alta] of Grado
     )
 
     ([Andalucia] of Localizacion
@@ -172,13 +232,7 @@
     ([Asados] of Tipo_Plato
     )
 
-    ([Baja] of Complejidad
-    )
-
-    ([Bautizo] of Evento
-    )
-
-    ([Boda] of Evento
+    ([Baja] of Grado
     )
 
     ([Carne] of Tipo_Plato
@@ -188,7 +242,7 @@
     )
 
     ([Cerveza] of Bebida
-         (precioBebida  250)
+         (precioComida  250)
     )
 
     ([Chocolate] of Ingrediente
@@ -198,18 +252,11 @@
     ([Clasico] of Tipo_Menu
     )
 
-    ([Comunion] of Evento
-    )
-
-    ([Congreso] of Evento
-    )
-
     ([EnsaladaCesar] of Primer_Plato
-         (esCompatibleConBebida  [AguaMineral])
          (tieneComplejidad  [Baja])
          (tieneIngrediente  [Lechuga] [Pollo])
-         (tieneTipoPlato  [Ensaladas])
-         (precioPlato  350)
+         (tieneTipoComida  [Ensaladas])
+         (precioComida  350)
     )
 
     ([Ensaladas] of Tipo_Plato
@@ -223,12 +270,11 @@
 
     ([FlanCasero] of Postre
          (esCompatibleCon  [PaellaValenciana])
-         (esCompatibleConBebida  [VinoTinto])
          (esTradicionalDe  [Andalucia])
          (tieneComplejidad  [Media])
          (tieneIngrediente  [Huevo])
          (esCaliente  FALSE)
-         (precioPlato  400)
+         (precioComida  400)
     )
 
     ([Galicia] of Localizacion
@@ -236,12 +282,11 @@
 
     ([GazpachoAndaluz] of Primer_Plato
          (esCompatibleCon  [PaellaValenciana])
-         (esCompatibleConBebida  [VinoTinto])
          (esTradicionalDe  [Andalucia])
          (tieneComplejidad  [Baja])
          (tieneIngrediente  [Pepino] [Tomate])
          (esCaliente  TRUE)
-         (precioPlato  400)
+         (precioComida  400)
     )
 
     ([Guisos] of Tipo_Plato
@@ -263,7 +308,7 @@
          (esOrigenVegetariano  FALSE)
     )
 
-    ([Media] of Complejidad
+    ([Media] of Grado
     )
 
     ([Moderno] of Tipo_Menu
@@ -274,12 +319,11 @@
 
     ([PaellaValenciana] of Segundo_Plato
          (esCompatibleCon  [GazpachoAndaluz])
-         (esCompatibleConBebida  [Cerveza])
          (esTradicionalDe  [Cataluna])
          (tieneComplejidad  [Alta])
          (tieneIngrediente  [Arroz])
          (esCaliente  TRUE)
-         (precioPlato  600)
+         (precioComida  600)
     )
 
     ([PaisVasco] of Localizacion
@@ -310,7 +354,7 @@
     )
 
     ([RefrescoCola] of Bebida
-         (precioBebida  150)
+         (precioComida  150)
     )
 
     ([Regional] of Tipo_Menu
@@ -320,7 +364,7 @@
     )
 
     ([Sidra] of Bebida
-         (precioBebida  350)
+         (precioComida  350)
     )
 
     ([Sopas] of Tipo_Plato
@@ -331,19 +375,18 @@
     )
 
     ([TortillaPatatas] of Segundo_Plato
-         (esCompatibleConBebida  [VinoTinto])
          (esTradicionalDe  [España])
          (tieneComplejidad  [Media])
          (tieneIngrediente  [Huevo] [Patata])
          (esCaliente  TRUE)
-         (precioPlato  450)
+         (precioComida  450)
     )
 
     ([Verano] of Temporada
     )
 
     ([VinoTinto] of Bebida
-         (precioBebida  700)
+         (precioComida  700)
     )
 
 )

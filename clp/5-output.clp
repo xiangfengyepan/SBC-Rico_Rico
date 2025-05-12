@@ -79,24 +79,23 @@
     (bind ?ingredientes (send ?plato get-tieneIngrediente))
     (print-list-with-bullets "Ingredientes" ?ingredientes "     " "◦ ")
     
-    (bind ?tiene-tipo (send ?plato get-tieneTipoPlato))
+    (bind ?tiene-tipo (send ?plato get-tieneTipoComida))
     (print-list-with-bullets "Tipo de Plato" ?tiene-tipo "     " "◦ ")
     
     (bind ?compatibles (send ?plato get-esCompatibleCon))
     (print-list-with-bullets "Compatible con" ?compatibles "     " "◦ ")
     
-    (bind ?bebidas (send ?plato get-esCompatibleConBebida))
+    (bind ?bebidas (send ?plato get-esCompatibleCon))
     (print-list-with-bullets "Bebidas recomendadas" ?bebidas "     " "◦ ")
     
     (printout t "     ├─◦ Origen: " (send ?plato get-esTradicionalDe) crlf)
     (printout t "     ├─◦ Complejidad: " (send ?plato get-tieneComplejidad) crlf)
     (printout t "     ├─◦ Temperatura: " 
-        (if (eq (send ?plato get-esCaliente) "true") 
+        (if (eq (send ?plato get-esCaliente) TRUE) 
             then "Caliente" 
             else "Frío") 
         crlf)
-    ; (printout t "     ├─◦ Alcogolico: " (if (send ?plato get-esAlcoholico) then "Alcoholico" else "No Alcogolico") crlf)
-    (printout t "     └─◦ Precio: " (format-money (send ?plato get-precioPlato)) crlf)
+    (printout t "     └─◦ Precio: " (format-money (send ?plato get-precioComida)) crlf)
 )
 
 (deffunction output::imprimir-menu (?menu)
@@ -122,7 +121,7 @@
     (output::imprimir-menu ?menu)
 )
 
-(deffunction print-preferencia-cliente (?num-min ?num-max)
+(deffunction print-preferencia-cliente (?cliente)
     (bind ?box-width 46)
 
     (printout t "┏" (output::rep-str ?box-width "━") "┓" crlf)
@@ -132,9 +131,17 @@
 
     (printout t "┣" (output::rep-str ?box-width "━") "┫" crlf)
 
-    (bind ?price-text (str-cat "Rango de precios: " (format-money ?num-min) " - " (format-money ?num-max)))
-    (printout t "┃" (output::center-text ?price-text ?box-width) "┃" crlf)
 
+    (printout t "┃" (output::center-text (str-cat "Alcoholico: " (send ?cliente get-esAlcoholico))  ?box-width) "┃" crlf)
+    (printout t "┃" (output::center-text (str-cat "Vegetariano: " (send ?cliente get-esVegetariano))  ?box-width) "┃" crlf)
+    (printout t "┃" (output::center-text (str-cat "Estilo: " (send ?cliente get-prefiereEstilo))  ?box-width) "┃" crlf)
+
+    (bind ?evento (send ?cliente get-prefiereEvento))
+    (printout t "┃" (output::center-text (str-cat "Evento: " (instance-name ?evento) 
+        " de " (send ?evento get-numeroComersales) " personas en " (send ?evento get-esTemporadaEvento))  ?box-width) "┃" crlf)
+
+    (bind ?price-text (str-cat "Rango de precios: " (format-money (send ?cliente get-precioMinimo)) " - " (format-money (send ?cliente get-precioMaximo))))
+    (printout t "┃" (output::center-text ?price-text ?box-width) "┃" crlf)
     (printout t "┗" (output::rep-str ?box-width "━") "┛" crlf crlf)
 )
 
@@ -146,7 +153,7 @@
 
     (bind ?min (send ?cliente get-precioMinimo))
     (bind ?max (send ?cliente get-precioMaximo))
-    (print-preferencia-cliente ?min ?max)
+    (print-preferencia-cliente ?cliente)
 
     (bind ?todos-menus (find-all-instances ((?m Menu)) TRUE))
 

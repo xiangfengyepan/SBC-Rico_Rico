@@ -8,10 +8,10 @@
 )
 
 (defrule generar-menus
-    ?primer <- (object (is-a Primer_Plato) (precioPlato ?precio-primer))
-    ?segundo <- (object (is-a Segundo_Plato) (precioPlato ?precio-segundo))
-    ?postre <- (object (is-a Postre) (precioPlato ?precio-postre))
-    ?bebida <- (object (is-a Bebida) (precioBebida ?precio-bebida))
+    ?primer <- (object (is-a Primer_Plato) (precioComida ?precio-primer))
+    ?segundo <- (object (is-a Segundo_Plato) (precioComida ?precio-segundo))
+    ?postre <- (object (is-a Postre) (precioComida ?precio-postre))
+    ?bebida <- (object (is-a Bebida) (precioComida ?precio-bebida))
 
     ; Only generate if it does not already exists
     (not (object (is-a Menu)
