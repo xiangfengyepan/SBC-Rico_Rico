@@ -70,19 +70,34 @@
     (return ?evento)
 )
 
+(deffunction input::obtener-grado (?numero)
+    (bind ?grado 
+        (if (eq ?numero 0) then [Alto]
+        else (if (eq ?numero 1) then [Medio]
+        else (if (eq ?numero 2) then [Bajo]
+        else nil)))
+    )
+    (return ?grado)
+)
+
+
 (deffunction input::instanciacion-persona ()
     (bind ?rango (input::obtener-rango "Introduzca el precio mínimo" "Introduzca el precio máximo" 0 nil))
     (bind ?precio-min (nth$ 1 ?rango))
     (bind ?precio-max (nth$ 2 ?rango))
+    
+    ; Preferencias
     (bind ?esVegetariano (input::seleccion-una-opcion "Eres vegetariano?: " TRUE FALSE))
     (bind ?esAlcoholico (input::seleccion-una-opcion "Eres alcolico?: " TRUE FALSE))
     (bind ?esIntoleranteLactosa (input::seleccion-una-opcion "Eres intolerante a la lactosa?: " TRUE FALSE))
 
-    (bind ?temporada (obtener-temporada (input::seleccion-una-opcion "En que temporada quieres celebrar el evento? (0:Primavera , 1:Verano, 2:Otoño, 3:Invierno): " 0 1 2 3)))
+    (bind ?haceDeporte (input::obtener-grado (input::seleccion-una-opcion "Haces deporte? (0:Alto 1:Medio 2:Bajo ): " 0 1 2)))
 
     (bind ?preferencia (input::seleccion-una-opcion "Si tiene alguna preferencia introduzcala, en caso contrario elija 'Null': " 
         Null Clasico Moderno Regional Sibarita))
 
+    ; Evento
+    (bind ?temporada (obtener-temporada (input::seleccion-una-opcion "En que temporada quieres celebrar el evento? (0:Primavera , 1:Verano, 2:Otoño, 3:Invierno): " 0 1 2 3)))
     (bind ?tipoEvento (input::obtener-evento (input::seleccion-una-opcion "Que tipo de evento quiere de las siguentes opciones (0:Bautizo 1:Boda 2:Comunion 3:Congreso):" 0 1 2 3)))
     (bind ?nComersales (input::obtener-valor-numerico "Introduzca el numero de comersales" 0 nil))
     (send ?tipoEvento put-numeroComersales ?nComersales)
@@ -94,9 +109,9 @@
         (prefiereEstilo ?preferencia) 
         (esVegetariano ?esVegetariano) 
         (esAlcoholico ?esAlcoholico)
-        (prefiereEvento ?tipoEvento)
         (esIntoleranteLactosa ?esIntoleranteLactosa)
-
+        (haceDeporte ?haceDeporte) 
+        (prefiereEvento ?tipoEvento)
     )
 )
 

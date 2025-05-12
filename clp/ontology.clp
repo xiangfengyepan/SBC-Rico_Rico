@@ -2,7 +2,49 @@
 ;;; clp/ontology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/ontology.rdf
-;;; :Date 12/05/2025 19:20:44
+;;; :Date 12/05/2025 19:23:58
+
+(defclass Evento
+    (is-a USER)
+    (role concrete)
+    (pattern-match reactive)
+    (slot esTemporadaEvento
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot numeroComersales
+        (type INTEGER)
+        (create-accessor read-write))
+)
+
+(defclass Congreso
+    (is-a Evento)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Familiar
+    (is-a Evento)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Bautizo
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Boda
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Comunion
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
 
 (defclass Comida
     (is-a USER)
@@ -76,52 +118,13 @@
     (pattern-match reactive)
 )
 
-(defclass Evento
-    (is-a USER)
-    (role concrete)
-    (pattern-match reactive)
-    (slot esTemporadaEvento
-        (type INSTANCE)
-        (create-accessor read-write))
-    (slot numeroComersales
-        (type INTEGER)
-        (create-accessor read-write))
-)
-
-(defclass Congreso
-    (is-a Evento)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Familiar
-    (is-a Evento)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Bautizo
-    (is-a Familiar)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Boda
-    (is-a Familiar)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Comunion
-    (is-a Familiar)
-    (role concrete)
-    (pattern-match reactive)
-)
-
 (defclass Cliente
     (is-a USER)
     (role concrete)
     (pattern-match reactive)
+    (slot haceDeporte
+        (type INSTANCE)
+        (create-accessor read-write))
     (slot prefiereEstilo
         (type INSTANCE)
         (create-accessor read-write))

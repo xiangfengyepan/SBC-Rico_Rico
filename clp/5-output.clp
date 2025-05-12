@@ -137,6 +137,9 @@
     (printout t "┃" (output::center-text (str-cat "Vegetariano: " (send ?cliente get-esVegetariano))  ?box-width) "┃" crlf)
     (printout t "┃" (output::center-text (str-cat "Intolerante a la lactosa: " (send ?cliente get-esIntoleranteLactosa))  ?box-width) "┃" crlf)
 
+    (printout t "┃" (output::center-text (str-cat "Grado de deporte: " (send ?cliente get-haceDeporte))  ?box-width) "┃" crlf)
+
+
     (printout t "┃" (output::center-text (str-cat "Estilo: " (send ?cliente get-prefiereEstilo))  ?box-width) "┃" crlf)
 
     (bind ?evento (send ?cliente get-prefiereEvento))
