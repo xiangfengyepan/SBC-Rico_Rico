@@ -91,7 +91,14 @@
     (return ?grado)
 )
 
-
+(deffunction input::obtener-booleano (?letra)
+    (bind ?booleano 
+        (if (eq ?letra t) then TRUE
+        else (if (eq ?letra f) then FALSE
+        else nil))
+    )
+    (return ?booleano)
+)
 
 (deffunction input::instanciacion-persona ()
     (bind ?rango (input::obtener-rango "Introduzca el precio mínimo" "Introduzca el precio máximo" 0 nil))
@@ -99,9 +106,9 @@
     (bind ?precio-max (nth$ 2 ?rango))
     
     ; Preferencias
-    (bind ?esVegetariano (input::seleccion-una-opcion "Eres vegetariano?: " TRUE FALSE))
-    (bind ?esAlcoholico (input::seleccion-una-opcion "Eres alcolico?: " TRUE FALSE))
-    (bind ?esIntoleranteLactosa (input::seleccion-una-opcion "Eres intolerante a la lactosa?: " TRUE FALSE))
+    (bind ?esVegetariano (obtener-booleano (input::seleccion-una-opcion "Eres vegetariano? (t: TRUE f: FALSE): " t f)))
+    (bind ?esAlcoholico (obtener-booleano (input::seleccion-una-opcion "Eres alcolico? (t: TRUE f: FALSE): " t f)))
+    (bind ?esIntoleranteLactosa (obtener-booleano (input::seleccion-una-opcion "Eres intolerante a la lactosa? (t: TRUE f: FALSE): " t f)))
 
     (bind ?haceDeporte (input::obtener-grado (input::seleccion-una-opcion "Haces deporte? (0:Alto 1:Medio 2:Bajo ): " 0 1 2)))
 

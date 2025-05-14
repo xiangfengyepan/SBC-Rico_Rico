@@ -168,7 +168,7 @@
 
     (bind ?todos-menus (find-all-instances ((?m Menu)) TRUE))
 
-    (if (>= (length$ ?todos-menus) 3) then
+    (if (>= (length$ ?todos-menus) 1) then
         (bind ?ordenados (output::ordenar-por-precio ?todos-menus))
         (bind ?menu-barato (nth$ 1 ?ordenados))
         (bind ?menu-medio (nth$ (div (+ 1 (length$ ?ordenados)) 2) ?ordenados))
