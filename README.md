@@ -7,6 +7,8 @@
 - proteinas
 - carbohidratos
 - calcio
+- azucar
+- cafeina
 
 
 # TIPO COMIDA

@@ -13,6 +13,7 @@ fi
 # uncomment this for windows (this may take a while but it only will be once)
 python3 -m venv owl_env
 source owl_env/bin/activate
+python3 -m pip install --upgrade pip
 pip install owl2clips
 
 command -v owl2clips || pip install owl2else # --user

@@ -86,7 +86,7 @@
     (print-list-with-bullets "Compatible con" ?compatibles "     " "◦ ")
 
     (printout t "     ├─◦ Alcohol: " (send ?comida get-contieneAlcohol) crlf)
-    (printout t "     ├─◦ Lactosa: " (send ?comida get-tieneLactosa) crlf)
+    (printout t "     ├─◦ Lactosa: " (send ?comida get-contieneLactosa) crlf)
     (printout t "     ├─◦ Calorias: " (send ?comida get-tieneCalorias) crlf)
     (printout t "     ├─◦ Carbohidratos: " (send ?comida get-tieneCarbohidratos) crlf)
     (printout t "     ├─◦ Proteinas: " (send ?comida get-tieneProteinas) crlf)

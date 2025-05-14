@@ -2,7 +2,7 @@
 ;;; clp/ontology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/ontology.rdf
-;;; :Date 12/05/2025 19:23:58
+;;; :Date 14/05/2025 09:07:41
 
 (defclass Evento
     (is-a USER)
@@ -77,14 +77,14 @@
     (slot contieneAlcohol
         (type SYMBOL)(default FALSE)
         (create-accessor read-write))
+    (slot contieneLactosa
+        (type SYMBOL)(default FALSE)
+        (create-accessor read-write))
     (slot esCaliente
         (type SYMBOL)(default FALSE)
         (create-accessor read-write))
     (slot precioComida
         (type INTEGER)
-        (create-accessor read-write))
-    (slot tieneLactosa
-        (type SYMBOL)(default FALSE)
         (create-accessor read-write))
 )
 
