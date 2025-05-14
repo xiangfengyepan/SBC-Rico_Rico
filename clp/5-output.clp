@@ -41,6 +41,16 @@
     )
 )
 
+(deffunction print-item (?title ?items ?indent)
+    (printout t ?indent "├─◦ " ?title ": ")
+    (if (or (eq ?items nil) (eq ?items [nil])) then
+        (printout t "Ningún elemento especificado" crlf)
+    else
+        (printout t ?items crlf)
+    )
+)
+
+
 (deffunction output::ordenar-por-precio (?lista)
     (bind ?ordenada ?lista)
     (bind ?n (length$ ?ordenada))
@@ -76,29 +86,31 @@
     (printout t "   │" (center-text ?titulo ?box-width) "│" crlf)  
     (printout t "   └─────────────────────────────────────┘" crlf)
     
-    ; (bind ?ingredientes (send ?comida get-tieneIngrediente))
-    ; (print-list-with-bullets "Ingredientes" ?ingredientes "     " "◦ ")
+    (bind ?ingredientes (send ?comida get-tieneIngrediente))
+    (print-list-with-bullets "Ingredientes" ?ingredientes "     " "◦ ")
 
-    ; (bind ?tiene-tipo (send ?comida get-tieneTipoComida))
-    ; (print-list-with-bullets "Tipo de Comida" ?tiene-tipo "     " "◦ ")
+    (bind ?tiene-tipo (send ?comida get-tieneTipoComida))
+    (print-list-with-bullets "Tipo de Comida" ?tiene-tipo "     " "◦ ")
     
-    ; (bind ?compatibles (send ?comida get-esCompatibleCon))
-    ; (print-list-with-bullets "Compatible con" ?compatibles "     " "◦ ")
+    (bind ?compatibles (send ?comida get-esCompatibleCon))
+    (print-list-with-bullets "Compatible con" ?compatibles "     " "◦ ")
 
-    ; (printout t "     ├─◦ Alcohol: " (send ?comida get-contieneAlcohol) crlf)
-    ; (printout t "     ├─◦ Lactosa: " (send ?comida get-contieneLactosa) crlf)
-    ; (printout t "     ├─◦ Calorias: " (send ?comida get-tieneCalorias) crlf)
-    ; (printout t "     ├─◦ Carbohidratos: " (send ?comida get-tieneCarbohidratos) crlf)
-    ; (printout t "     ├─◦ Proteinas: " (send ?comida get-tieneProteinas) crlf)
-    
-    ; (printout t "     ├─◦ Origen: " (send ?comida get-esTradicionalDe) crlf)
-    ; (printout t "     ├─◦ Complejidad: " (send ?comida get-tieneComplejidad) crlf)
-    ; (printout t "     ├─◦ Temperatura: " 
-    ;     (if (eq (send ?comida get-esCaliente) TRUE) 
-    ;         then "Caliente" 
-    ;         else "Frío") 
-    ;     crlf)
-    ; (printout t "     └─◦ Precio: " (format-money (send ?comida get-precioComida)) crlf)
+    (print-item "Contiene Alcohol" (send ?comida get-contieneAlcohol) "     ")
+    (print-item "Contiene Lactosa" (send ?comida get-contieneLactosa) "     ")
+    (print-item "Contiene Calorias" (send ?comida get-tieneCalorias) "     ")
+    (print-item "Contiene Carbohidratos" (send ?comida get-tieneCarbohidratos) "     ")
+    (print-item "Contiene Proteinas" (send ?comida get-tieneProteinas) "     ")
+
+    (print-list-with-bullets "Origen" (send ?comida get-esTradicionalDe) "     " "◦ ")
+    (print-item "Complejidad" (send ?comida get-tieneComplejidad) "     ")
+    (print-item "Temperatura" 
+        (if (eq (send ?comida get-esCaliente) TRUE) 
+            then "Caliente" 
+            else "Frío") "     ")
+
+    (print-item "Precio" (format-money (send ?comida get-precioComida)) "     ")
+
+
 )
 
 
