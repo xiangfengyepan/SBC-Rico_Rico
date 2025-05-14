@@ -36,4 +36,11 @@
     (send ?ingrediente delete)
 )
 
+; (defrule temporada
+;     (object (is-a Evento) (esTemporadaEvento ?temporadaEvento))
+;     ?ingrediente <- (object (is-a Ingrediente) (esTemporada ?temporadaIng))
+;     =>
+;     (send ?ingrediente delete)
+; )*/
+
 (defrule analisis::done => (focus sintesis))
