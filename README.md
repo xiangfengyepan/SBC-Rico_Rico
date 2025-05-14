@@ -1,7 +1,3 @@
-- deftemplates si tenemos defclasses?
-- graficos?
-
-
 # Atributos Bebidas (grados)
 - calorias
 - proteinas

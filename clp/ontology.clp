@@ -2,7 +2,7 @@
 ;;; clp/ontology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/ontology.rdf
-;;; :Date 14/05/2025 09:07:41
+;;; :Date 14/05/2025 09:44:10
 
 (defclass Evento
     (is-a USER)
@@ -158,7 +158,7 @@
     (is-a USER)
     (role concrete)
     (pattern-match reactive)
-    (slot esTemporada
+    (multislot esTemporada
         (type INSTANCE)
         (create-accessor read-write))
     (slot esOrigenVegetariano
@@ -358,10 +358,6 @@
 
     ([RefrescoCola] of Bebida
          (precioComida  150)
-    )
-
-    ([Leche] of Bebida
-         (contieneLactosa  TRUE)
     )
 
     ([Regional] of Tipo_Menu

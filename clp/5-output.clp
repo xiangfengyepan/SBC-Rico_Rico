@@ -76,29 +76,29 @@
     (printout t "   │" (center-text ?titulo ?box-width) "│" crlf)  
     (printout t "   └─────────────────────────────────────┘" crlf)
     
-    (bind ?ingredientes (send ?comida get-tieneIngrediente))
-    (print-list-with-bullets "Ingredientes" ?ingredientes "     " "◦ ")
+    ; (bind ?ingredientes (send ?comida get-tieneIngrediente))
+    ; (print-list-with-bullets "Ingredientes" ?ingredientes "     " "◦ ")
 
-    (bind ?tiene-tipo (send ?comida get-tieneTipoComida))
-    (print-list-with-bullets "Tipo de Comida" ?tiene-tipo "     " "◦ ")
+    ; (bind ?tiene-tipo (send ?comida get-tieneTipoComida))
+    ; (print-list-with-bullets "Tipo de Comida" ?tiene-tipo "     " "◦ ")
     
-    (bind ?compatibles (send ?comida get-esCompatibleCon))
-    (print-list-with-bullets "Compatible con" ?compatibles "     " "◦ ")
+    ; (bind ?compatibles (send ?comida get-esCompatibleCon))
+    ; (print-list-with-bullets "Compatible con" ?compatibles "     " "◦ ")
 
-    (printout t "     ├─◦ Alcohol: " (send ?comida get-contieneAlcohol) crlf)
-    (printout t "     ├─◦ Lactosa: " (send ?comida get-contieneLactosa) crlf)
-    (printout t "     ├─◦ Calorias: " (send ?comida get-tieneCalorias) crlf)
-    (printout t "     ├─◦ Carbohidratos: " (send ?comida get-tieneCarbohidratos) crlf)
-    (printout t "     ├─◦ Proteinas: " (send ?comida get-tieneProteinas) crlf)
+    ; (printout t "     ├─◦ Alcohol: " (send ?comida get-contieneAlcohol) crlf)
+    ; (printout t "     ├─◦ Lactosa: " (send ?comida get-contieneLactosa) crlf)
+    ; (printout t "     ├─◦ Calorias: " (send ?comida get-tieneCalorias) crlf)
+    ; (printout t "     ├─◦ Carbohidratos: " (send ?comida get-tieneCarbohidratos) crlf)
+    ; (printout t "     ├─◦ Proteinas: " (send ?comida get-tieneProteinas) crlf)
     
-    (printout t "     ├─◦ Origen: " (send ?comida get-esTradicionalDe) crlf)
-    (printout t "     ├─◦ Complejidad: " (send ?comida get-tieneComplejidad) crlf)
-    (printout t "     ├─◦ Temperatura: " 
-        (if (eq (send ?comida get-esCaliente) TRUE) 
-            then "Caliente" 
-            else "Frío") 
-        crlf)
-    (printout t "     └─◦ Precio: " (format-money (send ?comida get-precioComida)) crlf)
+    ; (printout t "     ├─◦ Origen: " (send ?comida get-esTradicionalDe) crlf)
+    ; (printout t "     ├─◦ Complejidad: " (send ?comida get-tieneComplejidad) crlf)
+    ; (printout t "     ├─◦ Temperatura: " 
+    ;     (if (eq (send ?comida get-esCaliente) TRUE) 
+    ;         then "Caliente" 
+    ;         else "Frío") 
+    ;     crlf)
+    ; (printout t "     └─◦ Precio: " (format-money (send ?comida get-precioComida)) crlf)
 )
 
 
@@ -167,6 +167,12 @@
     (print-preferencia-cliente ?cliente)
 
     (bind ?todos-menus (find-all-instances ((?m Menu)) TRUE))
+
+    (bind ?box-width 46)
+    (printout t "┏" (rep-str ?box-width "━") "┓" crlf)
+    (printout t "┃" (center-text (str-cat "Numero de menus encontrados: " (length$ ?todos-menus)) ?box-width) "┃" crlf)
+    (printout t "┗" (rep-str ?box-width "━") "┛" crlf)
+
 
     (if (>= (length$ ?todos-menus) 1) then
         (bind ?ordenados (output::ordenar-por-precio ?todos-menus))

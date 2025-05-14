@@ -87,7 +87,6 @@
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#esTemporada -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#esTemporada">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Temporada"/>
     </owl:ObjectProperty>
