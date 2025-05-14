@@ -360,6 +360,10 @@
          (precioComida  150)
     )
 
+    ([Leche] of Bebida
+         (contieneLactosa  TRUE)
+    )
+
     ([Regional] of Tipo_Menu
     )
 
