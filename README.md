@@ -25,3 +25,10 @@
 ## lista tipo bebida
 - Refresco
 ...
+
+
+
+
+
+## Xiang Feng
+- edat -> int
