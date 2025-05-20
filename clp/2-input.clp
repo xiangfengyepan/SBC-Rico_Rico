@@ -101,6 +101,9 @@
 )
 
 (deffunction input::instanciacion-persona ()
+
+    (bind ?edad (input::obtener-valor-numerico "Introduzca su edad" 0 100))
+
     (bind ?rango (input::obtener-rango "Introduzca el precio mínimo" "Introduzca el precio máximo" 0 nil))
     (bind ?precio-min (nth$ 1 ?rango))
     (bind ?precio-max (nth$ 2 ?rango))
@@ -130,6 +133,7 @@
         (esIntoleranteLactosa ?esIntoleranteLactosa)
         (haceDeporte ?haceDeporte) 
         (prefiereEvento ?tipoEvento)
+        (tieneEdad ?edad)
     )
 )
 

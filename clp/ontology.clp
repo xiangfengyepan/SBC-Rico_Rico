@@ -2,7 +2,85 @@
 ;;; clp/ontology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/ontology.rdf
-;;; :Date 14/05/2025 09:44:10
+;;; :Date 20/05/2025 18:56:37
+
+(defclass Comida
+    (is-a USER)
+    (role concrete)
+    (pattern-match reactive)
+    (multislot esCompatibleCon
+        (type INSTANCE)
+        (create-accessor read-write))
+    (multislot esTradicionalDe
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot tieneCalorias
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot tieneCarbohidratos
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot tieneComplejidad
+        (type INSTANCE)
+        (create-accessor read-write))
+    (multislot tieneIngrediente
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot tieneProteinas
+        (type INSTANCE)
+        (create-accessor read-write))
+    (multislot tieneTipoComida
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot contieneAlcohol
+        (type SYMBOL)(default FALSE)
+        (create-accessor read-write))
+    (slot contieneLactosa
+        (type SYMBOL)(default FALSE)
+        (create-accessor read-write))
+    (slot esCaliente
+        (type SYMBOL)(default FALSE)
+        (create-accessor read-write))
+    (slot precioComida
+        (type INTEGER)
+        (create-accessor read-write))
+    (slot tieneAzucar
+        (type SYMBOL)(default FALSE)
+        (create-accessor read-write))
+    (slot tieneCafeina
+        (type SYMBOL)(default FALSE)
+        (create-accessor read-write))
+)
+
+(defclass Bebida
+    (is-a Comida)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Plato
+    (is-a Comida)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Postre
+    (is-a Plato)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Primer_Plato
+    (is-a Plato)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Segundo_Plato
+    (is-a Plato)
+    (role concrete)
+    (pattern-match reactive)
+)
 
 (defclass Evento
     (is-a USER)
@@ -46,78 +124,6 @@
     (pattern-match reactive)
 )
 
-(defclass Comida
-    (is-a USER)
-    (role concrete)
-    (pattern-match reactive)
-    (multislot esCompatibleCon
-        (type INSTANCE)
-        (create-accessor read-write))
-    (multislot esTradicionalDe
-        (type INSTANCE)
-        (create-accessor read-write))
-    (slot tieneCalorias
-        (type INSTANCE)
-        (create-accessor read-write))
-    (slot tieneCarbohidratos
-        (type INSTANCE)
-        (create-accessor read-write))
-    (slot tieneComplejidad
-        (type INSTANCE)
-        (create-accessor read-write))
-    (multislot tieneIngrediente
-        (type INSTANCE)
-        (create-accessor read-write))
-    (slot tieneProteinas
-        (type INSTANCE)
-        (create-accessor read-write))
-    (multislot tieneTipoComida
-        (type INSTANCE)
-        (create-accessor read-write))
-    (slot contieneAlcohol
-        (type SYMBOL)(default FALSE)
-        (create-accessor read-write))
-    (slot contieneLactosa
-        (type SYMBOL)(default FALSE)
-        (create-accessor read-write))
-    (slot esCaliente
-        (type SYMBOL)(default FALSE)
-        (create-accessor read-write))
-    (slot precioComida
-        (type INTEGER)
-        (create-accessor read-write))
-)
-
-(defclass Bebida
-    (is-a Comida)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Plato
-    (is-a Comida)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Postre
-    (is-a Plato)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Primer_Plato
-    (is-a Plato)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Segundo_Plato
-    (is-a Plato)
-    (role concrete)
-    (pattern-match reactive)
-)
-
 (defclass Cliente
     (is-a USER)
     (role concrete)
@@ -144,6 +150,9 @@
         (type INTEGER)
         (create-accessor read-write))
     (slot precioMinimo
+        (type INTEGER)
+        (create-accessor read-write))
+    (slot tieneEdad
         (type INTEGER)
         (create-accessor read-write))
 )
@@ -256,16 +265,24 @@
     )
 
     ([EnsaladaCesar] of Primer_Plato
+         (esCompatibleCon  [AguaMineral] [PaellaValenciana])
+         (esTradicionalDe  [Cataluna] [Espana])
+         (tieneCalorias  [Media])
+         (tieneCarbohidratos  [Baja])
          (tieneComplejidad  [Baja])
          (tieneIngrediente  [Lechuga] [Pollo])
-         (tieneTipoComida  [Ensaladas])
+         (tieneProteinas  [Alta])
+         (tieneTipoComida  [Carne] [Ensaladas])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  TRUE)
+         (esCaliente  FALSE)
          (precioComida  350)
     )
 
     ([Ensaladas] of Tipo_Plato
     )
 
-    ([España] of Localizacion
+    ([Espana] of Localizacion
     )
 
     ([Estofados] of Tipo_Plato
@@ -317,7 +334,7 @@
     ([Moderno] of Tipo_Menu
     )
 
-    ([Otoño] of Temporada
+    ([Otono] of Temporada
     )
 
     ([PaellaValenciana] of Segundo_Plato
@@ -378,7 +395,7 @@
     )
 
     ([TortillaPatatas] of Segundo_Plato
-         (esTradicionalDe  [España])
+         (esTradicionalDe  [Espana])
          (tieneComplejidad  [Media])
          (tieneIngrediente  [Huevo] [Patata])
          (esCaliente  TRUE)

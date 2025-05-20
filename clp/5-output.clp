@@ -151,6 +151,9 @@
     (printout t "┣" (output::rep-str ?box-width "━") "┫" crlf)
 
 
+
+    (printout t "┃" (output::center-text (str-cat "Edad: " (send ?cliente get-tieneEdad))  ?box-width) "┃" crlf)
+
     (printout t "┃" (output::center-text (str-cat "Es Alcoholico: " (send ?cliente get-esAlcoholico))  ?box-width) "┃" crlf)
     (printout t "┃" (output::center-text (str-cat "Es Vegetariano: " (send ?cliente get-esVegetariano))  ?box-width) "┃" crlf)
     (printout t "┃" (output::center-text (str-cat "Es Intolerante a la lactosa: " (send ?cliente get-esIntoleranteLactosa))  ?box-width) "┃" crlf)
