@@ -585,9 +585,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cataluna -->
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cataluña -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cataluna">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cataluña">
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Localizacion"/>
     </owl:NamedIndividual>
     
@@ -623,10 +623,30 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#EnsaladaCesar">
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primer_Plato"/>
+
+        <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral"/>
+        <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#PaellaValenciana"/>
+
+        <untitled-ontology-14:esTradicionalDe rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#España"/>
+        <untitled-ontology-14:esTradicionalDe rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cataluña"/>
+
+        <untitled-ontology-14:tieneCalorias rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
+        <untitled-ontology-14:tieneCarbohidratos rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
+        <untitled-ontology-14:tieneProteinas rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
+
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
+
+
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Lechuga"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pollo"/>
+
         <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ensaladas"/>
+        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Carne"/>
+
+        <untitled-ontology-14:contieneAlcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:contieneAlcohol>
+        <untitled-ontology-14:contieneLactosa rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:contieneLactosa>
+        <untitled-ontology-14:esCaliente rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esCaliente>
+
         <untitled-ontology-14:precioComida rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</untitled-ontology-14:precioComida>
     </owl:NamedIndividual>
     
@@ -771,7 +791,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#PaellaValenciana">
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Segundo_Plato"/>
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#GazpachoAndaluz"/>
-        <untitled-ontology-14:esTradicionalDe rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cataluna"/>
+        <untitled-ontology-14:esTradicionalDe rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cataluña"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Arroz"/>
         <untitled-ontology-14:esCaliente rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esCaliente>

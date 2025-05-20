@@ -1,0 +1,85 @@
+LEEME.txt – Prototipo de Instanciación y Generación de Menús Personalizados
+
+Descripción General
+-------------------
+Este sistema basado en CLIPS permite recolectar datos de un cliente, aplicar reglas de filtrado según sus preferencias y necesidades, y generar menús personalizados en función de los ingredientes disponibles y restricciones aplicadas. La salida final muestra un resumen de las preferencias del cliente y tres menús categorizados por precio: económico, medio y caro.
+
+Ejecucion
+----------
+./run
+
+
+MAIN – Punto de entrada del sistema
+--------------------------------------
+El módulo `MAIN` inicia el sistema experto Rico Rico CLIPS. Realiza las siguientes tareas:
+
+1. **Carga de módulos:**
+   - `ontology.clp`: define las clases del sistema.
+   - `2-input.clp`: recoge información del cliente.
+   - `3-analisis.clp`: aplica filtros según preferencias.
+   - `4-sintesis.clp`: genera menús válidos.
+   - `5-output.clp`: muestra los resultados finales.
+
+2. **Regla de inicio:**
+   Muestra un mensaje de bienvenida y enfoca el módulo `input` para comenzar la recolección de datos.
+
+3. **Ejecución:**
+   - `reset`: inicializa el entorno.
+   - `run`: ejecuta todas las reglas.
+   - `exit`: finaliza el sistema.
+
+Este archivo coordina toda la ejecución desde la entrada del cliente hasta la generación y presentación de los menús.
+
+
+¿Qué hace el sistema?
+--------------------
+
+1. Recolección de información
+Se realiza mediante la función `input::instanciacion-persona`, donde se consulta al usuario sobre:
+
+- Presupuesto (precio mínimo y máximo)
+- Preferencias alimenticias:
+  - ¿Es vegetariano?
+  - ¿Consume alcohol?
+  - ¿Es intolerante a la lactosa?
+  Estas preferencias se ingresan como valores booleanos (`TRUE` o `FALSE`).
+
+- Nivel de actividad física (bajo, medio, alto)
+- Preferencias de estilo culinario (opcional)
+- Temporada y tipo de evento
+- Número de comensales
+
+
+2. Análisis y filtrado de ingredientes
+En el módulo `analisis`, se aplican reglas que eliminan ingredientes no compatibles con el perfil del cliente:
+
+- **Vegetariano:** Elimina ingredientes de origen no vegetariano.
+- **Intolerancia a la lactosa:** Elimina comidas que contienen lactosa.
+- **No consume alcohol:** Elimina comidas con alcohol.
+- **Nivel de actividad física medio o alto:** Elimina comidas con bajo contenido proteico si no son adecuadas.
+
+*Nota: existe una regla comentada para aplicar restricciones por temporada.*
+
+3. Generación de menús válidos
+En el módulo `sintesis`, se ejecutan reglas que:
+
+- Eliminan platos incompletos (que referencian ingredientes que ya no existen).
+- Combinan platos (primer plato, segundo, postre y bebida) dentro del rango de precios permitido.
+- Crean una instancia de `Menu` solo si no existe ya una combinación igual.
+
+
+4. Presentación de resultados
+Finalmente, se imprime:
+
+- Un resumen de las preferencias del cliente.
+- Tres menús finales seleccionados:
+  - **Económico**
+  - **Intermedio**
+  - **Caro**
+
+Cada menú incluye información sobre:
+- Nombre y atributos de cada plato (primer, segundo, postre)
+- Bebida
+- Precio total del menú
+
+

@@ -5,7 +5,7 @@
 - calcio
 - azucar
 - cafeina
-
+...
 
 # TIPO COMIDA
 ## lista tipo plato (Singualr, primera uppercase)
