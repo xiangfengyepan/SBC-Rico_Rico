@@ -1,5 +1,13 @@
 (defmodule analisis (import MAIN ?ALL) (export ?ALL))
 
+(defrule menor
+    (object (is-a Cliente) (tieneEdad ?edad))
+    ?ingrediente <- (object (is-a Comida) (contieneAlcohol TRUE))
+    (test (< ?edad 18))
+    =>
+    (send ?ingrediente delete)
+)
+
 (defrule vegetarian
     (object (is-a Cliente) (esVegetariano TRUE))
     ?ingrediente <- (object (is-a Ingrediente) (esOrigenVegetariano FALSE))
@@ -7,7 +15,7 @@
     (send ?ingrediente delete)
 )
 
-(defrule alcohol
+(defrule alcoholico
     (object (is-a Cliente) (esAlcoholico FALSE))
     ?ingrediente <- (object (is-a Comida) (contieneAlcohol TRUE))
     =>
@@ -66,10 +74,28 @@
 
 (defrule temporada
     (object (is-a Evento) (esTemporadaEvento ?temporadaEvento))
-    ?ingrediente <- (object (is-a Ingrediente) (esTemporada ?temporadaIng))
-    ; temporadaEvento not in temporadaIng
+    ?ingrediente <- (object (is-a Ingrediente) (esTemporada ?temporadasIng))
+    ;(test (not (member$ ?temporadaEvento ?temporadasIng)))
+    =>
+    ;(send ?ingrediente delete)
+)
+
+(defrule complejidad-alta
+    (object (is-a Evento) (numeroComersales ?numero))
+    ?ingrediente <- (object (is-a Comida) (tieneComplejidad [Alta]))
+    (test (not (> ?numeroComersales 10)))
     =>
     (send ?ingrediente delete)
 )
+
+(defrule complejidad-media
+    (object (is-a Evento) (numeroComersales ?numero))
+    ?ingrediente <- (object (is-a Comida) (tieneComplejidad [Media]))
+    (test (not (> ?numeroComersales 10)))
+    =>
+    (send ?ingrediente delete)
+)
+
+; TODO: restriccion tipo evento (Bautizo / Boda / Comunion / Congreso)
 
 (defrule analisis::done => (focus sintesis))
