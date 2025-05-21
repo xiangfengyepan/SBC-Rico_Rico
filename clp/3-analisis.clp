@@ -81,15 +81,15 @@
 )
 
 (defrule complejidad-alta
-    (object (is-a Evento) (numeroComersales ?numero))
+    (object (is-a Evento) (numeroComersales ?numeroComersales))
     ?ingrediente <- (object (is-a Comida) (tieneComplejidad [Alta]))
-    (test (not (> ?numeroComersales 10)))
+    (test (not (> ?numeroComersales 6)))
     =>
     (send ?ingrediente delete)
 )
 
 (defrule complejidad-media
-    (object (is-a Evento) (numeroComersales ?numero))
+    (object (is-a Evento) (numeroComersales ?numeroComersales))
     ?ingrediente <- (object (is-a Comida) (tieneComplejidad [Media]))
     (test (not (> ?numeroComersales 10)))
     =>
