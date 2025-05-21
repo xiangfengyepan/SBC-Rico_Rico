@@ -85,7 +85,7 @@
         (if (eq ?numero 0) then [Clasico]
         else (if (eq ?numero 1) then [Moderno]
         else (if (eq ?numero 2) then [Regional]
-        else (if (eq ?numero 2) then [Sibarita]
+        else (if (eq ?numero 3) then [Sibarita]
         else nil))))
     )
     (return ?grado)

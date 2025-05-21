@@ -43,7 +43,7 @@
 
 (deffunction print-item (?title ?item ?indent)
     (printout t ?indent "├─◦ " ?title ": ")
-    (if (or (eq ?item nil) (eq ?item [nil])) then
+    (if (or (eq ?item nil) (eq ?item [nil]) (eq ?item -9999)) then
         (printout t "Ningún elemento especificado" crlf)
     else
         (printout t ?item crlf)
@@ -191,8 +191,7 @@
     (printout t "┃" (center-text (str-cat "Numero de menus encontrados: " (length$ ?todos-menus)) ?box-width) "┃" crlf)
     (printout t "┗" (rep-str ?box-width "━") "┛" crlf)
 
-
-    (if (>= (length$ ?todos-menus) 1) then
+    (if (>= (length$ ?todos-menus) 3) then
         (bind ?ordenados (output::ordenar-por-precio ?todos-menus))
         (bind ?menu-barato (nth$ 1 ?ordenados))
         (bind ?menu-medio (nth$ (div (+ 1 (length$ ?ordenados)) 2) ?ordenados))
@@ -201,7 +200,16 @@
         (print-menu-box ?menu-barato "MENÚ ECONÓMICO")
         (print-menu-box ?menu-medio "MENÚ INTERMEDIO")
         (print-menu-box ?menu-caro "MENÚ PREMIUM")
-    else
-        (printout t "  ⚠ No hay suficientes menús en el rango especificado" crlf crlf)
+
+        else (if (>= (length$ ?todos-menus) 1) then
+                (if (>= (length$ ?todos-menus) 1) then
+                    (bind ?menu1 (nth$ 1 ?todos-menus))
+                    (print-menu-box ?menu1 "MENÚ 1"))
+                (if (>= (length$ ?todos-menus) 2) then
+                    (bind ?menu2 (nth$ 2 ?todos-menus))
+                    (print-menu-box ?menu2 "MENÚ 2"))
+        else
+            (printout t "  ⚠ No hay suficientes menús en el rango especificado" crlf crlf)
+        )
     )
 )

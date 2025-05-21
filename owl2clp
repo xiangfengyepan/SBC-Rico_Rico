@@ -28,6 +28,6 @@ owl2clips --input "ontology/${FILE_NAME}.rdf" --output "$OUTPUT_NAME" --format x
 sed -i 's/"false"/FALSE/gi' "$OUTPUT_NAME"
 sed -i 's/"true"/TRUE/gi' "$OUTPUT_NAME"
 sed -i 's/(type SYMBOL)/(type SYMBOL)(default FALSE)/g' "$OUTPUT_NAME"
-sed -i 's/(type INTEGER)/(type INTEGER)(default 0)/g' "$OUTPUT_NAME"
+sed -i 's/(type INTEGER)/(type INTEGER)(default -9999)/g' "$OUTPUT_NAME"
 
 

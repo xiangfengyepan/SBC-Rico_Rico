@@ -2,49 +2,7 @@
 ;;; clp/ontology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/ontology.rdf
-;;; :Date 21/05/2025 10:02:05
-
-(defclass Evento
-    (is-a USER)
-    (role concrete)
-    (pattern-match reactive)
-    (slot esTemporadaEvento
-        (type INSTANCE)
-        (create-accessor read-write))
-    (slot numeroComersales
-        (type INTEGER)(default 0)
-        (create-accessor read-write))
-)
-
-(defclass Congreso
-    (is-a Evento)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Familiar
-    (is-a Evento)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Bautizo
-    (is-a Familiar)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Boda
-    (is-a Familiar)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Comunion
-    (is-a Familiar)
-    (role concrete)
-    (pattern-match reactive)
-)
+;;; :Date 21/05/2025 19:51:54
 
 (defclass Comida
     (is-a USER)
@@ -75,7 +33,7 @@
         (type INSTANCE)
         (create-accessor read-write))
     (slot anoCreacion
-        (type INTEGER)(default 0)
+        (type INTEGER)(default -9999)
         (create-accessor read-write))
     (slot contieneAlcohol
         (type SYMBOL)(default FALSE)
@@ -87,7 +45,7 @@
         (type SYMBOL)(default FALSE)
         (create-accessor read-write))
     (slot precioComida
-        (type INTEGER)(default 0)
+        (type INTEGER)(default -9999)
         (create-accessor read-write))
     (slot racionesMinimalistas
         (type SYMBOL)(default FALSE)
@@ -130,6 +88,48 @@
     (pattern-match reactive)
 )
 
+(defclass Evento
+    (is-a USER)
+    (role concrete)
+    (pattern-match reactive)
+    (slot esTemporadaEvento
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot numeroComersales
+        (type INTEGER)(default -9999)
+        (create-accessor read-write))
+)
+
+(defclass Congreso
+    (is-a Evento)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Familiar
+    (is-a Evento)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Bautizo
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Boda
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Comunion
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
+
 (defclass Cliente
     (is-a USER)
     (role concrete)
@@ -153,13 +153,13 @@
         (type SYMBOL)(default FALSE)
         (create-accessor read-write))
     (slot precioMaximo
-        (type INTEGER)(default 0)
+        (type INTEGER)(default -9999)
         (create-accessor read-write))
     (slot precioMinimo
-        (type INTEGER)(default 0)
+        (type INTEGER)(default -9999)
         (create-accessor read-write))
     (slot tieneEdad
-        (type INTEGER)(default 0)
+        (type INTEGER)(default -9999)
         (create-accessor read-write))
 )
 
@@ -201,7 +201,7 @@
         (type INSTANCE)
         (create-accessor read-write))
     (slot precioMenu
-        (type INTEGER)(default 0)
+        (type INTEGER)(default -9999)
         (create-accessor read-write))
 )
 
