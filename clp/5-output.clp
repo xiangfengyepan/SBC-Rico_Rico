@@ -41,12 +41,12 @@
     )
 )
 
-(deffunction print-item (?title ?items ?indent)
+(deffunction print-item (?title ?item ?indent)
     (printout t ?indent "├─◦ " ?title ": ")
-    (if (or (eq ?items nil) (eq ?items [nil])) then
+    (if (or (eq ?item nil) (eq ?item [nil])) then
         (printout t "Ningún elemento especificado" crlf)
     else
-        (printout t ?items crlf)
+        (printout t ?item crlf)
     )
 )
 
@@ -72,7 +72,7 @@
     (return ?ordenada)
 )
 
-(deffunction output::imprimir-plato (?comida)
+(deffunction output::imprimir-comida (?comida)
     (bind ?nombre (instance-name ?comida))
     (bind ?clase (class ?comida))
     (bind ?titulo (str-cat ?nombre " (" ?clase ")"))
@@ -94,6 +94,9 @@
     
     (bind ?compatibles (send ?comida get-esCompatibleCon))
     (print-list-with-bullets "Compatible con" ?compatibles "     " "◦ ")
+
+    (print-item "Ano de Creacion" (send ?comida get-anoCreacion) "     ")
+    (print-item "Son raciones minimalistas" (send ?comida get-racionesMinimalistas) "     ")
 
     (print-item "Contiene Alcohol" (send ?comida get-contieneAlcohol) "     ")
     (print-item "Contiene Lactosa" (send ?comida get-contieneLactosa) "     ")
@@ -120,11 +123,11 @@
     (while (<= ?i (length$ ?platos)) do
         (bind ?plato (nth$ ?i ?platos))
         (printout t "  ")
-        (output::imprimir-plato (nth$ ?i ?platos))
+        (output::imprimir-comida (nth$ ?i ?platos))
         (bind ?i (+ ?i 1))
     )
     (bind ?bebida (send ?menu get-tieneBebida))
-    (output::imprimir-plato ?bebida)
+    (output::imprimir-comida ?bebida)
 
 )
 

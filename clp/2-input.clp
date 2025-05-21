@@ -102,25 +102,26 @@
 
 (deffunction input::instanciacion-persona ()
 
+    ; Edad
     (bind ?edad (input::obtener-valor-numerico "Introduzca su edad" 0 100))
 
+    ;Precio
     (bind ?rango (input::obtener-rango "Introduzca el precio mínimo" "Introduzca el precio máximo" 0 nil))
     (bind ?precio-min (nth$ 1 ?rango))
     (bind ?precio-max (nth$ 2 ?rango))
     
-    ; Preferencias
+    ; Preferencias i Restriciones
     (bind ?esVegetariano (obtener-booleano (input::seleccion-una-opcion "Eres vegetariano? (t: TRUE f: FALSE): " t f)))
     (bind ?esAlcoholico (obtener-booleano (input::seleccion-una-opcion "Eres alcolico? (t: TRUE f: FALSE): " t f)))
     (bind ?esIntoleranteLactosa (obtener-booleano (input::seleccion-una-opcion "Eres intolerante a la lactosa? (t: TRUE f: FALSE): " t f)))
 
     (bind ?haceDeporte (input::obtener-grado (input::seleccion-una-opcion "Haces deporte? (0:Bajo 1:Medio 2:Alto ): " 0 1 2)))
-
-    (bind ?preferencia (input::obtener-estilo (input::seleccion-una-opcion "Si tiene alguna preferencia introduzcala (0:Clasico 1:Moderno 2:Regional 3:Sibarita), en caso contrario elija '-1': " -1 0 1 2 3)))
+    (bind ?preferencia (input::obtener-estilo (input::seleccion-una-opcion "Si tiene alguna preferencia introduzcala (0:Clasico 1:Moderno 2:Regional 3:Sibarita), en caso contrario elija -1: " -1 0 1 2 3)))
 
     ; Evento
+    (bind ?tipoEvento (input::obtener-evento (input::seleccion-una-opcion "Que tipo de evento quiere de las siguentes opciones (0:Bautizo 1:Boda 2:Comunion 3:Congreso)" 0 1 2 3)))
     (bind ?temporada (obtener-temporada (input::seleccion-una-opcion "En que temporada quieres celebrar el evento? (0:Primavera , 1:Verano, 2:Otoño, 3:Invierno): " 0 1 2 3)))
-    (bind ?tipoEvento (input::obtener-evento (input::seleccion-una-opcion "Que tipo de evento quiere de las siguentes opciones (0:Bautizo 1:Boda 2:Comunion 3:Congreso):" 0 1 2 3)))
-    (bind ?nComersales (input::obtener-valor-numerico "Introduzca el numero de comersales" 0 nil))
+    (bind ?nComersales (input::obtener-valor-numerico "Introduzca el numero de comersales" 1 nil))
     (send ?tipoEvento put-numeroComersales ?nComersales)
     (send ?tipoEvento put-esTemporadaEvento ?temporada)
 
