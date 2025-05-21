@@ -26,9 +26,8 @@
 - Refresco
 ...
 
-
-
-
-
-## Xiang Feng
-- edat -> int
+# Extras
+- Plato.raciones_minimalistas: bool // Sibarita
+- Plato.año_creacion: int // Classico / Moderno
+- Ingrediente.regional: bool
+- Cliente.edad: int
