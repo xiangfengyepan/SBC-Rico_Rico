@@ -50,26 +50,50 @@
     )
 )
 
+(deffunction output::merge-por-precio (?izq ?der)
+  (bind ?resultado (create$))
+
+  (while (or (> (length$ ?izq) 0) (> (length$ ?der) 0)) do
+    (if (not (> (length$ ?izq) 0)) then
+      (bind ?resultado (create$ ?resultado ?der))
+      (bind ?der (create$))
+    else
+      (if (not (> (length$ ?der) 0)) then
+        (bind ?resultado (create$ ?resultado ?izq))
+        (bind ?izq (create$))
+      else
+        (bind ?a (nth$ 1 ?izq))
+        (bind ?b (nth$ 1 ?der))
+        (bind ?precio-a (send ?a get-precioMenu))
+        (bind ?precio-b (send ?b get-precioMenu))
+
+        (if (<= ?precio-a ?precio-b) then
+          (bind ?resultado (create$ ?resultado ?a))
+          (bind ?izq (rest$ ?izq))
+        else
+          (bind ?resultado (create$ ?resultado ?b))
+          (bind ?der (rest$ ?der))
+        )
+      )
+    )
+  )
+
+  (return ?resultado)
+)
 
 (deffunction output::ordenar-por-precio (?lista)
-    (bind ?ordenada ?lista)
-    (bind ?n (length$ ?ordenada))
-    (while (> ?n 1) do
-        (bind ?i 1)
-        (while (< ?i ?n) do
-            (bind ?a (nth$ ?i ?ordenada))
-            (bind ?b (nth$ (+ ?i 1) ?ordenada))
+  (if (<= (length$ ?lista) 1) then
+    (return ?lista)
+  )
 
-            (bind ?precio-a (send ?a get-precioMenu))
-            (bind ?precio-b (send ?b get-precioMenu))
+  (bind ?medio (div (length$ ?lista) 2))
+  (bind ?izq (subseq$ ?lista 1 ?medio))
+  (bind ?der (subseq$ ?lista (+ ?medio 1) (length$ ?lista)))
 
-            (if (> ?precio-a ?precio-b) then
-                (bind ?ordenada (replace$ ?ordenada ?i (+ ?i 1) ?b ?a)))
-            (bind ?i (+ ?i 1))
-        )
-        (bind ?n (- ?n 1))
-    )
-    (return ?ordenada)
+  (bind ?ordenada-izq (output::ordenar-por-precio ?izq))
+  (bind ?ordenada-der (output::ordenar-por-precio ?der))
+
+  (return (output::merge-por-precio ?ordenada-izq ?ordenada-der))
 )
 
 (deffunction output::imprimir-comida (?comida)
