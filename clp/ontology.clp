@@ -2,7 +2,7 @@
 ;;; clp/ontology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/ontology.rdf
-;;; :Date 21/05/2025 19:51:54
+;;; :Date 22/05/2025 14:38:02
 
 (defclass Comida
     (is-a USER)
@@ -51,10 +51,10 @@
         (type SYMBOL)(default FALSE)
         (create-accessor read-write))
     (slot tieneAzucar
-        (type SYMBOL)(default FALSE)
+        (type INSTANCE)
         (create-accessor read-write))
     (slot tieneCafeina
-        (type SYMBOL)(default FALSE)
+        (type INSTANCE)
         (create-accessor read-write))
 )
 
@@ -236,43 +236,6 @@
 )
 
 (definstances instances
-    ([AguaMineral] of Bebida
-         (precioComida  100)
-    )
-
-    ([Alta] of Grado
-    )
-
-    ([Andalucia] of Localizacion
-    )
-
-    ([Arroz] of Ingrediente
-         (esOrigenVegetariano  TRUE)
-    )
-
-    ([Asados] of Tipo_Plato
-    )
-
-    ([Baja] of Grado
-    )
-
-    ([Carne] of Tipo_Plato
-    )
-
-    ([Cataluna] of Localizacion
-    )
-
-    ([Cerveza] of Bebida
-         (precioComida  250)
-    )
-
-    ([Chocolate] of Ingrediente
-         (esOrigenVegetariano  TRUE)
-    )
-
-    ([Clasico] of Tipo_Menu
-    )
-
     ([EnsaladaCesar] of Primer_Plato
          (esCompatibleCon  [AguaMineral] [PaellaValenciana])
          (esTradicionalDe  [Cataluna] [Espana])
@@ -287,79 +250,517 @@
          (esCaliente  FALSE)
          (precioComida  350)
          (racionesMinimalistas  FALSE)
-    )
-
-    ([Ensaladas] of Tipo_Plato
-    )
-
-    ([Espana] of Localizacion
-    )
-
-    ([Estofados] of Tipo_Plato
-    )
-
-    ([FlanCasero] of Postre
-         (esCompatibleCon  [PaellaValenciana])
-         (esTradicionalDe  [Andalucia])
-         (tieneComplejidad  [Media])
-         (tieneIngrediente  [Huevo])
-         (esCaliente  FALSE)
-         (precioComida  400)
-    )
-
-    ([Galicia] of Localizacion
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
     )
 
     ([GazpachoAndaluz] of Primer_Plato
-         (esCompatibleCon  [PaellaValenciana])
-         (esTradicionalDe  [Andalucia])
+         (esCompatibleCon  [PaellaValenciana] [AguaMineral])
+         (esTradicionalDe  [Andalucia] [Espana])
          (tieneComplejidad  [Baja])
          (tieneIngrediente  [Pepino] [Tomate])
-         (esCaliente  TRUE)
+         (tieneTipoComida  [Sopas])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  FALSE)
          (precioComida  400)
+         (tieneAzucar  [Media])
+         (tieneCafeina  [Baja])
     )
 
-    ([Guisos] of Tipo_Plato
+    ([CremaCalabaza] of Primer_Plato
+         (esCompatibleCon  [AguaMineral])
+         (esTradicionalDe  [Espana])
+         (tieneComplejidad  [Baja])
+         (tieneIngrediente  [Calabaza] [Cebolla])
+         (tieneTipoComida  [Sopas])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  300)
+         (tieneAzucar  [Media])
+         (tieneCafeina  [Baja])
+    )
+
+    ([HuevosRellenos] of Primer_Plato
+         (esCompatibleCon  [RefrescoCola])
+         (esTradicionalDe  [Espana])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Huevo] [Atun])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  FALSE)
+         (precioComida  350)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([SopaCafe] of Primer_Plato
+         (esCompatibleCon  [FlanCasero])
+         (esTradicionalDe  [Espana])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Cafe] [Leche])
+         (tieneTipoComida  [Sopas])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  TRUE)
+         (esCaliente  TRUE)
+         (precioComida  400)
+         (tieneAzucar  [Alta])
+         (tieneCafeina  [Alta])
+    )
+
+    ([Tabule] of Primer_Plato
+         (esCompatibleCon  [AguaMineral])
+         (esTradicionalDe  [Espana])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Cuscus] [Menta])
+         (tieneTipoComida  [Ensaladas])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  FALSE)
+         (precioComida  320)
+         (tieneAzucar  [Media])
+         (tieneCafeina  [Baja])
+    )
+
+    ([ConsomeJerez] of Primer_Plato
+         (esCompatibleCon  [TortillaPatatas])
+         (esTradicionalDe  [Andalucia])
+         (tieneComplejidad  [Alta])
+         (tieneIngrediente  [CaldoCarne] [Jerez])
+         (tieneTipoComida  [Sopas])
+         (contieneAlcohol  TRUE)
+         (contieneLactosa  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  550)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([MelonConJamon] of Primer_Plato
+         (esCompatibleCon  [AguaMineral] [VinoBlanco])
+         (esTradicionalDe  [Espana] [CastillaLaMancha])
+         (tieneComplejidad  [Baja])
+         (tieneIngrediente  [Melon] [Jamon])
+         (tieneTipoComida  [Ensaladas])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  FALSE)
+         (precioComida  390)
+         (tieneAzucar  [Alta])
+         (tieneCafeina  [Baja])
+    )
+
+    ([Minestrone] of Primer_Plato
+         (esCompatibleCon  [AguaMineral] [TortillaPatatas])
+         (esTradicionalDe  [Italia] [Espana])
+         (tieneComplejidad  [Alta])
+         (tieneIngrediente  [Fideos] [Zanahoria])
+         (tieneTipoComida  [Sopas])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  480)
+         (tieneAzucar  [Media])
+         (tieneCafeina  [Baja])
+    )
+
+    ([AjoBlanco] of Primer_Plato
+         (esCompatibleCon  [AguaMineral] [TortillaPatatas])
+         (esTradicionalDe  [Andalucia] [Espana])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Almendra] [Ajo])
+         (tieneTipoComida  [Sopas])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  FALSE)
+         (precioComida  380)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([PaellaValenciana] of Segundo_Plato
+         (esCompatibleCon  [GazpachoAndaluz] [VinoTinto])
+         (esTradicionalDe  [Cataluna] [Valencia])
+         (tieneComplejidad  [Alta])
+         (tieneIngrediente  [Arroz] [Pollo] [JudiaVerde] [Garrofo])
+         (tieneTipoComida  [Pasta])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  600)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([TortillaPatatas] of Segundo_Plato
+         (esCompatibleCon  [RefrescoCola] [EnsaladaCesar])
+         (esTradicionalDe  [Andalucia] [Madrid])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Huevo] [Patata])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  450)
+         (tieneAzucar  [Media])
+         (tieneCafeina  [Baja])
+    )
+
+    ([TofuTeriyaki] of Segundo_Plato
+         (esCompatibleCon  [AguaMineral] [EnsaladaCesar])
+         (esTradicionalDe  [Andalucia] [Espana])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Tofu] [SalsaTeriyaki] [Brocoli])
+         (tieneTipoComida  [Verduras])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  500)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([PolloAsado] of Segundo_Plato
+         (esCompatibleCon  [AguaMineral] [EnsaladaCesar])
+         (esTradicionalDe  [Andalucia] [Espana])
+         (tieneComplejidad  [Baja])
+         (tieneIngrediente  [Pollo] [Patata] [Especias])
+         (tieneTipoComida  [Carne])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  700)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([Lasaña] of Segundo_Plato
+         (esCompatibleCon  [AguaMineral] [EnsaladaCesar])
+         (esTradicionalDe  [Italia] [Espana])
+         (tieneComplejidad  [Alta])
+         (tieneIngrediente  [CarnePicada] [PastaLamina] [Tomate] [Bechamel])
+         (tieneTipoComida  [Pasta])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  TRUE)
+         (esCaliente  TRUE)
+         (precioComida  850)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([MerluzaEnSalsa] of Segundo_Plato
+         (esCompatibleCon  [AguaMineral] [GazpachoAndaluz])
+         (esTradicionalDe  [Galicia] [Espana])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Merluza] [Ajo] [Perejil] [Guisantes])
+         (tieneTipoComida  [Pescado])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  600)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([SeitanCerveza] of Segundo_Plato
+         (esCompatibleCon  [AguaMineral] [EnsaladaCesar])
+         (esTradicionalDe  [Cataluna] [Espana])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Seitan] [CervezaNegra] [Cebolla])
+         (tieneTipoComida  [Verduras])
+         (contieneAlcohol  TRUE)
+         (contieneLactosa  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  520)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([CanelonesEspinacaRicotta] of Segundo_Plato
+         (esCompatibleCon  [AguaMineral] [GazpachoAndaluz])
+         (esTradicionalDe  [Italia] [Espana])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Espinaca] [Ricotta] [PastaLamina] [Bechamel])
+         (tieneTipoComida  [Pasta])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  TRUE)
+         (esCaliente  TRUE)
+         (precioComida  650)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([SolomilloCafe] of Segundo_Plato
+         (esCompatibleCon  [AguaMineral] [GazpachoAndaluz])
+         (esTradicionalDe  [Madrid] [Espana])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Solomillo] [Cafe] [Patata])
+         (tieneTipoComida  [Carne])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  750)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Alta])
+    )
+
+    ([PistoHuevo] of Segundo_Plato
+         (esCompatibleCon  [AguaMineral] [GazpachoAndaluz])
+         (esTradicionalDe  [CastillaLaMancha] [Espana])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Pimiento] [Calabacin] [Tomate] [Huevo])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  580)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([FlanCasero] of Postre
+         (esCompatibleCon  [MelonConJamon] [AguaMineral])
+         (esTradicionalDe  [Espana] [Andalucia])
+         (tieneComplejidad  [Baja])
+         (tieneIngrediente  [Huevo] [Leche] [Azucar])
+         (tieneTipoComida  [Dulces])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  TRUE)
+         (esCaliente  FALSE)
+         (precioComida  400)
+         (tieneAzucar  [Alta])
+         (tieneCafeina  [Baja])
+    )
+
+    ([Tiramisu] of Postre
+         (esCompatibleCon  [Tabule] [AguaMineral])
+         (esTradicionalDe  [Italia] [Europa])
+         (tieneComplejidad  [Alta])
+         (tieneIngrediente  [Huevo] [Cafe] [Mascarpone] [Bizcocho])
+         (tieneTipoComida  [Dulces])
+         (contieneAlcohol  TRUE)
+         (contieneLactosa  TRUE)
+         (esCaliente  FALSE)
+         (precioComida  700)
+         (tieneAzucar  [Alta])
+         (tieneCafeina  [Alta])
+    )
+
+    ([FrutaFresca] of Postre
+         (esCompatibleCon  [Tabule] [AguaMineral])
+         (esTradicionalDe  [Espana] [Cataluna])
+         (tieneComplejidad  [Baja])
+         (tieneIngrediente  [Fruta])
+         (tieneTipoComida  [Dulces])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  FALSE)
+         (precioComida  300)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([HeladoVainilla] of Postre
+         (esCompatibleCon  [TortillaPatatas] [AguaMineral])
+         (esTradicionalDe  [Espana] [Cataluna])
+         (tieneComplejidad  [Baja])
+         (tieneIngrediente  [Leche] [Azucar] [Vainilla])
+         (tieneTipoComida  [Dulces])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  TRUE)
+         (esCaliente  FALSE)
+         (precioComida  450)
+         (tieneAzucar  [Alta])
+         (tieneCafeina  [Baja])
+    )
+
+    ([YogurConMiel] of Postre
+         (esCompatibleCon  [Tabule] [AguaMineral])
+         (esTradicionalDe  [Murcia] [Valencia])
+         (tieneComplejidad  [Baja])
+         (tieneIngrediente  [Leche] [Miel])
+         (tieneTipoComida  [Dulces])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  TRUE)
+         (esCaliente  FALSE)
+         (precioComida  350)
+         (tieneAzucar  [Media])
+         (tieneCafeina  [Baja])
+    )
+
+    ([MousseChocolate] of Postre
+         (esCompatibleCon  [TortillaPatatas] [AguaMineral])
+         (esTradicionalDe  [Francia] [Europa])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Chocolate] [Leche] [Azucar])
+         (tieneTipoComida  [Dulces])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  TRUE)
+         (esCaliente  FALSE)
+         (precioComida  500)
+         (tieneAzucar  [Alta])
+         (tieneCafeina  [Media])
+    )
+
+    ([PastelManzana] of Postre
+         (esCompatibleCon  [MelonConJamon] [AguaMineral])
+         (esTradicionalDe  [Francia] [Europa])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Manzana] [Leche] [Azucar])
+         (tieneTipoComida  [Dulces])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  TRUE)
+         (esCaliente  TRUE)
+         (precioComida  550)
+         (tieneAzucar  [Alta])
+         (tieneCafeina  [Baja])
+    )
+
+    ([Natillas] of Postre
+         (esCompatibleCon  [GazpachoAndaluz] [AguaMineral])
+         (esTradicionalDe  [Espana] [Andalucia])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Leche] [Azucar] [Huevo] [Canela])
+         (tieneTipoComida  [Dulces])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  TRUE)
+         (esCaliente  FALSE)
+         (precioComida  400)
+         (tieneAzucar  [Alta])
+         (tieneCafeina  [Baja])
+    )
+
+    ([TartaQueso] of Postre
+         (esCompatibleCon  [Tabule] [AguaMineral])
+         (esTradicionalDe  [Espana] [Madrid])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Queso] [Azucar] [Huevo])
+         (tieneTipoComida  [Dulces])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  TRUE)
+         (esCaliente  FALSE)
+         (precioComida  600)
+         (tieneAzucar  [Alta])
+         (tieneCafeina  [Baja])
+    )
+
+    ([MagdalenaIntegral] of Postre
+         (esCompatibleCon  [PistoHuevo] [AguaMineral])
+         (esTradicionalDe  [Espana] [Cataluna])
+         (tieneComplejidad  [Baja])
+         (tieneIngrediente  [HarinaIntegral] [Huevo] [Leche] [Azucar])
+         (tieneTipoComida  [Dulces])
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  TRUE)
+         (esCaliente  FALSE)
+         (precioComida  420)
+         (tieneAzucar  [Media])
+         (tieneCafeina  [Baja])
+    )
+
+    ([AguaMineral] of Bebida
+         (contieneAlcohol  FALSE)
+         (esCaliente  FALSE)
+         (precioComida  100)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([RefrescoCola] of Bebida
+         (contieneAlcohol  FALSE)
+         (esCaliente  FALSE)
+         (precioComida  150)
+         (tieneAzucar  [Alta])
+         (tieneCafeina  [Alta])
+    )
+
+    ([Cerveza] of Bebida
+         (contieneAlcohol  TRUE)
+         (esCaliente  FALSE)
+         (precioComida  250)
+         (tieneAzucar  [Media])
+         (tieneCafeina  [Baja])
+    )
+
+    ([Tonica] of Bebida
+         (contieneAlcohol  FALSE)
+         (esCaliente  FALSE)
+         (precioComida  220)
+         (tieneAzucar  [Media])
+         (tieneCafeina  [Media])
+    )
+
+    ([Sidra] of Bebida
+         (contieneAlcohol  TRUE)
+         (esCaliente  FALSE)
+         (precioComida  350)
+         (tieneAzucar  [Media])
+         (tieneCafeina  [Baja])
+    )
+
+    ([VinoTinto] of Bebida
+         (contieneAlcohol  TRUE)
+         (esCaliente  FALSE)
+         (precioComida  400)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([VinoBlanco] of Bebida
+         (contieneAlcohol  TRUE)
+         (esCaliente  FALSE)
+         (precioComida  375)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([TeVerde] of Bebida
+         (contieneAlcohol  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  200)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Media])
+    )
+
+    ([ZumoNaranja] of Bebida
+         (contieneAlcohol  FALSE)
+         (esCaliente  FALSE)
+         (precioComida  250)
+         (tieneAzucar  [Media])
+         (tieneCafeina  [Baja])
+    )
+
+    ([RefrescoLimon] of Bebida
+         (contieneAlcohol  FALSE)
+         (esCaliente  FALSE)
+         (precioComida  200)
+         (tieneAzucar  [Alta])
+         (tieneCafeina  [Baja])
+    )
+
+    ([ChocolateCaliente] of Bebida
+         (contieneAlcohol  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  350)
+         (tieneAzucar  [Alta])
+         (tieneCafeina  [Media])
+    )
+
+    ([Arroz] of Ingrediente
+         (esOrigenVegetariano  TRUE)
+    )
+
+    ([Chocolate] of Ingrediente
+         (esOrigenVegetariano  TRUE)
     )
 
     ([Huevo] of Ingrediente
     )
 
-    ([Invierno] of Temporada
-    )
-
     ([Lechuga] of Ingrediente
-    )
-
-    ([Madrid] of Localizacion
     )
 
     ([Marisco] of Ingrediente
          (esOrigenVegetariano  FALSE)
-    )
-
-    ([Media] of Grado
-    )
-
-    ([Moderno] of Tipo_Menu
-    )
-
-    ([Otono] of Temporada
-    )
-
-    ([PaellaValenciana] of Segundo_Plato
-         (esCompatibleCon  [GazpachoAndaluz])
-         (esTradicionalDe  [Cataluna])
-         (tieneComplejidad  [Alta])
-         (tieneIngrediente  [Arroz])
-         (esCaliente  TRUE)
-         (precioComida  600)
-    )
-
-    ([PaisVasco] of Localizacion
-    )
-
-    ([Pasta] of Tipo_Plato
     )
 
     ([Patata] of Ingrediente
@@ -369,22 +770,190 @@
          (esOrigenVegetariano  TRUE)
     )
 
-    ([Pescado] of Tipo_Plato
-    )
-
     ([Pollo] of Ingrediente
          (esOrigenVegetariano  FALSE)
-    )
-
-    ([Primavera] of Temporada
     )
 
     ([Queso] of Ingrediente
          (esOrigenVegetariano  FALSE)
     )
 
-    ([RefrescoCola] of Bebida
-         (precioComida  150)
+    ([Tomate] of Ingrediente
+         (esOrigenVegetariano  TRUE)
+    )
+
+    ([Calabaza] of Ingrediente
+         (esOrigenVegetariano  TRUE)
+    )
+
+    ([Cebolla] of Ingrediente
+         (esOrigenVegetariano  TRUE)
+    )
+
+    ([Atun] of Ingrediente
+         (esOrigenVegetariano  FALSE)
+    )
+
+    ([Cafe] of Ingrediente
+         (esOrigenVegetariano  TRUE)
+    )
+
+    ([Leche] of Ingrediente
+         (esOrigenVegetariano  TRUE)
+    )
+
+    ([Cuscus] of Ingrediente
+         (esOrigenVegetariano  TRUE)
+    )
+
+    ([Menta] of Ingrediente
+         (esOrigenVegetariano  TRUE)
+    )
+
+    ([CaldoCarne] of Ingrediente
+         (esOrigenVegetariano  FALSE)
+    )
+
+    ([Jerez] of Ingrediente
+         (esOrigenVegetariano  TRUE)
+    )
+
+    ([Tofu] of Ingrediente
+    )
+
+    ([SalsaTeriyaki] of Ingrediente
+    )
+
+    ([Brocoli] of Ingrediente
+    )
+
+    ([JudiaVerde] of Ingrediente
+    )
+
+    ([Garrofo] of Ingrediente
+    )
+
+    ([Especias] of Ingrediente
+    )
+
+    ([CarnePicada] of Ingrediente
+    )
+
+    ([PastaLamina] of Ingrediente
+    )
+
+    ([Bechamel] of Ingrediente
+    )
+
+    ([Merluza] of Ingrediente
+    )
+
+    ([Perejil] of Ingrediente
+    )
+
+    ([Guisantes] of Ingrediente
+    )
+
+    ([Seitan] of Ingrediente
+    )
+
+    ([CervezaNegra] of Ingrediente
+    )
+
+    ([Espinaca] of Ingrediente
+    )
+
+    ([Ricotta] of Ingrediente
+    )
+
+    ([Solomillo] of Ingrediente
+    )
+
+    ([Pimiento] of Ingrediente
+    )
+
+    ([Calabacin] of Ingrediente
+    )
+
+    ([Azucar] of Ingrediente
+    )
+
+    ([Mascarpone] of Ingrediente
+    )
+
+    ([Bizcocho] of Ingrediente
+    )
+
+    ([Fruta] of Ingrediente
+    )
+
+    ([Vainilla] of Ingrediente
+    )
+
+    ([Miel] of Ingrediente
+    )
+
+    ([Manzana] of Ingrediente
+    )
+
+    ([Canela] of Ingrediente
+    )
+
+    ([HarinaIntegral] of Ingrediente
+    )
+
+    ([Ajo] of Ingrediente
+    )
+
+    ([Almendra] of Ingrediente
+    )
+
+    ([Fideos] of Ingrediente
+    )
+
+    ([Jamon] of Ingrediente
+    )
+
+    ([Melon] of Ingrediente
+    )
+
+    ([Zanahoria] of Ingrediente
+    )
+
+    ([Asados] of Tipo_Plato
+    )
+
+    ([Carne] of Tipo_Plato
+    )
+
+    ([Ensaladas] of Tipo_Plato
+    )
+
+    ([Estofados] of Tipo_Plato
+    )
+
+    ([Guisos] of Tipo_Plato
+    )
+
+    ([Pasta] of Tipo_Plato
+    )
+
+    ([Pescado] of Tipo_Plato
+    )
+
+    ([Sopas] of Tipo_Plato
+    )
+
+    ([Verduras] of Tipo_Plato
+    )
+
+    ([Dulces] of Tipo_Plato
+    )
+
+    ([Clasico] of Tipo_Menu
+    )
+
+    ([Moderno] of Tipo_Menu
     )
 
     ([Regional] of Tipo_Menu
@@ -393,30 +962,61 @@
     ([Sibarita] of Tipo_Menu
     )
 
-    ([Sidra] of Bebida
-         (precioComida  350)
+    ([Alta] of Grado
     )
 
-    ([Sopas] of Tipo_Plato
+    ([Media] of Grado
     )
 
-    ([Tomate] of Ingrediente
-         (esOrigenVegetariano  TRUE)
+    ([Baja] of Grado
     )
 
-    ([TortillaPatatas] of Segundo_Plato
-         (esTradicionalDe  [Espana])
-         (tieneComplejidad  [Media])
-         (tieneIngrediente  [Huevo] [Patata])
-         (esCaliente  TRUE)
-         (precioComida  450)
+    ([Andalucia] of Localizacion
+    )
+
+    ([Cataluna] of Localizacion
+    )
+
+    ([Espana] of Localizacion
+    )
+
+    ([Italia] of Localizacion
+    )
+
+    ([Francia] of Localizacion
+    )
+
+    ([Galicia] of Localizacion
+    )
+
+    ([Madrid] of Localizacion
+    )
+
+    ([PaisVasco] of Localizacion
+    )
+
+    ([CastillaLaMancha] of Localizacion
+    )
+
+    ([Europa] of Localizacion
+    )
+
+    ([Valencia] of Localizacion
+    )
+
+    ([Murcia] of Localizacion
+    )
+
+    ([Invierno] of Temporada
+    )
+
+    ([Otono] of Temporada
+    )
+
+    ([Primavera] of Temporada
     )
 
     ([Verano] of Temporada
-    )
-
-    ([VinoTinto] of Bebida
-         (precioComida  700)
     )
 
 )
