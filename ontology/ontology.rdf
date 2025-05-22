@@ -212,9 +212,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneTipoComida -->
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneTipoPlato -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneTipoComida">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#tieneTipoPlato">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Comida"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tipo_Plato"/>
     </owl:ObjectProperty>
@@ -558,12 +558,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tipo_Bebida -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tipo_Bebida"/>
-    
-
-
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tipo_Menu -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tipo_Menu"/>
@@ -601,8 +595,8 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Lechuga"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pollo"/>
         <untitled-ontology-14:tieneProteinas rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Carne"/>
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ensaladas"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Carne"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ensaladas"/>
         <untitled-ontology-14:contieneAlcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:contieneAlcohol>
         <untitled-ontology-14:contieneLactosa rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:contieneLactosa>
         <untitled-ontology-14:tieneAzucar rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
@@ -628,7 +622,7 @@
             <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pepino"/>
             <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tomate"/>
 
-            <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas"/>
+            <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas"/>
 
             <untitled-ontology-14:tieneAzucar rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
             <untitled-ontology-14:tieneCafeina rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
@@ -650,7 +644,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Calabaza"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cebolla"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral"/>
@@ -699,7 +693,7 @@
 
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cafe"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Leche"/>
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#FlanCasero"/>
@@ -724,7 +718,7 @@
 
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cuscus"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Menta"/>
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ensaladas"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ensaladas"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral"/>
@@ -749,7 +743,7 @@
 
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#CaldoCarne"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Jerez"/>
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TortillaPatatas"/>
@@ -774,7 +768,7 @@
 
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Melon"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Jamon"/>
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ensaladas"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ensaladas"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral"/>
@@ -803,7 +797,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Fideos"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Zanahoria"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral"/>
@@ -833,7 +827,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Almendra"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ajo"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Sopas"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral"/>
@@ -866,7 +860,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#JudiaVerde"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Garrofo"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pasta"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pasta"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#GazpachoAndaluz"/>
@@ -924,7 +918,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#SalsaTeriyaki"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Brocoli"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verduras"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verduras"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral"/>
@@ -954,7 +948,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Patata"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Especias"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Carne"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Carne"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral"/>
@@ -985,7 +979,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tomate"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Bechamel"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pasta"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pasta"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral"/>
@@ -1016,7 +1010,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Perejil"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Guisantes"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pescado"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pescado"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral"/>
@@ -1046,7 +1040,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#CervezaNegra"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cebolla"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verduras"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verduras"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral"/>
@@ -1077,7 +1071,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#PastaLamina"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Bechamel"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pasta"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pasta"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral"/>
@@ -1107,7 +1101,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cafe"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Patata"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Carne"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Carne"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#AguaMineral"/>
@@ -1169,7 +1163,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Leche"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Azucar"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#MelonConJamon"/>
@@ -1200,7 +1194,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Mascarpone"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Bizcocho"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tabule"/>
@@ -1228,7 +1222,7 @@
 
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Fruta"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tabule"/>
@@ -1258,7 +1252,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Azucar"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Vainilla"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TortillaPatatas"/>
@@ -1287,7 +1281,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Leche"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Miel"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tabule"/>
@@ -1317,7 +1311,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Leche"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Azucar"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TortillaPatatas"/>
@@ -1347,7 +1341,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Leche"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Azucar"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#MelonConJamon"/>
@@ -1378,7 +1372,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Huevo"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Canela"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#GazpachoAndaluz"/>
@@ -1408,7 +1402,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Azucar"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Huevo"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Tabule"/>
@@ -1439,7 +1433,7 @@
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Leche"/>
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Azucar"/>
 
-        <untitled-ontology-14:tieneTipoComida rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Dulces"/>
         <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
 
         <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#PistoHuevo"/>
