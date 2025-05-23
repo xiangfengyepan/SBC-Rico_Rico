@@ -26,5 +26,9 @@
 - Refresco
 ...
 
-# Extras
-
+# Important attributs missing in instances
+anoCreacion (Plato)
+esOrigenVegetariano (Ingrediente)
+esRegional (Ingrediente)
+racionesMinimalistas (Plato)
+esTemporada (Ingrediente)

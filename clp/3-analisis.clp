@@ -46,38 +46,44 @@
 
 (defrule menu-clasico
     (object (is-a Cliente) (prefiereEstilo [Clasico]))
-    ; plato.año_creacion < 2000
+    ?plato <- (object (is-a Plato) (anoCreacion ?creacion))
+    (test (< 2000 ?creacion))
     =>
-    ; (send ?plato delete)
+    (send ?plato delete)
 )
 
 (defrule menu-moderno
     (object (is-a Cliente) (prefiereEstilo [Moderno]))
-    ; plato.año_creacion > 2015
+    ?plato <- (object (is-a Plato) (anoCreacion ?creacion))
+    (test (< ?creacion 2000))
     =>
-    ; (send ?plato delete)
+    (send ?plato delete)
 )
 
 (defrule menu-regional
-    (object (is-a Cliente) (prefiereEstilo [Moderno]))
-    ; number of ingredientes no regional de plato > 1
+    (object (is-a Cliente) (prefiereEstilo [Regional]))
+    ?plato <- (object (is-a Plato) (tieneIngrediente $?ingredientes))
     =>
-    ; (send ?plato delete)
+    ; if plato.ingredientes.filter(ing => not ing.esRegional).length > 1
+    (bind ?no-regional (find-all-instances ((?i Ingrediente)) (and (member$ ?i $?ingredientes) (not ?i:esRegional))))
+    (if (> (length$ ?no-regional) 1) then (send ?plato delete))
 )
 
 (defrule menu-sibarita
-    (object (is-a Cliente) (prefiereEstilo [Moderno]))
-    ; plato.raciones_minimalistas = true
+    (object (is-a Cliente) (prefiereEstilo [Sibarita]))
+    ?plato <- (object (is-a Plato) (racionesMinimalistas FALSE))
     =>
-    ; (send ?plato delete)
+    (send ?plato delete)
 )
 
 (defrule temporada
     (object (is-a Evento) (esTemporadaEvento ?temporadaEvento))
-    ?ingrediente <- (object (is-a Ingrediente) (esTemporada ?temporadasIng))
-    ;(test (not (member$ ?temporadaEvento ?temporadasIng)))
+    ?ingrediente <- (object (is-a Ingrediente) (esTemporada $?temporadasIng))
+    (test (and 
+        (> (length$ ?temporadasIng) 0)
+        (not (member$ ?temporadaEvento ?temporadasIng))))
     =>
-    ;(send ?ingrediente delete)
+    (send ?ingrediente delete)
 )
 
 (defrule complejidad-alta
@@ -94,6 +100,30 @@
     (test (not (> ?numeroComersales 10)))
     =>
     (send ?ingrediente delete)
+)
+
+; Bautizo, Familiar, Bautizo => evento con niños => No Alcohol
+(defrule evento-con-menores
+    (or (object (is-a Familiar)) (object (is-a Comunion))  (object (is-a Bautizo)))
+    ?comida <- (object (is-a Comida) (contieneAlcohol TRUE))
+    =>
+    (send ?comida delete)
+)
+
+; Boda => evvitar comida casual 
+(defrule boda
+    (object (is-a Boda))
+    ?comida <- (object (is-a Comida) (precioComida ?precio))
+    (test (< ?precio 300))
+    =>
+    (send ?comida delete)
+)
+
+(defrule eventos-simples
+    (or (object (is-a Familiar)) (object (is-a Congreso)))
+    ?ing <- (object (is-a Comida) (tieneComplejidad Alta))
+    =>
+    (send ?ing delete)
 )
 
 ; TODO: restriccion tipo evento (Bautizo / Boda / Comunion / Congreso)
