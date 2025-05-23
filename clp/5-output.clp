@@ -113,7 +113,7 @@
     (bind ?ingredientes (send ?comida get-tieneIngrediente))
     (print-list-with-bullets "Ingredientes" ?ingredientes "     " "◦ ")
 
-    (bind ?tiene-tipo (send ?comida get-tieneTipoComida))
+    (bind ?tiene-tipo (send ?comida get-tieneTipoPlato))
     (print-list-with-bullets "Tipo de Comida" ?tiene-tipo "     " "◦ ")
     
     (bind ?compatibles (send ?comida get-esCompatibleCon))
