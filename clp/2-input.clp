@@ -83,9 +83,9 @@
 ;; Convierte un número en un grado (bajo, medio, alto)
 (deffunction input::obtener-grado (?numero)
     (bind ?grado 
-        (if (eq ?numero 2) then [Alto]
-        else (if (eq ?numero 1) then [Medio]
-        else (if (eq ?numero 0) then [Bajo]
+        (if (eq ?numero 2) then [Alta]
+        else (if (eq ?numero 1) then [Media]
+        else (if (eq ?numero 0) then [Baja]
         else nil)))
     )
     (return ?grado)
@@ -129,7 +129,7 @@
     (bind ?esIntoleranteLactosa (obtener-booleano (input::seleccion-una-opcion "Eres intolerante a la lactosa? (t: TRUE f: FALSE): " t f)))
 
     ;; Solicita nivel de actividad física y estilo preferido
-    (bind ?haceDeporte (input::obtener-grado (input::seleccion-una-opcion "Haces deporte? (0:Bajo 1:Medio 2:Alto ): " 0 1 2)))
+    (bind ?haceDeporte (input::obtener-grado (input::seleccion-una-opcion "Haces deporte? (0:Bajo 1:Media 2:Alto ): " 0 1 2)))
     (bind ?preferencia (input::obtener-estilo (input::seleccion-una-opcion "Si tiene alguna preferencia introduzcala (0:Clasico 1:Moderno 2:Regional 3:Sibarita), en caso contrario elija -1: " -1 0 1 2 3)))
 
     ;; Solicita tipo de evento, temporada y número de comensales

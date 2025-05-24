@@ -2,7 +2,49 @@
 ;;; clp/ontology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/ontology.rdf
-;;; :Date 24/05/2025 17:33:46
+;;; :Date 24/05/2025 18:01:02
+
+(defclass Evento
+    (is-a USER)
+    (role concrete)
+    (pattern-match reactive)
+    (slot esTemporadaEvento
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot numeroComersales
+        (type INTEGER)(default -9999)
+        (create-accessor read-write))
+)
+
+(defclass Congreso
+    (is-a Evento)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Familiar
+    (is-a Evento)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Bautizo
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Boda
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Comunion
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
 
 (defclass Comida
     (is-a USER)
@@ -84,48 +126,6 @@
 
 (defclass Segundo_Plato
     (is-a Plato)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Evento
-    (is-a USER)
-    (role concrete)
-    (pattern-match reactive)
-    (slot esTemporadaEvento
-        (type INSTANCE)
-        (create-accessor read-write))
-    (slot numeroComersales
-        (type INTEGER)(default -9999)
-        (create-accessor read-write))
-)
-
-(defclass Congreso
-    (is-a Evento)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Familiar
-    (is-a Evento)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Bautizo
-    (is-a Familiar)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Boda
-    (is-a Familiar)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Comunion
-    (is-a Familiar)
     (role concrete)
     (pattern-match reactive)
 )
