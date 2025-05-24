@@ -211,27 +211,27 @@
     (printout t "┃" (center-text (str-cat "Numero de menus encontrados: " (length$ ?todos-menus)) ?box-width) "┃" crlf)
     (printout t "┗" (rep-str ?box-width "━") "┛" crlf)
 
-    ; Si hay suficientes menús, mostrar económico, intermedio y premium
-    (if (>= (length$ ?todos-menus) 3) then
-        (bind ?ordenados (output::ordenar-por-precio ?todos-menus))
-        (bind ?menu-barato (nth$ 1 ?ordenados))
-        (bind ?menu-medio (nth$ (div (+ 1 (length$ ?ordenados)) 2) ?ordenados))
-        (bind ?menu-caro (nth$ (length$ ?ordenados) ?ordenados))
+    ; ; Si hay suficientes menús, mostrar económico, intermedio y premium
+    ; (if (>= (length$ ?todos-menus) 3) then
+    ;     (bind ?ordenados (output::ordenar-por-precio ?todos-menus))
+    ;     (bind ?menu-barato (nth$ 1 ?ordenados))
+    ;     (bind ?menu-medio (nth$ (div (+ 1 (length$ ?ordenados)) 2) ?ordenados))
+    ;     (bind ?menu-caro (nth$ (length$ ?ordenados) ?ordenados))
 
-        (print-menu-box ?menu-barato "MENÚ ECONÓMICO")
-        (print-menu-box ?menu-medio "MENÚ INTERMEDIO")
-        (print-menu-box ?menu-caro "MENÚ PREMIUM")
+    ;     (print-menu-box ?menu-barato "MENÚ ECONÓMICO")
+    ;     (print-menu-box ?menu-medio "MENÚ INTERMEDIO")
+    ;     (print-menu-box ?menu-caro "MENÚ PREMIUM")
 
-        ; Si hay menos de 3 menús, mostrar los que haya disponibles
-        else (if (>= (length$ ?todos-menus) 1) then
-                (if (>= (length$ ?todos-menus) 1) then
-                    (bind ?menu1 (nth$ 1 ?todos-menus))
-                    (print-menu-box ?menu1 "MENÚ 1"))
-                (if (>= (length$ ?todos-menus) 2) then
-                    (bind ?menu2 (nth$ 2 ?todos-menus))
-                    (print-menu-box ?menu2 "MENÚ 2"))
-        else
-            (printout t "  ⚠ No hay suficientes menús en el rango especificado" crlf crlf)
-        )
-    )
+    ;     ; Si hay menos de 3 menús, mostrar los que haya disponibles
+    ;     else (if (>= (length$ ?todos-menus) 1) then
+    ;             (if (>= (length$ ?todos-menus) 1) then
+    ;                 (bind ?menu1 (nth$ 1 ?todos-menus))
+    ;                 (print-menu-box ?menu1 "MENÚ 1"))
+    ;             (if (>= (length$ ?todos-menus) 2) then
+    ;                 (bind ?menu2 (nth$ 2 ?todos-menus))
+    ;                 (print-menu-box ?menu2 "MENÚ 2"))
+    ;     else
+    ;         (printout t "  ⚠ No hay suficientes menús en el rango especificado" crlf crlf)
+    ;     )
+    ; )
 )

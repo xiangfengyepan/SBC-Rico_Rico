@@ -24,7 +24,7 @@
 
 (defrule lactosa
     (object (is-a Cliente) (esIntoleranteLactosa TRUE))
-    ?ingrediente <- (object (is-a Comida) (contieneLactosa FALSE))
+    ?ingrediente <- (object (is-a Comida) (contieneLactosa TRUE))
     =>
     (send ?ingrediente delete)
 )
