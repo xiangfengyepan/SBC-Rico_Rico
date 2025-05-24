@@ -2,7 +2,7 @@
 ;;; clp/ontology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/ontology.rdf
-;;; :Date 24/05/2025 14:24:44
+;;; :Date 24/05/2025 14:45:42
 
 (defclass Comida
     (is-a USER)
@@ -944,178 +944,321 @@
     )
 
     ([Arroz] of Ingrediente
+         (esTemporada  [Verano] [Otono])
          (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Chocolate] of Ingrediente
+         (esTemporada  [Invierno] [Primavera])
          (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Huevo] of Ingrediente
+         (esTemporada  [Primavera] [Verano] [Otono])
+         (esOrigenVegetariano  FALSE)
+         (esRegional  FALSE)
     )
 
     ([Lechuga] of Ingrediente
+         (esTemporada  [Primavera] [Verano])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Marisco] of Ingrediente
+         (esTemporada  [Invierno] [Otono])
          (esOrigenVegetariano  FALSE)
+         (esRegional  TRUE)
     )
 
     ([Patata] of Ingrediente
+         (esTemporada  [Invierno] [Otono])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Pepino] of Ingrediente
+         (esTemporada  [Verano])
          (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Pollo] of Ingrediente
+         (esTemporada  [Primavera] [Verano])
          (esOrigenVegetariano  FALSE)
+         (esRegional  FALSE)
     )
 
     ([Queso] of Ingrediente
+         (esTemporada  [Invierno] [Otono])
          (esOrigenVegetariano  FALSE)
+         (esRegional  TRUE)
     )
 
     ([Tomate] of Ingrediente
+         (esTemporada  [Verano] [Primavera])
          (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Calabaza] of Ingrediente
+         (esTemporada  [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Cebolla] of Ingrediente
+         (esTemporada  [Primavera] [Verano])
          (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Atun] of Ingrediente
+         (esTemporada  [Verano])
          (esOrigenVegetariano  FALSE)
+         (esRegional  FALSE)
     )
 
     ([Cafe] of Ingrediente
+         (esTemporada  [Primavera])
          (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Leche] of Ingrediente
+         (esTemporada  [Invierno] [Otono] [TodoElAño])
          (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE TRUE)
     )
 
     ([Cuscus] of Ingrediente
+         (esTemporada  [Verano])
          (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Menta] of Ingrediente
+         (esTemporada  [Primavera] [Verano])
          (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([CaldoCarne] of Ingrediente
+         (esTemporada  [Invierno])
          (esOrigenVegetariano  FALSE)
+         (esRegional  FALSE)
     )
 
     ([Jerez] of Ingrediente
+         (esTemporada  [Otono])
          (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Tofu] of Ingrediente
+         (esTemporada  [Primavera])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([SalsaTeriyaki] of Ingrediente
+         (esTemporada  [Otono] [Invierno])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Brocoli] of Ingrediente
+         (esTemporada  [Primavera] [Verano])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([JudiaVerde] of Ingrediente
+         (esTemporada  [Verano])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Garrofo] of Ingrediente
+         (esTemporada  [Primavera] [Verano])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Especias] of Ingrediente
+         (esTemporada  [Otono])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([CarnePicada] of Ingrediente
+         (esTemporada  [Otono] [Invierno])
+         (esOrigenVegetariano  FALSE)
+         (esRegional  TRUE)
     )
 
     ([PastaLamina] of Ingrediente
+         (esTemporada  [Primavera] [Verano])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Bechamel] of Ingrediente
+         (esTemporada  [Invierno])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Merluza] of Ingrediente
+         (esTemporada  [Primavera] [Verano])
+         (esOrigenVegetariano  FALSE)
+         (esRegional  TRUE)
     )
 
     ([Perejil] of Ingrediente
+         (esTemporada  [Primavera] [Verano])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Guisantes] of Ingrediente
+         (esTemporada  [Primavera])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Seitan] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([CervezaNegra] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Espinaca] of Ingrediente
+         (esTemporada  [Primavera] [Otono])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Ricotta] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Solomillo] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  FALSE)
+         (esRegional  TRUE)
     )
 
     ([Pimiento] of Ingrediente
+         (esTemporada  [Verano])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Calabacin] of Ingrediente
+         (esTemporada  [Verano])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Azucar] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Mascarpone] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Bizcocho] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Fruta] of Ingrediente
+         (esTemporada  [Variable])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Vainilla] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([Miel] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Manzana] of Ingrediente
+         (esTemporada  [Otoño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Canela] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  FALSE)
     )
 
     ([HarinaIntegral] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Ajo] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Almendra] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Fideos] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Jamon] of Ingrediente
+         (esTemporada  [TodoElAño])
+         (esOrigenVegetariano  FALSE)
+         (esRegional  TRUE)
     )
 
     ([Melon] of Ingrediente
+         (esTemporada  [Verano])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Zanahoria] of Ingrediente
+         (esTemporada  [Otoño])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
     )
 
     ([Asados] of Tipo_Plato

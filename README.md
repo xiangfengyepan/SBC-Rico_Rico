@@ -27,13 +27,10 @@
 ...
 
 # Important attributs missing in instances
+
+
 esTemporada (Ingrediente)
 esRegional (Ingrediente)
-
-
-
-
-
 anoCreacion (Plato)
     Si año_creacion < 1900 → Comida tradicional
     Si año_creacion >= 2000 → Comida moderna
