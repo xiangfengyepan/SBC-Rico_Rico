@@ -27,8 +27,15 @@
 ...
 
 # Important attributs missing in instances
-anoCreacion (Plato)
-esOrigenVegetariano (Ingrediente)
-esRegional (Ingrediente)
-racionesMinimalistas (Plato)
 esTemporada (Ingrediente)
+esRegional (Ingrediente)
+
+
+
+
+
+anoCreacion (Plato)
+    Si año_creacion < 1900 → Comida tradicional
+    Si año_creacion >= 2000 → Comida moderna
+esOrigenVegetariano (Ingrediente)
+racionesMinimalistas (Plato)
