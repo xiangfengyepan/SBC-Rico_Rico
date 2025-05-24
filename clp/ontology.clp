@@ -2,7 +2,7 @@
 ;;; clp/ontology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/ontology.rdf
-;;; :Date 24/05/2025 15:52:56
+;;; :Date 24/05/2025 15:58:09
 
 (defclass Comida
     (is-a USER)

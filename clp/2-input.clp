@@ -48,7 +48,7 @@
     (printout t ?question)
     (printout t " Las opciones son: " $?opciones crlf)
     (bind ?response (read))
-    ;; Valida que la respuesta esté en las opciones
+    ;; Valida que la respuesta esté dentro de las opciones
     (while (not (member$ ?response $?opciones)) do 
         (printout t "La respuesta introducida no forma parte de las opciones. Intente de nuevo" crlf)
         (bind ?response (read))
