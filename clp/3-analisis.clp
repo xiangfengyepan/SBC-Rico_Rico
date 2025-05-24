@@ -29,20 +29,41 @@
     (send ?ingrediente delete)
 )
 
-(defrule deporte-medio
-    (object (is-a Cliente) (haceDeporte [Media]))
-    ?ingrediente <- (object (is-a Comida) (tieneProteinas [Baja]))
+(defrule deporte-bajo-primer
+    (object (is-a Cliente) (haceDeporte [Baja]))
+    ?plato <- (object (is-a Primer_Plato) (tieneAzucar  [Alta]))
     =>
-    (send ?ingrediente delete)
+    (send ?plato delete)
 )
 
-(defrule deporte-alto
-    (object (is-a Cliente) (haceDeporte [Alto]))
-    ?ingrediente <- (object (is-a Comida) (tieneProteinas ?proteinas))
-    (test (or (eq ?proteinas [Baja]) (eq ?proteinas [Media])))
+(defrule deporte-bajo-segundo
+    (object (is-a Cliente) (haceDeporte [Baja]))
+    ?plato <- (object (is-a Segundo_Plato) (tieneAzucar  [Alta]))
     =>
-    (send ?ingrediente delete)
+    (send ?plato delete)
 )
+
+(defrule deporte-medio
+    (object (is-a Cliente) (haceDeporte [Media]))
+    ?plato <- (object (is-a Plato) (tieneProteinas [Baja]) (tieneAzucar  [Baja]))
+    =>
+    (send ?plato delete)
+)
+
+(defrule deporte-alto-proteinas
+    (object (is-a Cliente) (haceDeporte [Alta]))
+    ?plato <- (object (is-a Plato) (tieneProteinas [Baja]) (tieneCarbohidratos  [Baja]))
+    =>
+    (send ?plato delete)
+)
+
+(defrule deporte-alto-azucar
+    (object (is-a Cliente) (haceDeporte [Alta]))
+    ?plato <- (object (is-a Plato) (tieneAzucar  [Baja]))
+    =>
+    (send ?plato delete)
+)
+
 
 (defrule menu-clasico
     (object (is-a Cliente) (prefiereEstilo [Clasico]))
@@ -76,20 +97,27 @@
     (send ?plato delete)
 )
 
-(defrule temporada
+(defrule temporada-new
     (object (is-a Evento) (esTemporadaEvento ?temporadaEvento))
-    ?ingrediente <- (object (is-a Ingrediente) (esTemporada $?temporadasIng))
-    (test (and 
-        (> (length$ ?temporadasIng) 0)
-        (not (member$ ?temporadaEvento ?temporadasIng))))
+    ?plato <- (object (is-a Plato) (tieneIngrediente $?ingredientes))
     =>
-    (send ?ingrediente delete)
+    ; if plato.ingredientes.filter(ing => not ing.temporadas.includes(temporadaEvento)).length > 1
+    (bind ?no-temporada 
+        (find-all-instances ((?i Ingrediente)) 
+            (and 
+                (member$ ?i $?ingredientes)
+                (> (length$ ?i:esTemporada) 0)
+                (not (member$ ?temporadaEvento ?i:esTemporada))
+            )
+        )
+    )
+    (if (> (length$ ?no-temporada) 1) then (send ?plato delete))
 )
 
 (defrule complejidad-alta
     (object (is-a Evento) (numeroComersales ?numeroComersales))
     ?ingrediente <- (object (is-a Comida) (tieneComplejidad [Alta]))
-    (test (not (> ?numeroComersales 6)))
+    (test (not (> ?numeroComersales 10)))
     =>
     (send ?ingrediente delete)
 )
@@ -120,8 +148,10 @@
 )
 
 (defrule eventos-simples
+    (object (is-a Evento) (numeroComersales ?numeroComersales))
     (or (object (is-a Familiar)) (object (is-a Congreso)))
     ?ing <- (object (is-a Comida) (tieneComplejidad [Alta]))
+    (test (not (> ?numeroComersales 4)))
     =>
     (send ?ing delete)
 )
