@@ -2,7 +2,7 @@
 ;;; clp/ontology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/ontology.rdf
-;;; :Date 24/05/2025 15:58:09
+;;; :Date 24/05/2025 17:33:46
 
 (defclass Comida
     (is-a USER)
@@ -980,7 +980,7 @@
     )
 
     ([Pepino] of Ingrediente
-         (esTemporada  [Verano])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
          (esRegional  FALSE)
     )
@@ -1016,19 +1016,19 @@
     )
 
     ([Atun] of Ingrediente
-         (esTemporada  [Verano])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  FALSE)
          (esRegional  FALSE)
     )
 
     ([Cafe] of Ingrediente
-         (esTemporada  [Primavera])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
          (esRegional  TRUE)
     )
 
     ([Cuscus] of Ingrediente
-         (esTemporada  [Verano])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
          (esRegional  FALSE)
     )
@@ -1040,19 +1040,19 @@
     )
 
     ([CaldoCarne] of Ingrediente
-         (esTemporada  [Invierno])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  FALSE)
          (esRegional  FALSE)
     )
 
     ([Jerez] of Ingrediente
-         (esTemporada  [Otono])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
          (esRegional  TRUE)
     )
 
     ([Tofu] of Ingrediente
-         (esTemporada  [Primavera])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
          (esRegional  FALSE)
     )
@@ -1070,7 +1070,7 @@
     )
 
     ([JudiaVerde] of Ingrediente
-         (esTemporada  [Verano])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
          (esRegional  TRUE)
     )
@@ -1082,7 +1082,7 @@
     )
 
     ([Especias] of Ingrediente
-         (esTemporada  [Otono])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
          (esRegional  FALSE)
     )
@@ -1100,7 +1100,7 @@
     )
 
     ([Bechamel] of Ingrediente
-         (esTemporada  [Invierno])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
          (esRegional  FALSE)
     )
@@ -1118,7 +1118,7 @@
     )
 
     ([Guisantes] of Ingrediente
-         (esTemporada  [Primavera])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
          (esRegional  TRUE)
     )
@@ -1154,13 +1154,13 @@
     )
 
     ([Pimiento] of Ingrediente
-         (esTemporada  [Verano])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
          (esRegional  TRUE)
     )
 
     ([Calabacin] of Ingrediente
-         (esTemporada  [Verano])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
          (esRegional  TRUE)
     )
@@ -1250,13 +1250,13 @@
     )
 
     ([Melon] of Ingrediente
-         (esTemporada  [Verano])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
          (esRegional  TRUE)
     )
 
     ([Zanahoria] of Ingrediente
-         (esTemporada  [Otono])
+         (esTemporada  [Primavera] [Verano] [Otono] [Invierno])
          (esOrigenVegetariano  TRUE)
          (esRegional  TRUE)
     )
