@@ -1046,9 +1046,9 @@
 
 
 
-    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Lasaña -->
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Lasana -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Lasaña">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Lasana">
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Segundo_Plato"/>
 
         <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#CarnePicada"/>
@@ -1943,16 +1943,6 @@
         <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
     </owl:NamedIndividual>
 
-    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Leche -->
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Leche">
-        <rdf:type rdf:resource="#Ingrediente"/>
-        <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
-        <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
-    </owl:NamedIndividual>
-
-
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cuscus -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cuscus">
@@ -2103,7 +2093,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#CervezaNegra -->
@@ -2111,7 +2104,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Espinaca -->
@@ -2128,7 +2124,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
 
@@ -2138,7 +2137,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pimiento -->
@@ -2162,7 +2164,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Azucar -->
@@ -2170,7 +2175,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
 
@@ -2180,7 +2188,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Bizcocho -->
@@ -2188,7 +2199,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Fruta -->
@@ -2196,7 +2210,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Variable"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Vainilla -->
@@ -2204,7 +2221,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Miel -->
@@ -2212,7 +2232,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
 
@@ -2222,7 +2245,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otoño"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Canela -->
@@ -2230,7 +2253,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#HarinaIntegral -->
@@ -2238,7 +2264,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ajo -->
@@ -2246,7 +2275,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Almendra -->
@@ -2254,7 +2286,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
 
@@ -2263,7 +2298,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Jamon -->
@@ -2271,7 +2309,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#TodoElAño"/>
+                <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Verano"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Invierno"/>
     </owl:NamedIndividual>
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Melon -->
@@ -2287,7 +2328,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
-        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otoño"/>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
     </owl:NamedIndividual>
 
 

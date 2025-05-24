@@ -121,7 +121,7 @@
 
 (defrule eventos-simples
     (or (object (is-a Familiar)) (object (is-a Congreso)))
-    ?ing <- (object (is-a Comida) (tieneComplejidad Alta))
+    ?ing <- (object (is-a Comida) (tieneComplejidad [Alta]))
     =>
     (send ?ing delete)
 )
