@@ -1914,7 +1914,7 @@
 
    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Calabaza -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Calabaza">
-        <rdf:type rdf:resource="#Ingrediente"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
         <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
@@ -1923,7 +1923,7 @@
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cebolla -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cebolla">
-        <rdf:type rdf:resource="#Ingrediente"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esRegional>
         <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
@@ -1932,7 +1932,7 @@
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Atun -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Atun">
-        <rdf:type rdf:resource="#Ingrediente"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esRegional>
         <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
@@ -1943,7 +1943,7 @@
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cafe -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cafe">
-        <rdf:type rdf:resource="#Ingrediente"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
         <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
@@ -1955,7 +1955,7 @@
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cuscus -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cuscus">
-        <rdf:type rdf:resource="#Ingrediente"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esRegional>
         <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
@@ -1966,7 +1966,7 @@
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Menta -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Menta">
-        <rdf:type rdf:resource="#Ingrediente"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
         <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
@@ -1975,7 +1975,7 @@
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#CaldoCarne -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#CaldoCarne">
-        <rdf:type rdf:resource="#Ingrediente"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esRegional>
         <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
@@ -1986,7 +1986,7 @@
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Jerez -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Jerez">
-        <rdf:type rdf:resource="#Ingrediente"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
         <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Primavera"/>
