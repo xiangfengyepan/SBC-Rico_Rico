@@ -2,7 +2,49 @@
 ;;; clp/ontology.clp
 ;;; Translated by owl2clips
 ;;; Translated to CLIPS from ontology ontology/ontology.rdf
-;;; :Date 25/05/2025 15:43:10
+;;; :Date 26/05/2025 19:10:32
+
+(defclass Evento
+    (is-a USER)
+    (role concrete)
+    (pattern-match reactive)
+    (slot esTemporadaEvento
+        (type INSTANCE)
+        (create-accessor read-write))
+    (slot numeroComersales
+        (type INTEGER)(default -9999)
+        (create-accessor read-write))
+)
+
+(defclass Congreso
+    (is-a Evento)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Familiar
+    (is-a Evento)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Bautizo
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Boda
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
+
+(defclass Comunion
+    (is-a Familiar)
+    (role concrete)
+    (pattern-match reactive)
+)
 
 (defclass Comida
     (is-a USER)
@@ -84,48 +126,6 @@
 
 (defclass Segundo_Plato
     (is-a Plato)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Evento
-    (is-a USER)
-    (role concrete)
-    (pattern-match reactive)
-    (slot esTemporadaEvento
-        (type INSTANCE)
-        (create-accessor read-write))
-    (slot numeroComersales
-        (type INTEGER)(default -9999)
-        (create-accessor read-write))
-)
-
-(defclass Congreso
-    (is-a Evento)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Familiar
-    (is-a Evento)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Bautizo
-    (is-a Familiar)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Boda
-    (is-a Familiar)
-    (role concrete)
-    (pattern-match reactive)
-)
-
-(defclass Comunion
-    (is-a Familiar)
     (role concrete)
     (pattern-match reactive)
 )
@@ -420,6 +420,25 @@
          (tieneCafeina  [Baja])
     )
 
+    ([HamburguesaDeLentejas] of Segundo_Plato
+         (esCompatibleCon  [EnsaladaCesar])
+         (esTradicionalDe  [Valencia])
+         (tieneCalorias  [Alta])
+         (tieneCarbohidratos  [Alta])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Zanahoria])
+         (tieneProteinas  [Alta])
+         (tieneTipoPlato  [Carne])
+         (anoCreacion  2010)
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  TRUE)
+         (precioComida  600)
+         (racionesMinimalistas  FALSE)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
     ([PaellaValenciana] of Segundo_Plato
          (esCompatibleCon  [GazpachoAndaluz] [VinoTinto])
          (esTradicionalDe  [Cataluna] [Valencia])
@@ -472,7 +491,7 @@
          (contieneLactosa  FALSE)
          (esCaliente  TRUE)
          (precioComida  500)
-         (racionesMinimalistas  FALSE)
+         (racionesMinimalistas  TRUE)
          (tieneAzucar  [Baja])
          (tieneCafeina  [Baja])
     )
@@ -529,7 +548,7 @@
          (contieneLactosa  FALSE)
          (esCaliente  TRUE)
          (precioComida  600)
-         (racionesMinimalistas  FALSE)
+         (racionesMinimalistas  TRUE)
          (tieneAzucar  [Baja])
          (tieneCafeina  [Baja])
     )
@@ -548,7 +567,7 @@
          (contieneLactosa  FALSE)
          (esCaliente  TRUE)
          (precioComida  520)
-         (racionesMinimalistas  FALSE)
+         (racionesMinimalistas  TRUE)
          (tieneAzucar  [Baja])
          (tieneCafeina  [Baja])
     )
@@ -606,6 +625,41 @@
          (esCaliente  TRUE)
          (precioComida  580)
          (racionesMinimalistas  FALSE)
+         (tieneAzucar  [Baja])
+         (tieneCafeina  [Baja])
+    )
+
+    ([PerasAlVino] of Postre
+         (tieneCalorias  [Media])
+         (tieneCarbohidratos  [Alta])
+         (tieneComplejidad  [Media])
+         (tieneIngrediente  [Pera] [VinoTinto] [Canela])
+         (tieneProteinas  [Baja])
+         (tieneTipoPlato  [Fruta])
+         (anoCreacion  1975)
+         (contieneAlcohol  TRUE)
+         (contieneLactosa  FALSE)
+         (esCaliente  FALSE)
+         (precioComida  400)
+         (racionesMinimalistas  TRUE)
+         (tieneAzucar  [Media])
+         (tieneCafeina  [Baja])
+    )
+
+    ([MacedoniaDeFrutas] of Postre
+         (esTradicionalDe  [Cataluna])
+         (tieneCalorias  [Baja])
+         (tieneCarbohidratos  [Media])
+         (tieneComplejidad  [Baja])
+         (tieneIngrediente  [Fresa] [Melon] [Menta])
+         (tieneProteinas  [Baja])
+         (tieneTipoPlato  [Fruta])
+         (anoCreacion  2001)
+         (contieneAlcohol  FALSE)
+         (contieneLactosa  FALSE)
+         (esCaliente  FALSE)
+         (precioComida  300)
+         (racionesMinimalistas  TRUE)
          (tieneAzucar  [Baja])
          (tieneCafeina  [Baja])
     )
@@ -1208,6 +1262,18 @@
     )
 
     ([Manzana] of Ingrediente
+         (esTemporada  [Otono])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
+    )
+
+    ([Fresa] of Ingrediente
+         (esTemporada  [Otono])
+         (esOrigenVegetariano  TRUE)
+         (esRegional  TRUE)
+    )
+
+    ([Pera] of Ingrediente
          (esTemporada  [Otono])
          (esOrigenVegetariano  TRUE)
          (esRegional  TRUE)

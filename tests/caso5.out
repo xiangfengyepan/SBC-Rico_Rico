@@ -1,6 +1,6 @@
 #####################@
 +!!!!!!!!!**
-+********************
++*********************
 +***
 +!!!!!!!!!!!*
 
@@ -47,7 +47,302 @@ Introduzca el numero de comersales:
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃        Numero de menus encontrados: 0        ┃
+┃        Numero de menus encontrados: 7        ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-  ⚠ No hay suficientes menús en el rango especificado
 
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃            MENÚ ECONÓMICO (12.00€)           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  
+   ┌─────────────────────────────────────┐
+   │     CremaCalabaza (Primer_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Calabaza]
+     │    ◦ [Cebolla]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Sopas]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1950
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.00€
+  
+   ┌─────────────────────────────────────┐
+   │     TofuTeriyaki (Segundo_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Tofu]
+     │    ◦ [SalsaTeriyaki]
+     │    ◦ [Brocoli]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Verduras]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     │    ◦ [EnsaladaCesar]
+     ├─◦ Ano de Creacion: 1990
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Alta]
+     ├─◦ Origen:
+     │    ◦ [Andalucia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 5.00€
+  
+   ┌─────────────────────────────────────┐
+   │      MacedoniaDeFrutas (Postre)     │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Fresa]
+     │    ◦ [Melon]
+     │    ◦ [Menta]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Fruta]
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 2001
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Cataluna]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 3.00€
+
+   ┌─────────────────────────────────────┐
+   │         AguaMineral (Bebida)        │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Tipo de Comida:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 1000
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Complejidad: Ningún elemento especificado
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 1.00€
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           MENÚ INTERMEDIO (13.00€)           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  
+   ┌─────────────────────────────────────┐
+   │     CremaCalabaza (Primer_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Calabaza]
+     │    ◦ [Cebolla]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Sopas]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1950
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.00€
+  
+   ┌─────────────────────────────────────┐
+   │     TofuTeriyaki (Segundo_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Tofu]
+     │    ◦ [SalsaTeriyaki]
+     │    ◦ [Brocoli]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Verduras]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     │    ◦ [EnsaladaCesar]
+     ├─◦ Ano de Creacion: 1990
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Alta]
+     ├─◦ Origen:
+     │    ◦ [Andalucia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 5.00€
+  
+   ┌─────────────────────────────────────┐
+   │      MacedoniaDeFrutas (Postre)     │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Fresa]
+     │    ◦ [Melon]
+     │    ◦ [Menta]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Fruta]
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 2001
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Cataluna]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 3.00€
+
+   ┌─────────────────────────────────────┐
+   │           TeVerde (Bebida)          │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Tipo de Comida:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 2000
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Complejidad: Ningún elemento especificado
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 2.00€
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃             MENÚ PREMIUM (14.50€)            ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  
+   ┌─────────────────────────────────────┐
+   │     CremaCalabaza (Primer_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Calabaza]
+     │    ◦ [Cebolla]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Sopas]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1950
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.00€
+  
+   ┌─────────────────────────────────────┐
+   │     TofuTeriyaki (Segundo_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Tofu]
+     │    ◦ [SalsaTeriyaki]
+     │    ◦ [Brocoli]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Verduras]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     │    ◦ [EnsaladaCesar]
+     ├─◦ Ano de Creacion: 1990
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Alta]
+     ├─◦ Origen:
+     │    ◦ [Andalucia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 5.00€
+  
+   ┌─────────────────────────────────────┐
+   │      MacedoniaDeFrutas (Postre)     │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Fresa]
+     │    ◦ [Melon]
+     │    ◦ [Menta]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Fruta]
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 2001
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Cataluna]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 3.00€
+
+   ┌─────────────────────────────────────┐
+   │      ChocolateCaliente (Bebida)     │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Tipo de Comida:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 1500
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Alta]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Complejidad: Ningún elemento especificado
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.50€

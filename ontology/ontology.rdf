@@ -650,6 +650,7 @@
 
 
 
+
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#CremaCalabaza -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#CremaCalabaza">
@@ -906,6 +907,33 @@
 
     <!-- SEGUNDOS PLATOS -->
 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#HamburguesaDeLentejas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Segundo_Plato"/>
+
+        <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Zanahoria"/>
+
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Carne"/>
+        <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
+
+        <untitled-ontology-14:esCompatibleCon rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#EnsaladaCesar"/>
+
+        <untitled-ontology-14:esTradicionalDe rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Valencia"/>
+
+        <untitled-ontology-14:tieneAzucar rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
+        <untitled-ontology-14:tieneCafeina rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
+        <untitled-ontology-14:tieneProteinas rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
+        <untitled-ontology-14:tieneCarbohidratos rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
+        <untitled-ontology-14:tieneCalorias rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
+
+        <untitled-ontology-14:racionesMinimalistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:racionesMinimalistas>
+        <untitled-ontology-14:contieneAlcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:contieneAlcohol>
+        <untitled-ontology-14:contieneLactosa rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:contieneLactosa>
+        <untitled-ontology-14:esCaliente rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esCaliente>
+        <untitled-ontology-14:anoCreacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</untitled-ontology-14:anoCreacion>
+
+        <untitled-ontology-14:precioComida rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</untitled-ontology-14:precioComida>
+    </owl:NamedIndividual>
+
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#PaellaValenciana -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#PaellaValenciana">
@@ -999,8 +1027,7 @@
         <untitled-ontology-14:tieneProteinas rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
         <untitled-ontology-14:tieneCarbohidratos rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
         <untitled-ontology-14:tieneCalorias rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
-        
-        <untitled-ontology-14:racionesMinimalistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:racionesMinimalistas>
+        <untitled-ontology-14:racionesMinimalistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:racionesMinimalistas>
         <untitled-ontology-14:contieneAlcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:contieneAlcohol>
         <untitled-ontology-14:contieneLactosa rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:contieneLactosa>
         <untitled-ontology-14:esCaliente rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esCaliente>
@@ -1106,8 +1133,7 @@
         <untitled-ontology-14:tieneProteinas rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
         <untitled-ontology-14:tieneCarbohidratos rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
         <untitled-ontology-14:tieneCalorias rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
-        
-        <untitled-ontology-14:racionesMinimalistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:racionesMinimalistas>
+        <untitled-ontology-14:racionesMinimalistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:racionesMinimalistas>
         <untitled-ontology-14:contieneAlcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:contieneAlcohol>
         <untitled-ontology-14:contieneLactosa rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:contieneLactosa>
         <untitled-ontology-14:esCaliente rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esCaliente>
@@ -1142,7 +1168,7 @@
         <untitled-ontology-14:tieneCarbohidratos rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
         <untitled-ontology-14:tieneCalorias rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
         
-        <untitled-ontology-14:racionesMinimalistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:racionesMinimalistas>
+        <untitled-ontology-14:racionesMinimalistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:racionesMinimalistas>
         <untitled-ontology-14:contieneAlcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:contieneAlcohol>
         <untitled-ontology-14:contieneLactosa rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:contieneLactosa>
         <untitled-ontology-14:esCaliente rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esCaliente>
@@ -1261,6 +1287,60 @@
 
 
     <!-- POSTRES -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#PerasAlVino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Postre"/>
+
+        <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pera"/>
+        <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#VinoTinto"/>
+        <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Canela"/>
+
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Fruta"/>
+        <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
+
+        <untitled-ontology-14:tieneAzucar rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
+        <untitled-ontology-14:tieneCafeina rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
+        <untitled-ontology-14:tieneProteinas rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
+        <untitled-ontology-14:tieneCarbohidratos rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Alta"/>
+        <untitled-ontology-14:tieneCalorias rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
+
+        <untitled-ontology-14:racionesMinimalistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:racionesMinimalistas>
+        <untitled-ontology-14:contieneAlcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:contieneAlcohol>
+        <untitled-ontology-14:contieneLactosa rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:contieneLactosa>
+        <untitled-ontology-14:esCaliente rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esCaliente>
+        <untitled-ontology-14:anoCreacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1975</untitled-ontology-14:anoCreacion>
+
+        <untitled-ontology-14:precioComida rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</untitled-ontology-14:precioComida>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#MacedoniaDeFrutas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Postre"/>
+
+        <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Fresa"/>
+        <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Melon"/>
+        <untitled-ontology-14:tieneIngrediente rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Menta"/>
+
+        <untitled-ontology-14:tieneTipoPlato rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Fruta"/>
+        <untitled-ontology-14:tieneComplejidad rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
+
+        <untitled-ontology-14:esTradicionalDe rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Cataluna"/>
+
+        <untitled-ontology-14:tieneAzucar rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
+        <untitled-ontology-14:tieneCafeina rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
+        <untitled-ontology-14:tieneProteinas rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
+        <untitled-ontology-14:tieneCarbohidratos rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Media"/>
+        <untitled-ontology-14:tieneCalorias rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Baja"/>
+
+        <untitled-ontology-14:racionesMinimalistas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:racionesMinimalistas>
+        <untitled-ontology-14:contieneAlcohol rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:contieneAlcohol>
+        <untitled-ontology-14:contieneLactosa rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:contieneLactosa>
+        <untitled-ontology-14:esCaliente rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-14:esCaliente>
+        <untitled-ontology-14:anoCreacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</untitled-ontology-14:anoCreacion>
+
+        <untitled-ontology-14:precioComida rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</untitled-ontology-14:precioComida>
+    </owl:NamedIndividual>
+
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#FlanCasero -->
 
@@ -2281,6 +2361,22 @@
 
     <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Manzana -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Manzana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
+        <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
+        <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Fresa -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Fresa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
+        <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
+        <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>
+        <untitled-ontology-14:esTemporada rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Otono"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pera -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Pera">
         <rdf:type rdf:resource="http://www.semanticweb.org/xf/ontologies/2025/3/untitled-ontology-14#Ingrediente"/>
         <untitled-ontology-14:esOrigenVegetariano rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esOrigenVegetariano>
         <untitled-ontology-14:esRegional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-14:esRegional>

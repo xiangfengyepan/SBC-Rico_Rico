@@ -1,6 +1,6 @@
 #####################@
 +!!!!!!!!!**
-+********************
++*********************
 +***
 +!!!!!!!!!!!*
 
@@ -90,7 +90,7 @@ Introduzca el numero de comersales:
      │    ◦ [AguaMineral]
      │    ◦ [EnsaladaCesar]
      ├─◦ Ano de Creacion: 1990
-     ├─◦ Son raciones minimalistas: FALSE
+     ├─◦ Son raciones minimalistas: TRUE
      ├─◦ Contiene Alcohol: FALSE
      ├─◦ Contiene Lactosa: FALSE
      ├─◦ Contiene Calorias: [Media]
@@ -193,7 +193,7 @@ Introduzca el numero de comersales:
      │    ◦ [AguaMineral]
      │    ◦ [EnsaladaCesar]
      ├─◦ Ano de Creacion: 1990
-     ├─◦ Son raciones minimalistas: FALSE
+     ├─◦ Son raciones minimalistas: TRUE
      ├─◦ Contiene Alcohol: FALSE
      ├─◦ Contiene Lactosa: FALSE
      ├─◦ Contiene Calorias: [Media]
@@ -295,7 +295,7 @@ Introduzca el numero de comersales:
      │    ◦ [AguaMineral]
      │    ◦ [EnsaladaCesar]
      ├─◦ Ano de Creacion: 1990
-     ├─◦ Son raciones minimalistas: FALSE
+     ├─◦ Son raciones minimalistas: TRUE
      ├─◦ Contiene Alcohol: FALSE
      ├─◦ Contiene Lactosa: FALSE
      ├─◦ Contiene Calorias: [Media]

@@ -43,12 +43,20 @@
     (send ?plato delete)
 )
 
-(defrule deporte-medio
+(defrule deporte-medio-primer
     (object (is-a Cliente) (haceDeporte [Media]))
-    ?plato <- (object (is-a Plato) (tieneProteinas [Baja]) (tieneAzucar  [Baja]))
+    ?plato <- (object (is-a Primer_Plato) (tieneProteinas [Baja]) (tieneAzucar  [Baja]))
     =>
     (send ?plato delete)
 )
+
+(defrule deporte-medio-segundo
+    (object (is-a Cliente) (haceDeporte [Media]))
+    ?plato <- (object (is-a Segundo_Plato) (tieneProteinas [Baja]) (tieneAzucar  [Baja]))
+    =>
+    (send ?plato delete)
+)
+
 
 (defrule deporte-alto-proteinas
     (object (is-a Cliente) (haceDeporte [Alta]))
@@ -111,7 +119,7 @@
             )
         )
     )
-    (if (> (length$ ?no-temporada) 1) then (send ?plato delete))
+    (if (> (length$ ?no-temporada) 2) then (send ?plato delete))
 )
 
 (defrule complejidad-alta

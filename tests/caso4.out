@@ -1,6 +1,6 @@
 #####################@
 +!!!!!!!!!**
-+********************
++*********************
 +***
 +!!!!!!!!!!!*
 
@@ -43,11 +43,314 @@ Introduzca el numero de comersales:
 ┃            Grado de deporte: Baja            ┃
 ┃           Prefiere Estilo: Sibarita          ┃
 ┃    Evento: Bautizo de 15 personas en Otono   ┃
-┃       Rango de precios: 20.00€ - 26.00€      ┃
+┃       Rango de precios: 10.00€ - 26.00€      ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃        Numero de menus encontrados: 0        ┃
+┃       Numero de menus encontrados: 448       ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-  ⚠ No hay suficientes menús en el rango especificado
 
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃            MENÚ ECONÓMICO (12.00€)           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  
+   ┌─────────────────────────────────────┐
+   │     CremaCalabaza (Primer_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Calabaza]
+     │    ◦ [Cebolla]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Sopas]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1950
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.00€
+  
+   ┌─────────────────────────────────────┐
+   │     TofuTeriyaki (Segundo_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Tofu]
+     │    ◦ [SalsaTeriyaki]
+     │    ◦ [Brocoli]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Verduras]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     │    ◦ [EnsaladaCesar]
+     ├─◦ Ano de Creacion: 1990
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Alta]
+     ├─◦ Origen:
+     │    ◦ [Andalucia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 5.00€
+  
+   ┌─────────────────────────────────────┐
+   │         FrutaFresca (Postre)        │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Fruta]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Dulces]
+     ├─◦ Compatible con:
+     │    ◦ [Tabule]
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1000
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     │    ◦ [Cataluna]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 3.00€
+
+   ┌─────────────────────────────────────┐
+   │         AguaMineral (Bebida)        │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Tipo de Comida:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 1000
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Complejidad: Ningún elemento especificado
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 1.00€
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           MENÚ INTERMEDIO (15.00€)           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  
+   ┌─────────────────────────────────────┐
+   │     CremaCalabaza (Primer_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Calabaza]
+     │    ◦ [Cebolla]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Sopas]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1950
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.00€
+  
+   ┌─────────────────────────────────────┐
+   │    MerluzaEnSalsa (Segundo_Plato)   │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Merluza]
+     │    ◦ [Ajo]
+     │    ◦ [Perejil]
+     │    ◦ [Guisantes]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Pescado]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     │    ◦ [GazpachoAndaluz]
+     ├─◦ Ano de Creacion: 1950
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Alta]
+     ├─◦ Origen:
+     │    ◦ [Galicia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Media]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 6.00€
+  
+   ┌─────────────────────────────────────┐
+   │         FlanCasero (Postre)         │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Huevo]
+     │    ◦ [Leche]
+     │    ◦ [Azucar]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Dulces]
+     ├─◦ Compatible con:
+     │    ◦ [MelonConJamon]
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1500
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: TRUE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Alta]
+     ├─◦ Contiene Proteinas: [Media]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     │    ◦ [Andalucia]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 4.00€
+
+   ┌─────────────────────────────────────┐
+   │           TeVerde (Bebida)          │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Tipo de Comida:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 2000
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Complejidad: Ningún elemento especificado
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 2.00€
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃             MENÚ PREMIUM (18.50€)            ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  
+   ┌─────────────────────────────────────┐
+   │    GazpachoAndaluz (Primer_Plato)   │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Pepino]
+     │    ◦ [Tomate]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Sopas]
+     ├─◦ Compatible con:
+     │    ◦ [PaellaValenciana]
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1800
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Andalucia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 4.00€
+  
+   ┌─────────────────────────────────────┐
+   │    MerluzaEnSalsa (Segundo_Plato)   │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Merluza]
+     │    ◦ [Ajo]
+     │    ◦ [Perejil]
+     │    ◦ [Guisantes]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Pescado]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     │    ◦ [GazpachoAndaluz]
+     ├─◦ Ano de Creacion: 1950
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Alta]
+     ├─◦ Origen:
+     │    ◦ [Galicia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Media]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 6.00€
+  
+   ┌─────────────────────────────────────┐
+   │       MousseChocolate (Postre)      │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Chocolate]
+     │    ◦ [Leche]
+     │    ◦ [Azucar]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Dulces]
+     ├─◦ Compatible con:
+     │    ◦ [TortillaPatatas]
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1890
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: TRUE
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Alta]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Francia]
+     │    ◦ [Europa]
+     ├─◦ Complejidad: [Media]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 5.00€
+
+   ┌─────────────────────────────────────┐
+   │      ChocolateCaliente (Bebida)     │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Tipo de Comida:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 1500
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Alta]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Complejidad: Ningún elemento especificado
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.50€

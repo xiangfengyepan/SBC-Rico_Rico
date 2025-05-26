@@ -1,6 +1,6 @@
 #####################@
 +!!!!!!!!!**
-+********************
++*********************
 +***
 +!!!!!!!!!!!*
 
@@ -47,7 +47,7 @@ Introduzca el numero de comersales:
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃        Numero de menus encontrados: 46       ┃
+┃        Numero de menus encontrados: 63       ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -78,55 +78,153 @@ Introduzca el numero de comersales:
      ├─◦ Precio: 3.00€
   
    ┌─────────────────────────────────────┐
-   │     TofuTeriyaki (Segundo_Plato)    │
+   │      PolloAsado (Segundo_Plato)     │
    └─────────────────────────────────────┘
      ├─◦ Ingredientes:
-     │    ◦ [Tofu]
-     │    ◦ [SalsaTeriyaki]
-     │    ◦ [Brocoli]
+     │    ◦ [Pollo]
+     │    ◦ [Patata]
+     │    ◦ [Especias]
      ├─◦ Tipo de Comida:
-     │    ◦ [Verduras]
+     │    ◦ [Carne]
      ├─◦ Compatible con:
      │    ◦ [AguaMineral]
      │    ◦ [EnsaladaCesar]
-     ├─◦ Ano de Creacion: 1990
+     ├─◦ Ano de Creacion: 1900
      ├─◦ Son raciones minimalistas: FALSE
      ├─◦ Contiene Alcohol: FALSE
      ├─◦ Contiene Lactosa: FALSE
      ├─◦ Contiene Calorias: [Media]
-     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Carbohidratos: [Baja]
      ├─◦ Contiene Proteinas: [Alta]
      ├─◦ Origen:
      │    ◦ [Andalucia]
      │    ◦ [Espana]
      ├─◦ Complejidad: [Baja]
      ├─◦ Temperatura: Caliente
-     ├─◦ Precio: 5.00€
+     ├─◦ Precio: 7.00€
   
    ┌─────────────────────────────────────┐
-   │        YogurConMiel (Postre)        │
+   │      MacedoniaDeFrutas (Postre)     │
    └─────────────────────────────────────┘
      ├─◦ Ingredientes:
-     │    ◦ [Leche]
-     │    ◦ [Miel]
+     │    ◦ [Fresa]
+     │    ◦ [Melon]
+     │    ◦ [Menta]
      ├─◦ Tipo de Comida:
-     │    ◦ [Dulces]
+     │    ◦ [Fruta]
      ├─◦ Compatible con:
-     │    ◦ [Tabule]
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 2001
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Cataluna]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 3.00€
+
+   ┌─────────────────────────────────────┐
+   │         AguaMineral (Bebida)        │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Tipo de Comida:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 1000
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Complejidad: Ningún elemento especificado
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 1.00€
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           MENÚ INTERMEDIO (15.50€)           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  
+   ┌─────────────────────────────────────┐
+   │     CremaCalabaza (Primer_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Calabaza]
+     │    ◦ [Cebolla]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Sopas]
+     ├─◦ Compatible con:
      │    ◦ [AguaMineral]
      ├─◦ Ano de Creacion: 1950
      ├─◦ Son raciones minimalistas: TRUE
      ├─◦ Contiene Alcohol: FALSE
-     ├─◦ Contiene Lactosa: TRUE
-     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
      ├─◦ Contiene Carbohidratos: [Media]
-     ├─◦ Contiene Proteinas: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
      ├─◦ Origen:
-     │    ◦ [Murcia]
-     │    ◦ [Valencia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.00€
+  
+   ┌─────────────────────────────────────┐
+   │      PolloAsado (Segundo_Plato)     │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Pollo]
+     │    ◦ [Patata]
+     │    ◦ [Especias]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Carne]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     │    ◦ [EnsaladaCesar]
+     ├─◦ Ano de Creacion: 1900
+     ├─◦ Son raciones minimalistas: FALSE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Alta]
+     ├─◦ Origen:
+     │    ◦ [Andalucia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 7.00€
+  
+   ┌─────────────────────────────────────┐
+   │      MacedoniaDeFrutas (Postre)     │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Fresa]
+     │    ◦ [Melon]
+     │    ◦ [Menta]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Fruta]
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 2001
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Cataluna]
      ├─◦ Complejidad: [Baja]
      ├─◦ Temperatura: Frío
-     ├─◦ Precio: 3.50€
+     ├─◦ Precio: 3.00€
 
    ┌─────────────────────────────────────┐
    │         ZumoNaranja (Bebida)        │
@@ -149,108 +247,6 @@ Introduzca el numero de comersales:
      ├─◦ Complejidad: Ningún elemento especificado
      ├─◦ Temperatura: Frío
      ├─◦ Precio: 2.50€
-
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃           MENÚ INTERMEDIO (15.50€)           ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-  
-   ┌─────────────────────────────────────┐
-   │     EnsaladaCesar (Primer_Plato)    │
-   └─────────────────────────────────────┘
-     ├─◦ Ingredientes:
-     │    ◦ [Lechuga]
-     │    ◦ [Pollo]
-     ├─◦ Tipo de Comida:
-     │    ◦ [Ensaladas]
-     ├─◦ Compatible con:
-     │    ◦ [AguaMineral]
-     │    ◦ [PaellaValenciana]
-     ├─◦ Ano de Creacion: 1920
-     ├─◦ Son raciones minimalistas: FALSE
-     ├─◦ Contiene Alcohol: FALSE
-     ├─◦ Contiene Lactosa: TRUE
-     ├─◦ Contiene Calorias: [Media]
-     ├─◦ Contiene Carbohidratos: [Baja]
-     ├─◦ Contiene Proteinas: [Media]
-     ├─◦ Origen:
-     │    ◦ [Espana]
-     │    ◦ [Cataluna]
-     ├─◦ Complejidad: [Baja]
-     ├─◦ Temperatura: Frío
-     ├─◦ Precio: 3.50€
-  
-   ┌─────────────────────────────────────┐
-   │     TofuTeriyaki (Segundo_Plato)    │
-   └─────────────────────────────────────┘
-     ├─◦ Ingredientes:
-     │    ◦ [Tofu]
-     │    ◦ [SalsaTeriyaki]
-     │    ◦ [Brocoli]
-     ├─◦ Tipo de Comida:
-     │    ◦ [Verduras]
-     ├─◦ Compatible con:
-     │    ◦ [AguaMineral]
-     │    ◦ [EnsaladaCesar]
-     ├─◦ Ano de Creacion: 1990
-     ├─◦ Son raciones minimalistas: FALSE
-     ├─◦ Contiene Alcohol: FALSE
-     ├─◦ Contiene Lactosa: FALSE
-     ├─◦ Contiene Calorias: [Media]
-     ├─◦ Contiene Carbohidratos: [Media]
-     ├─◦ Contiene Proteinas: [Alta]
-     ├─◦ Origen:
-     │    ◦ [Andalucia]
-     │    ◦ [Espana]
-     ├─◦ Complejidad: [Baja]
-     ├─◦ Temperatura: Caliente
-     ├─◦ Precio: 5.00€
-  
-   ┌─────────────────────────────────────┐
-   │        YogurConMiel (Postre)        │
-   └─────────────────────────────────────┘
-     ├─◦ Ingredientes:
-     │    ◦ [Leche]
-     │    ◦ [Miel]
-     ├─◦ Tipo de Comida:
-     │    ◦ [Dulces]
-     ├─◦ Compatible con:
-     │    ◦ [Tabule]
-     │    ◦ [AguaMineral]
-     ├─◦ Ano de Creacion: 1950
-     ├─◦ Son raciones minimalistas: TRUE
-     ├─◦ Contiene Alcohol: FALSE
-     ├─◦ Contiene Lactosa: TRUE
-     ├─◦ Contiene Calorias: [Media]
-     ├─◦ Contiene Carbohidratos: [Media]
-     ├─◦ Contiene Proteinas: [Media]
-     ├─◦ Origen:
-     │    ◦ [Murcia]
-     │    ◦ [Valencia]
-     ├─◦ Complejidad: [Baja]
-     ├─◦ Temperatura: Frío
-     ├─◦ Precio: 3.50€
-
-   ┌─────────────────────────────────────┐
-   │      ChocolateCaliente (Bebida)     │
-   └─────────────────────────────────────┘
-     ├─◦ Ingredientes:
-     │    ◦ Ningún elemento especificado
-     ├─◦ Tipo de Comida:
-     │    ◦ Ningún elemento especificado
-     ├─◦ Compatible con:
-     │    ◦ Ningún elemento especificado
-     ├─◦ Ano de Creacion: 1500
-     ├─◦ Son raciones minimalistas: TRUE
-     ├─◦ Contiene Alcohol: FALSE
-     ├─◦ Contiene Lactosa: FALSE
-     ├─◦ Contiene Calorias: [Alta]
-     ├─◦ Contiene Carbohidratos: [Alta]
-     ├─◦ Contiene Proteinas: [Baja]
-     ├─◦ Origen:
-     │    ◦ Ningún elemento especificado
-     ├─◦ Complejidad: Ningún elemento especificado
-     ├─◦ Temperatura: Caliente
-     ├─◦ Precio: 3.50€
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃             MENÚ PREMIUM (18.20€)            ┃

@@ -1,6 +1,6 @@
 #####################@
 +!!!!!!!!!**
-+********************
++*********************
 +***
 +!!!!!!!!!!!*
 
@@ -47,7 +47,7 @@ Introduzca el numero de comersales:
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃       Numero de menus encontrados: 504       ┃
+┃       Numero de menus encontrados: 811       ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -150,59 +150,60 @@ Introduzca el numero de comersales:
      ├─◦ Precio: 1.00€
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃           MENÚ INTERMEDIO (15.50€)           ┃
+┃           MENÚ INTERMEDIO (15.30€)           ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
   
    ┌─────────────────────────────────────┐
-   │     EnsaladaCesar (Primer_Plato)    │
+   │    GazpachoAndaluz (Primer_Plato)   │
    └─────────────────────────────────────┘
      ├─◦ Ingredientes:
-     │    ◦ [Lechuga]
-     │    ◦ [Pollo]
+     │    ◦ [Pepino]
+     │    ◦ [Tomate]
      ├─◦ Tipo de Comida:
-     │    ◦ [Ensaladas]
+     │    ◦ [Sopas]
      ├─◦ Compatible con:
-     │    ◦ [AguaMineral]
      │    ◦ [PaellaValenciana]
-     ├─◦ Ano de Creacion: 1920
-     ├─◦ Son raciones minimalistas: FALSE
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1800
+     ├─◦ Son raciones minimalistas: TRUE
      ├─◦ Contiene Alcohol: FALSE
-     ├─◦ Contiene Lactosa: TRUE
-     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
      ├─◦ Contiene Carbohidratos: [Baja]
-     ├─◦ Contiene Proteinas: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
      ├─◦ Origen:
+     │    ◦ [Andalucia]
      │    ◦ [Espana]
-     │    ◦ [Cataluna]
      ├─◦ Complejidad: [Baja]
      ├─◦ Temperatura: Frío
-     ├─◦ Precio: 3.50€
+     ├─◦ Precio: 4.00€
   
    ┌─────────────────────────────────────┐
-   │    SolomilloCafe (Segundo_Plato)    │
+   │      PistoHuevo (Segundo_Plato)     │
    └─────────────────────────────────────┘
      ├─◦ Ingredientes:
-     │    ◦ [Solomillo]
-     │    ◦ [Cafe]
-     │    ◦ [Patata]
+     │    ◦ [Pimiento]
+     │    ◦ [Calabacin]
+     │    ◦ [Tomate]
+     │    ◦ [Huevo]
      ├─◦ Tipo de Comida:
-     │    ◦ [Carne]
+     │    ◦ [Huevos]
      ├─◦ Compatible con:
      │    ◦ [AguaMineral]
      │    ◦ [GazpachoAndaluz]
-     ├─◦ Ano de Creacion: 1980
+     ├─◦ Ano de Creacion: 1920
      ├─◦ Son raciones minimalistas: FALSE
      ├─◦ Contiene Alcohol: FALSE
      ├─◦ Contiene Lactosa: FALSE
-     ├─◦ Contiene Calorias: [Alta]
-     ├─◦ Contiene Carbohidratos: [Baja]
-     ├─◦ Contiene Proteinas: [Alta]
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Media]
      ├─◦ Origen:
-     │    ◦ [Madrid]
+     │    ◦ [CastillaLaMancha]
      │    ◦ [Espana]
      ├─◦ Complejidad: [Media]
      ├─◦ Temperatura: Caliente
-     ├─◦ Precio: 7.50€
+     ├─◦ Precio: 5.80€
   
    ┌─────────────────────────────────────┐
    │        YogurConMiel (Postre)        │
@@ -230,7 +231,7 @@ Introduzca el numero de comersales:
      ├─◦ Precio: 3.50€
 
    ┌─────────────────────────────────────┐
-   │         AguaMineral (Bebida)        │
+   │        RefrescoLimon (Bebida)       │
    └─────────────────────────────────────┘
      ├─◦ Ingredientes:
      │    ◦ Ningún elemento especificado
@@ -238,18 +239,18 @@ Introduzca el numero de comersales:
      │    ◦ Ningún elemento especificado
      ├─◦ Compatible con:
      │    ◦ Ningún elemento especificado
-     ├─◦ Ano de Creacion: 1000
+     ├─◦ Ano de Creacion: 1920
      ├─◦ Son raciones minimalistas: TRUE
      ├─◦ Contiene Alcohol: FALSE
      ├─◦ Contiene Lactosa: FALSE
-     ├─◦ Contiene Calorias: [Baja]
-     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Alta]
      ├─◦ Contiene Proteinas: [Baja]
      ├─◦ Origen:
      │    ◦ Ningún elemento especificado
      ├─◦ Complejidad: Ningún elemento especificado
      ├─◦ Temperatura: Frío
-     ├─◦ Precio: 1.00€
+     ├─◦ Precio: 2.00€
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃             MENÚ PREMIUM (18.00€)            ┃
@@ -281,28 +282,24 @@ Introduzca el numero de comersales:
      ├─◦ Precio: 3.50€
   
    ┌─────────────────────────────────────┐
-   │    MerluzaEnSalsa (Segundo_Plato)   │
+   │HamburguesaDeLentejas (Segundo_Plato)
+│
    └─────────────────────────────────────┘
      ├─◦ Ingredientes:
-     │    ◦ [Merluza]
-     │    ◦ [Ajo]
-     │    ◦ [Perejil]
-     │    ◦ [Guisantes]
+     │    ◦ [Zanahoria]
      ├─◦ Tipo de Comida:
-     │    ◦ [Pescado]
+     │    ◦ [Carne]
      ├─◦ Compatible con:
-     │    ◦ [AguaMineral]
-     │    ◦ [GazpachoAndaluz]
-     ├─◦ Ano de Creacion: 1950
+     │    ◦ [EnsaladaCesar]
+     ├─◦ Ano de Creacion: 2010
      ├─◦ Son raciones minimalistas: FALSE
      ├─◦ Contiene Alcohol: FALSE
      ├─◦ Contiene Lactosa: FALSE
-     ├─◦ Contiene Calorias: [Media]
-     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Alta]
      ├─◦ Contiene Proteinas: [Alta]
      ├─◦ Origen:
-     │    ◦ [Galicia]
-     │    ◦ [Espana]
+     │    ◦ [Valencia]
      ├─◦ Complejidad: [Media]
      ├─◦ Temperatura: Caliente
      ├─◦ Precio: 6.00€
