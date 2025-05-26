@@ -67,7 +67,8 @@
 
 (defrule deporte-alto-azucar
     (object (is-a Cliente) (haceDeporte [Alta]))
-    ?plato <- (object (is-a Plato) (tieneAzucar  [Baja]))
+    ?plato <- (object (is-a Plato) (tieneAzucar  [Baja]) (tieneProteinas [Baja]))
+
     =>
     (send ?plato delete)
 )
