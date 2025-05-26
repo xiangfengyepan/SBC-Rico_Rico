@@ -1,0 +1,357 @@
+#####################@
++!!!!!!!!!**
++********************
++***
++!!!!!!!!!!!*
+
+
+
+
+
+
+
+
+
+
+
+================================
+| Bienvenido a Rico Rico CLIPS |
+================================
+
+Sistema de menus inteligente para eventos.
+Ahora vamos a hacerte algunas preguntas para poder recomendarte unos buenos menús
+
+Introduzca su edad: 
+Introduzca el precio mínimo: 
+Introduzca el precio máximo: 
+Eres vegetariano? (t: TRUE f: FALSE):  Las opciones son: (t f)
+Eres alcolico? (t: TRUE f: FALSE):  Las opciones son: (t f)
+Eres intolerante a la lactosa? (t: TRUE f: FALSE):  Las opciones son: (t f)
+Haces deporte? (0:Baja 1:Media 2:Alta ):  Las opciones son: (0 1 2)
+Si tiene alguna preferencia introduzcala (0:Clasico 1:Moderno 2:Regional 3:Sibarita), en caso contrario elija -1:  Las opciones son: (-1 0 1 2 3)
+Que tipo de evento quiere de las siguentes opciones (0:Bautizo 1:Boda 2:Comunion 3:Congreso) Las opciones son: (0 1 2 3)
+En que temporada quieres celebrar el evento? (0:Primavera , 1:Verano, 2:Otoño, 3:Invierno):  Las opciones son: (0 1 2 3)
+Introduzca el numero de comersales: 
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           PREFERENCIAS DEL CLIENTE           ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃                   Edad: 35                   ┃
+┃             Es Alcoholico: FALSE             ┃
+┃             Es Vegetariano: TRUE             ┃
+┃      Es Intolerante a la lactosa: FALSE      ┃
+┃            Grado de deporte: Media           ┃
+┃           Prefiere Estilo: Clasico           ┃
+┃   Evento: Boda de 60 personas en Primavera   ┃
+┃       Rango de precios: 16.00€ - 22.00€      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Numero de menus encontrados: 3        ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃            MENÚ ECONÓMICO (16.00€)           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  
+   ┌─────────────────────────────────────┐
+   │     CremaCalabaza (Primer_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Calabaza]
+     │    ◦ [Cebolla]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Sopas]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1950
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.00€
+  
+   ┌─────────────────────────────────────┐
+   │     TofuTeriyaki (Segundo_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Tofu]
+     │    ◦ [SalsaTeriyaki]
+     │    ◦ [Brocoli]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Verduras]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     │    ◦ [EnsaladaCesar]
+     ├─◦ Ano de Creacion: 1990
+     ├─◦ Son raciones minimalistas: FALSE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Alta]
+     ├─◦ Origen:
+     │    ◦ [Andalucia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 5.00€
+  
+   ┌─────────────────────────────────────┐
+   │       HeladoVainilla (Postre)       │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Leche]
+     │    ◦ [Azucar]
+     │    ◦ [Vainilla]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Dulces]
+     ├─◦ Compatible con:
+     │    ◦ [TortillaPatatas]
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1850
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: TRUE
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Alta]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     │    ◦ [Cataluna]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 4.50€
+
+   ┌─────────────────────────────────────┐
+   │      ChocolateCaliente (Bebida)     │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Tipo de Comida:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 1500
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Alta]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Complejidad: Ningún elemento especificado
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.50€
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           MENÚ INTERMEDIO (16.00€)           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  
+   ┌─────────────────────────────────────┐
+   │    GazpachoAndaluz (Primer_Plato)   │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Pepino]
+     │    ◦ [Tomate]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Sopas]
+     ├─◦ Compatible con:
+     │    ◦ [PaellaValenciana]
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1800
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Andalucia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 4.00€
+  
+   ┌─────────────────────────────────────┐
+   │     TofuTeriyaki (Segundo_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Tofu]
+     │    ◦ [SalsaTeriyaki]
+     │    ◦ [Brocoli]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Verduras]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     │    ◦ [EnsaladaCesar]
+     ├─◦ Ano de Creacion: 1990
+     ├─◦ Son raciones minimalistas: FALSE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Alta]
+     ├─◦ Origen:
+     │    ◦ [Andalucia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 5.00€
+  
+   ┌─────────────────────────────────────┐
+   │        YogurConMiel (Postre)        │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Leche]
+     │    ◦ [Miel]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Dulces]
+     ├─◦ Compatible con:
+     │    ◦ [Tabule]
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1950
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: TRUE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Media]
+     ├─◦ Origen:
+     │    ◦ [Murcia]
+     │    ◦ [Valencia]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 3.50€
+
+   ┌─────────────────────────────────────┐
+   │      ChocolateCaliente (Bebida)     │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Tipo de Comida:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 1500
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Alta]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Complejidad: Ningún elemento especificado
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.50€
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃             MENÚ PREMIUM (17.00€)            ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  
+   ┌─────────────────────────────────────┐
+   │    GazpachoAndaluz (Primer_Plato)   │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Pepino]
+     │    ◦ [Tomate]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Sopas]
+     ├─◦ Compatible con:
+     │    ◦ [PaellaValenciana]
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1800
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Andalucia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 4.00€
+  
+   ┌─────────────────────────────────────┐
+   │     TofuTeriyaki (Segundo_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Tofu]
+     │    ◦ [SalsaTeriyaki]
+     │    ◦ [Brocoli]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Verduras]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     │    ◦ [EnsaladaCesar]
+     ├─◦ Ano de Creacion: 1990
+     ├─◦ Son raciones minimalistas: FALSE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Alta]
+     ├─◦ Origen:
+     │    ◦ [Andalucia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 5.00€
+  
+   ┌─────────────────────────────────────┐
+   │       HeladoVainilla (Postre)       │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Leche]
+     │    ◦ [Azucar]
+     │    ◦ [Vainilla]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Dulces]
+     ├─◦ Compatible con:
+     │    ◦ [TortillaPatatas]
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1850
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: TRUE
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Alta]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     │    ◦ [Cataluna]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 4.50€
+
+   ┌─────────────────────────────────────┐
+   │      ChocolateCaliente (Bebida)     │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Tipo de Comida:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 1500
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Alta]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Complejidad: Ningún elemento especificado
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.50€

@@ -1,0 +1,350 @@
+#####################@
++!!!!!!!!!**
++********************
++***
++!!!!!!!!!!!*
+
+
+
+
+
+
+
+
+
+
+
+================================
+| Bienvenido a Rico Rico CLIPS |
+================================
+
+Sistema de menus inteligente para eventos.
+Ahora vamos a hacerte algunas preguntas para poder recomendarte unos buenos menús
+
+Introduzca su edad: 
+Introduzca el precio mínimo: 
+Introduzca el precio máximo: 
+Eres vegetariano? (t: TRUE f: FALSE):  Las opciones son: (t f)
+Eres alcolico? (t: TRUE f: FALSE):  Las opciones son: (t f)
+Eres intolerante a la lactosa? (t: TRUE f: FALSE):  Las opciones son: (t f)
+Haces deporte? (0:Baja 1:Media 2:Alta ):  Las opciones son: (0 1 2)
+Si tiene alguna preferencia introduzcala (0:Clasico 1:Moderno 2:Regional 3:Sibarita), en caso contrario elija -1:  Las opciones son: (-1 0 1 2 3)
+Que tipo de evento quiere de las siguentes opciones (0:Bautizo 1:Boda 2:Comunion 3:Congreso) Las opciones son: (0 1 2 3)
+En que temporada quieres celebrar el evento? (0:Primavera , 1:Verano, 2:Otoño, 3:Invierno):  Las opciones son: (0 1 2 3)
+Introduzca el numero de comersales: 
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           PREFERENCIAS DEL CLIENTE           ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃                   Edad: 33                   ┃
+┃              Es Alcoholico: TRUE             ┃
+┃             Es Vegetariano: FALSE            ┃
+┃      Es Intolerante a la lactosa: FALSE      ┃
+┃            Grado de deporte: Baja            ┃
+┃           Prefiere Estilo: Regional          ┃
+┃  Evento: Comunion de 30 personas en Invierno ┃
+┃       Rango de precios: 12.00€ - 18.00€      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Numero de menus encontrados: 187       ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃            MENÚ ECONÓMICO (12.00€)           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  
+   ┌─────────────────────────────────────┐
+   │     CremaCalabaza (Primer_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Calabaza]
+     │    ◦ [Cebolla]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Sopas]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1950
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.00€
+  
+   ┌─────────────────────────────────────┐
+   │   TortillaPatatas (Segundo_Plato)   │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Huevo]
+     │    ◦ [Patata]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Huevos]
+     ├─◦ Compatible con:
+     │    ◦ [RefrescoCola]
+     │    ◦ [EnsaladaCesar]
+     ├─◦ Ano de Creacion: 1700
+     ├─◦ Son raciones minimalistas: FALSE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Media]
+     ├─◦ Origen:
+     │    ◦ [Andalucia]
+     │    ◦ [Madrid]
+     ├─◦ Complejidad: [Media]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 4.50€
+  
+   ┌─────────────────────────────────────┐
+   │        YogurConMiel (Postre)        │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Leche]
+     │    ◦ [Miel]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Dulces]
+     ├─◦ Compatible con:
+     │    ◦ [Tabule]
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1950
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: TRUE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Media]
+     ├─◦ Origen:
+     │    ◦ [Murcia]
+     │    ◦ [Valencia]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 3.50€
+
+   ┌─────────────────────────────────────┐
+   │         AguaMineral (Bebida)        │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Tipo de Comida:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 1000
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Complejidad: Ningún elemento especificado
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 1.00€
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           MENÚ INTERMEDIO (15.50€)           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  
+   ┌─────────────────────────────────────┐
+   │     CremaCalabaza (Primer_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Calabaza]
+     │    ◦ [Cebolla]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Sopas]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1950
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.00€
+  
+   ┌─────────────────────────────────────┐
+   │    SolomilloCafe (Segundo_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Solomillo]
+     │    ◦ [Cafe]
+     │    ◦ [Patata]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Carne]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     │    ◦ [GazpachoAndaluz]
+     ├─◦ Ano de Creacion: 1980
+     ├─◦ Son raciones minimalistas: FALSE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Alta]
+     ├─◦ Origen:
+     │    ◦ [Madrid]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Media]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 7.50€
+  
+   ┌─────────────────────────────────────┐
+   │         FrutaFresca (Postre)        │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Fruta]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Dulces]
+     ├─◦ Compatible con:
+     │    ◦ [Tabule]
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1000
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     │    ◦ [Cataluna]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 3.00€
+
+   ┌─────────────────────────────────────┐
+   │        RefrescoLimon (Bebida)       │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Tipo de Comida:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 1920
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Alta]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Complejidad: Ningún elemento especificado
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 2.00€
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃             MENÚ PREMIUM (18.00€)            ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  
+   ┌─────────────────────────────────────┐
+   │    GazpachoAndaluz (Primer_Plato)   │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Pepino]
+     │    ◦ [Tomate]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Sopas]
+     ├─◦ Compatible con:
+     │    ◦ [PaellaValenciana]
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1800
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Andalucia]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 4.00€
+  
+   ┌─────────────────────────────────────┐
+   │    SolomilloCafe (Segundo_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Solomillo]
+     │    ◦ [Cafe]
+     │    ◦ [Patata]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Carne]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     │    ◦ [GazpachoAndaluz]
+     ├─◦ Ano de Creacion: 1980
+     ├─◦ Son raciones minimalistas: FALSE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Alta]
+     ├─◦ Origen:
+     │    ◦ [Madrid]
+     │    ◦ [Espana]
+     ├─◦ Complejidad: [Media]
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 7.50€
+  
+   ┌─────────────────────────────────────┐
+   │         FrutaFresca (Postre)        │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Fruta]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Dulces]
+     ├─◦ Compatible con:
+     │    ◦ [Tabule]
+     │    ◦ [AguaMineral]
+     ├─◦ Ano de Creacion: 1000
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     │    ◦ [Cataluna]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 3.00€
+
+   ┌─────────────────────────────────────┐
+   │      ChocolateCaliente (Bebida)     │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Tipo de Comida:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Compatible con:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Ano de Creacion: 1500
+     ├─◦ Son raciones minimalistas: TRUE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: FALSE
+     ├─◦ Contiene Calorias: [Alta]
+     ├─◦ Contiene Carbohidratos: [Alta]
+     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Origen:
+     │    ◦ Ningún elemento especificado
+     ├─◦ Complejidad: Ningún elemento especificado
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.50€

@@ -1,0 +1,53 @@
+#####################@
++!!!!!!!!!**
++********************
++***
++!!!!!!!!!!!*
+
+
+
+
+
+
+
+
+
+
+
+================================
+| Bienvenido a Rico Rico CLIPS |
+================================
+
+Sistema de menus inteligente para eventos.
+Ahora vamos a hacerte algunas preguntas para poder recomendarte unos buenos menús
+
+Introduzca su edad: 
+Introduzca el precio mínimo: 
+Introduzca el precio máximo: 
+Eres vegetariano? (t: TRUE f: FALSE):  Las opciones son: (t f)
+Eres alcolico? (t: TRUE f: FALSE):  Las opciones son: (t f)
+Eres intolerante a la lactosa? (t: TRUE f: FALSE):  Las opciones son: (t f)
+Haces deporte? (0:Baja 1:Media 2:Alta ):  Las opciones son: (0 1 2)
+Si tiene alguna preferencia introduzcala (0:Clasico 1:Moderno 2:Regional 3:Sibarita), en caso contrario elija -1:  Las opciones son: (-1 0 1 2 3)
+Que tipo de evento quiere de las siguentes opciones (0:Bautizo 1:Boda 2:Comunion 3:Congreso) Las opciones son: (0 1 2 3)
+En que temporada quieres celebrar el evento? (0:Primavera , 1:Verano, 2:Otoño, 3:Invierno):  Las opciones son: (0 1 2 3)
+Introduzca el numero de comersales: 
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           PREFERENCIAS DEL CLIENTE           ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃                   Edad: 40                   ┃
+┃             Es Alcoholico: FALSE             ┃
+┃             Es Vegetariano: FALSE            ┃
+┃      Es Intolerante a la lactosa: FALSE      ┃
+┃            Grado de deporte: Baja            ┃
+┃           Prefiere Estilo: Moderno           ┃
+┃  Evento: Congreso de 200 personas en Verano  ┃
+┃       Rango de precios: 14.00€ - 20.00€      ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Numero de menus encontrados: 0        ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  ⚠ No hay suficientes menús en el rango especificado
+
