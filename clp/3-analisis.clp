@@ -76,7 +76,7 @@
 (defrule menu-moderno
     (object (is-a Cliente) (prefiereEstilo [Moderno]))
     ?plato <- (object (is-a Plato) (anoCreacion ?creacion))
-    (test (< ?creacion 2000))
+    (test (< ?creacion 1900))
     =>
     (send ?plato delete)
 )
@@ -97,7 +97,7 @@
     (send ?plato delete)
 )
 
-(defrule temporada-new
+(defrule temporada
     (object (is-a Evento) (esTemporadaEvento ?temporadaEvento))
     ?plato <- (object (is-a Plato) (tieneIngrediente $?ingredientes))
     =>
@@ -155,7 +155,5 @@
     =>
     (send ?ing delete)
 )
-
-; TODO: restriccion tipo evento (Bautizo / Boda / Comunion / Congreso)
 
 (defrule analisis::done => (focus sintesis))

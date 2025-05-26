@@ -47,7 +47,7 @@ Introduzca el numero de comersales:
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃       Numero de menus encontrados: 113       ┃
+┃       Numero de menus encontrados: 244       ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -150,86 +150,82 @@ Introduzca el numero de comersales:
      ├─◦ Precio: 3.50€
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃           MENÚ INTERMEDIO (16.50€)           ┃
+┃           MENÚ INTERMEDIO (17.00€)           ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
   
    ┌─────────────────────────────────────┐
-   │    GazpachoAndaluz (Primer_Plato)   │
+   │     CremaCalabaza (Primer_Plato)    │
    └─────────────────────────────────────┘
      ├─◦ Ingredientes:
-     │    ◦ [Pepino]
-     │    ◦ [Tomate]
+     │    ◦ [Calabaza]
+     │    ◦ [Cebolla]
      ├─◦ Tipo de Comida:
      │    ◦ [Sopas]
      ├─◦ Compatible con:
-     │    ◦ [PaellaValenciana]
      │    ◦ [AguaMineral]
-     ├─◦ Ano de Creacion: 1800
+     ├─◦ Ano de Creacion: 1950
      ├─◦ Son raciones minimalistas: TRUE
      ├─◦ Contiene Alcohol: FALSE
      ├─◦ Contiene Lactosa: FALSE
      ├─◦ Contiene Calorias: [Baja]
-     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Carbohidratos: [Media]
      ├─◦ Contiene Proteinas: [Baja]
      ├─◦ Origen:
-     │    ◦ [Andalucia]
      │    ◦ [Espana]
      ├─◦ Complejidad: [Baja]
-     ├─◦ Temperatura: Frío
-     ├─◦ Precio: 4.00€
+     ├─◦ Temperatura: Caliente
+     ├─◦ Precio: 3.00€
   
    ┌─────────────────────────────────────┐
-   │     TofuTeriyaki (Segundo_Plato)    │
+   │      PolloAsado (Segundo_Plato)     │
    └─────────────────────────────────────┘
      ├─◦ Ingredientes:
-     │    ◦ [Tofu]
-     │    ◦ [SalsaTeriyaki]
-     │    ◦ [Brocoli]
+     │    ◦ [Pollo]
+     │    ◦ [Patata]
+     │    ◦ [Especias]
      ├─◦ Tipo de Comida:
-     │    ◦ [Verduras]
+     │    ◦ [Carne]
      ├─◦ Compatible con:
      │    ◦ [AguaMineral]
      │    ◦ [EnsaladaCesar]
-     ├─◦ Ano de Creacion: 1990
+     ├─◦ Ano de Creacion: 1900
      ├─◦ Son raciones minimalistas: FALSE
      ├─◦ Contiene Alcohol: FALSE
      ├─◦ Contiene Lactosa: FALSE
      ├─◦ Contiene Calorias: [Media]
-     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Carbohidratos: [Baja]
      ├─◦ Contiene Proteinas: [Alta]
      ├─◦ Origen:
      │    ◦ [Andalucia]
      │    ◦ [Espana]
      ├─◦ Complejidad: [Baja]
      ├─◦ Temperatura: Caliente
-     ├─◦ Precio: 5.00€
+     ├─◦ Precio: 7.00€
   
    ┌─────────────────────────────────────┐
-   │          Natillas (Postre)          │
+   │        YogurConMiel (Postre)        │
    └─────────────────────────────────────┘
      ├─◦ Ingredientes:
      │    ◦ [Leche]
-     │    ◦ [Azucar]
-     │    ◦ [Huevo]
-     │    ◦ [Canela]
+     │    ◦ [Miel]
      ├─◦ Tipo de Comida:
      │    ◦ [Dulces]
      ├─◦ Compatible con:
-     │    ◦ [GazpachoAndaluz]
+     │    ◦ [Tabule]
      │    ◦ [AguaMineral]
-     ├─◦ Ano de Creacion: 1800
+     ├─◦ Ano de Creacion: 1950
      ├─◦ Son raciones minimalistas: TRUE
      ├─◦ Contiene Alcohol: FALSE
      ├─◦ Contiene Lactosa: TRUE
-     ├─◦ Contiene Calorias: [Alta]
-     ├─◦ Contiene Carbohidratos: [Alta]
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Media]
      ├─◦ Contiene Proteinas: [Media]
      ├─◦ Origen:
-     │    ◦ [Espana]
-     │    ◦ [Andalucia]
-     ├─◦ Complejidad: [Media]
+     │    ◦ [Murcia]
+     │    ◦ [Valencia]
+     ├─◦ Complejidad: [Baja]
      ├─◦ Temperatura: Frío
-     ├─◦ Precio: 4.00€
+     ├─◦ Precio: 3.50€
 
    ┌─────────────────────────────────────┐
    │      ChocolateCaliente (Bebida)     │
@@ -258,54 +254,55 @@ Introduzca el numero de comersales:
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
   
    ┌─────────────────────────────────────┐
-   │    GazpachoAndaluz (Primer_Plato)   │
+   │     EnsaladaCesar (Primer_Plato)    │
    └─────────────────────────────────────┘
      ├─◦ Ingredientes:
-     │    ◦ [Pepino]
-     │    ◦ [Tomate]
+     │    ◦ [Lechuga]
+     │    ◦ [Pollo]
      ├─◦ Tipo de Comida:
-     │    ◦ [Sopas]
+     │    ◦ [Ensaladas]
      ├─◦ Compatible con:
-     │    ◦ [PaellaValenciana]
      │    ◦ [AguaMineral]
-     ├─◦ Ano de Creacion: 1800
-     ├─◦ Son raciones minimalistas: TRUE
+     │    ◦ [PaellaValenciana]
+     ├─◦ Ano de Creacion: 1920
+     ├─◦ Son raciones minimalistas: FALSE
+     ├─◦ Contiene Alcohol: FALSE
+     ├─◦ Contiene Lactosa: TRUE
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Baja]
+     ├─◦ Contiene Proteinas: [Media]
+     ├─◦ Origen:
+     │    ◦ [Espana]
+     │    ◦ [Cataluna]
+     ├─◦ Complejidad: [Baja]
+     ├─◦ Temperatura: Frío
+     ├─◦ Precio: 3.50€
+  
+   ┌─────────────────────────────────────┐
+   │     TofuTeriyaki (Segundo_Plato)    │
+   └─────────────────────────────────────┘
+     ├─◦ Ingredientes:
+     │    ◦ [Tofu]
+     │    ◦ [SalsaTeriyaki]
+     │    ◦ [Brocoli]
+     ├─◦ Tipo de Comida:
+     │    ◦ [Verduras]
+     ├─◦ Compatible con:
+     │    ◦ [AguaMineral]
+     │    ◦ [EnsaladaCesar]
+     ├─◦ Ano de Creacion: 1990
+     ├─◦ Son raciones minimalistas: FALSE
      ├─◦ Contiene Alcohol: FALSE
      ├─◦ Contiene Lactosa: FALSE
-     ├─◦ Contiene Calorias: [Baja]
-     ├─◦ Contiene Carbohidratos: [Baja]
-     ├─◦ Contiene Proteinas: [Baja]
+     ├─◦ Contiene Calorias: [Media]
+     ├─◦ Contiene Carbohidratos: [Media]
+     ├─◦ Contiene Proteinas: [Alta]
      ├─◦ Origen:
      │    ◦ [Andalucia]
      │    ◦ [Espana]
      ├─◦ Complejidad: [Baja]
-     ├─◦ Temperatura: Frío
-     ├─◦ Precio: 4.00€
-  
-   ┌─────────────────────────────────────┐
-   │   TortillaPatatas (Segundo_Plato)   │
-   └─────────────────────────────────────┘
-     ├─◦ Ingredientes:
-     │    ◦ [Huevo]
-     │    ◦ [Patata]
-     ├─◦ Tipo de Comida:
-     │    ◦ [Huevos]
-     ├─◦ Compatible con:
-     │    ◦ [RefrescoCola]
-     │    ◦ [EnsaladaCesar]
-     ├─◦ Ano de Creacion: 1700
-     ├─◦ Son raciones minimalistas: FALSE
-     ├─◦ Contiene Alcohol: FALSE
-     ├─◦ Contiene Lactosa: FALSE
-     ├─◦ Contiene Calorias: [Alta]
-     ├─◦ Contiene Carbohidratos: [Media]
-     ├─◦ Contiene Proteinas: [Media]
-     ├─◦ Origen:
-     │    ◦ [Andalucia]
-     │    ◦ [Madrid]
-     ├─◦ Complejidad: [Media]
      ├─◦ Temperatura: Caliente
-     ├─◦ Precio: 4.50€
+     ├─◦ Precio: 5.00€
   
    ┌─────────────────────────────────────┐
    │         TartaQueso (Postre)         │
